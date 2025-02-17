@@ -1330,8 +1330,17 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 		. = CB.Invoke()
 	usr = temp
 
-//datum may be null, but it does need to be a typed var
+/**
+ * NAMEOF: Compile time checked variable name to string conversion
+ * evaluates to a string equal to "X", but compile errors if X isn't a var on datum.
+ * datum may be null, but it does need to be a typed var.
+ **/
 #define NAMEOF(datum, X) (#X || ##datum.##X)
+
+/**
+ * NAMEOF that actually works in static definitions because src::type requires src to be defined
+ */
+#define NAMEOF_STATIC(datum, X) (nameof(type::##X))
 
 #define VARSET_LIST_CALLBACK(target, var_name, var_value) CALLBACK(GLOBAL_PROC, /proc/___callbackvarset, ##target, ##var_name, ##var_value)
 //dupe code because dm can't handle 3 level deep macros

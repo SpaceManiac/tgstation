@@ -46,7 +46,7 @@ SUBSYSTEM_DEF(hullrot)
 		return abort("[name] [dll_major].[dll_minor] was expected, but incompatible [version["version"]] was supplied.")
 	loaded_version = version["version"]
 
-	var/list/res = json_decode(call(lib(), "hullrot_init")(CONFIG_GET(string/hullrot_control_addr)))
+	var/list/res = json_decode(call_ext(lib(), "hullrot_init")(CONFIG_GET(string/hullrot_control_addr)))
 	var/error = res["error"] || res["Fatal"] || res["Debug"]
 	if (error || !res["Version"])
 		return abort("[name] failed to initialize: [error]")
@@ -61,7 +61,7 @@ SUBSYSTEM_DEF(hullrot)
 
 /datum/controller/subsystem/hullrot/proc/get_dll_version()
 	// In its own proc so if it crashes, dll_initialize can check for null.
-	return json_decode(call(lib(), "hullrot_dll_version")())
+	return json_decode(call_ext(lib(), "hullrot_dll_version")())
 
 /datum/controller/subsystem/hullrot/stat_entry(msg)
 	..(dead_because || "C:[loaded_version] S:[server_version]")
@@ -72,7 +72,7 @@ SUBSYSTEM_DEF(hullrot)
 /datum/controller/subsystem/hullrot/Shutdown()
 	if (loaded_version)
 		loaded_version = null
-		call(lib(), "hullrot_stop")()
+		call_ext(lib(), "hullrot_stop")()
 
 // because the DLL starts a thread, we have to make *extra* sure to join it
 /world/Del()
@@ -130,9 +130,9 @@ SUBSYSTEM_DEF(hullrot)
 	checked_events = TRUE
 	var/events
 	if (what)
-		events = json_decode(call(lib(), "hullrot_control")(json_encode(list("[what]" = data))))
+		events = json_decode(call_ext(lib(), "hullrot_control")(json_encode(list("[what]" = data))))
 	else
-		events = json_decode(call(lib(), "hullrot_control")())
+		events = json_decode(call_ext(lib(), "hullrot_control")())
 
 	// Handle the read events.
 	for (var/event in events)
