@@ -1,0 +1,12 @@
+{
+	"version": 1,
+	"map_name": "SB Station",
+	"map_path": "map_files/SBStation",
+	"map_file": "SBStation.dmm",
+	"shuttles": {
+		"ferry": "ferry_fancy",
+		"cargo": "cargo_sb",
+		"emergency": "emergency_sb",
+		"whiteship": "whiteship_sb"
+	}
+}

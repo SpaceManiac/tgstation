@@ -101,7 +101,7 @@ ROUNDSTART_BLUE_ALERT 1
 REPEATED_MODE_ADJUST 45 30 10
 
 ## The amount of time it takes for the emergency shuttle to be called, from round start.
-SHUTTLE_REFUEL_DELAY 12000
+SHUTTLE_REFUEL_DELAY 6000
 
 ## Variables calculate how number of antagonists will scale to population.
 ## Used as (Antagonists = Population / Coeff)
@@ -122,8 +122,8 @@ SECURITY_SCALING_COEFF 8
 
 ## The number of objectives traitors get.
 ## Not including escaping/hijacking.
-TRAITOR_OBJECTIVES_AMOUNT 2
-BROTHER_OBJECTIVES_AMOUNT 2
+TRAITOR_OBJECTIVES_AMOUNT 3
+BROTHER_OBJECTIVES_AMOUNT 5
 
 ## Uncomment to prohibit jobs that start with loyalty
 ## implants from being most antagonists.
@@ -138,7 +138,7 @@ PROTECT_ROLES_FROM_ANTAGONIST
 ## "NON_HUMAN_WHITELIST": non-humans will not be able to play as heads of staff, unless that job incorporates the "allow non-humans" flag (Which can be configured via a variable or the job config txt).
 ## "ENFORCED": non-humans cannot be heads of staff, only humans can. the "allow non-humans" setting will be ignored.
 ## Uncomment to enable a human authority mode of your choice.
-#HUMAN_AUTHORITY HUMAN_WHITELIST
+HUMAN_AUTHORITY ENFORCED
 
 ## If late-joining players have a chance to become a traitor/changeling
 ALLOW_LATEJOIN_ANTAGONISTS
@@ -190,7 +190,7 @@ ALLOW_AI_MULTICAM
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
 ## 600 is one minute.
-GATEWAY_DELAY 18000
+GATEWAY_DELAY 10000
 
 ## Overrides to gateway delay for specific away mission start points.
 GATEWAY_DELAYS_BY_ID AWAYSTART_BEACH 6000
@@ -213,13 +213,13 @@ MINIMAL_ACCESS_THRESHOLD 20
 #JOBS_HAVE_MINIMAL_ACCESS
 
 ## Uncomment to give assistants maint access.
-#ASSISTANTS_HAVE_MAINT_ACCESS
+ASSISTANTS_HAVE_MAINT_ACCESS
 
 ## Uncoment to give security maint access. Note that if you deactivate JOBS_HAVE_MINIMAL_ACCESS security already gets maint from that.
-#SECURITY_HAS_MAINT_ACCESS
+SECURITY_HAS_MAINT_ACCESS
 
 ## Uncomment to give everyone maint access.
-#EVERYONE_HAS_MAINT_ACCESS
+EVERYONE_HAS_MAINT_ACCESS
 
 ## Comment this out this to make security officers spawn in departmental security posts
 #SEC_START_BRIG
@@ -306,7 +306,7 @@ RANDOM_LAWS corporate
 
 ## Make sure there are no spaces between the law_id and the number.
 
-LAW_WEIGHT custom,0
+#LAW_WEIGHT custom,0
 
 ## standard-ish laws. These are fairly ok to run
 ## Unique AI station trait uses weights so we don't want asimov
@@ -455,13 +455,13 @@ BOMBCAP 20
 ## a less lootfilled or smaller or less round effecting ruin costs less to
 ## spawn, while the converse is true. Alter this number to affect the amount
 ## of ruins.
-LAVALAND_BUDGET 60
+LAVALAND_BUDGET 180
 
 ## Ice Moon Budget
 ICEMOON_BUDGET 90
 
 ## Space Ruin Budget
-Space_Budget 16
+Space_Budget 40
 
 ## Time in ds from when a player latejoins till the arrival shuttle docks at the station
 ## Must be at least 30. At least 55 recommended to be visually/aurally appropriate
@@ -478,7 +478,7 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 MICE_ROUNDSTART 10
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
-#EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
+#EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.4
 
 ## Uncomment to allow roundstart quirk selection in the character setup menu.
 ## This used to be named traits, hence the config name, but it handles quirks, not the other kind of trait!

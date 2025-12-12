@@ -65,3 +65,7 @@ endmap
 
 map runtimestation
 endmap
+
+map sbstation
+	default
+endmap

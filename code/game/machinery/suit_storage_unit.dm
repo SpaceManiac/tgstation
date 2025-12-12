@@ -90,6 +90,7 @@
 
 /obj/machinery/suit_storage_unit/engine
 	mask_type = /obj/item/clothing/mask/breath
+	storage_type = /obj/item/clothing/shoes/magboots // SBOX
 	mod_type = /obj/item/mod/control/pre_equipped/engineering
 
 /obj/machinery/suit_storage_unit/atmos

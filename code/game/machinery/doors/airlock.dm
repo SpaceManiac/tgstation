@@ -183,6 +183,7 @@
 	diag_hud.add_atom_to_hud(src)
 
 	diag_hud_set_electrified()
+	QUEUE_SMOOTH_NEIGHBORS(src)
 
 	// Click on the floor to close airlocks
 	AddComponent(/datum/component/redirect_attack_hand_from_turf, interact_check = CALLBACK(src, PROC_REF(drag_check)))

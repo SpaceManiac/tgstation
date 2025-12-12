@@ -378,7 +378,7 @@
 		icon_living = "old_corgi"
 		held_state = "old_corgi"
 		icon_dead = "old_corgi_dead"
-		desc = "At a ripe old age of [record_age], Ian's not as spry as he used to be, but he'll always be the HoP's beloved corgi." //RIP
+		desc = "At a ripe old age of [record_age], [name]'s not as spry as he used to be, but he'll always be the HoP's beloved corgi." //RIP
 		ai_controller?.set_blackboard_key(BB_DOG_IS_SLOW, TRUE)
 		is_slow = TRUE
 		speed = 2
