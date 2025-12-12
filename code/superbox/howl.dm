@@ -8,7 +8,10 @@
 /mob/living/basic/pet/dog/corgi/ian
     name = "Howl"
     real_name = "Howl"
-    emote_see = list("shakes its head.", "chases its tail.", "shivers.", "howls at the moon.")
+
+/mob/living/basic/pet/dog/corgi/ian/update_dog_speech(datum/ai_planning_subtree/random_speech/speech)
+	. = ..()
+	speech.emote_see = string_list(speech.emote_see + "howls at the moon.")
 
 /mob/living/basic/pet/dog/corgi/puppy/ian
 	name = "Howl"
