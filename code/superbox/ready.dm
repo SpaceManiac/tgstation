@@ -1,9 +1,9 @@
-#if 0
 // Info for admins on who is ready or not ready.
 
-/mob/dead/Stat()
-	..()
-	if(!statpanel("Status") || SSticker.HasRoundStarted() || !client.holder)
+/mob/dead/get_status_tab_items()
+	. = ..()
+
+	if(SSticker.HasRoundStarted() || !client.holder)
 		return
 
 	for(var/mob/dead/new_player/player in GLOB.player_list)
@@ -15,8 +15,6 @@
 					job = J.title
 					break
 
-			stat("[player.key]", "[player.client.prefs.real_name], [job]")
+			. += "[player.key]: [player.client.prefs.read_preference(/datum/preference/name/real_name)], [job]"
 		else
-			stat("[player.key]", "NOT READY!")
-
-#endif
+			. += "[player.key]: NOT READY!"
