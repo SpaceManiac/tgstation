@@ -10,8 +10,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/arrival)
 "d" = (
-/obj/structure/window/shuttle,
-/obj/structure/grille,
+/obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/shuttle/arrival)
 "e" = (
@@ -25,7 +24,7 @@
 "g" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/emergency,
-/obj/item/storage/firstaid/regular,
+/obj/item/storage/medkit/regular,
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#cee5d2"
@@ -33,7 +32,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "h" = (
-/obj/structure/shuttle/engine/heater{
+/obj/machinery/power/shuttle_engine/heater{
 	dir = 4
 	},
 /obj/structure/window/reinforced{
@@ -42,7 +41,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/arrival)
 "i" = (
-/obj/structure/shuttle/engine/propulsion{
+/obj/machinery/power/shuttle_engine/propulsion{
 	dir = 4
 	},
 /turf/open/floor/plating/airless,
@@ -51,7 +50,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "k" = (
-/obj/structure/shuttle/engine/propulsion{
+/obj/machinery/power/shuttle_engine/propulsion{
 	dir = 4
 	},
 /obj/docking_port/mobile/arrivals{
@@ -83,9 +82,8 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/machinery/camera{
+/obj/machinery/camera/directional/south{
 	c_tag = "Arrivals - Shuttle";
-	dir = 1;
 	network = list("SS13")
 	},
 /turf/open/floor/mineral/titanium,

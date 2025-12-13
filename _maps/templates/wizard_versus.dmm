@@ -27,7 +27,7 @@
 /obj/effect/turf_decal/box/red,
 /obj/effect/mist,
 /obj/effect/wizard_clothier/marisa,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/wizard_versus)
 "ah" = (
 /obj/structure/table/wood/fancy,
@@ -47,7 +47,7 @@
 /area/wizard_versus)
 "ak" = (
 /obj/structure/dresser,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/wizard_versus)
 "al" = (
 /obj/machinery/door/airlock{
@@ -71,10 +71,10 @@
 	pixel_x = 28;
 	pixel_y = 0
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/wizard_versus)
 "ap" = (
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/wizard_versus)
 "aq" = (
 /obj/machinery/light{
@@ -111,7 +111,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aw" = (
 /obj/structure/mirror/magic{
@@ -127,7 +127,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "ax" = (
 /obj/effect/turf_decal/tile/blue{
@@ -140,7 +140,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "ay" = (
 /obj/machinery/light{
@@ -167,7 +167,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aC" = (
 /obj/effect/turf_decal/box,
@@ -183,7 +183,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aD" = (
 /obj/structure/table/wood/fancy,
@@ -210,15 +210,15 @@
 /turf/open/floor/carpet,
 /area/wizard_versus)
 "aI" = (
-/obj/structure/destructible/cult/talisman{
+/obj/structure/destructible/cult/item_dispenser/altar{
 	desc = "An altar dedicated to the Wizards' Federation"
 	},
-/obj/item/kitchen/knife/ritual,
+/obj/item/knife/ritual,
 /turf/open/floor/engine/cult,
 /area/wizard_versus)
 "aK" = (
 /obj/structure/table/wood/fancy,
-/obj/item/storage/pill_bottle/dice{
+/obj/item/storage/dice{
 	icon_state = "magicdicebag"
 	},
 /turf/open/floor/carpet,
@@ -245,7 +245,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aN" = (
 /obj/machinery/light,
@@ -265,7 +265,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aP" = (
 /obj/structure/dresser,
@@ -279,7 +279,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aQ" = (
 /obj/item/banner/engineering/mundane,
@@ -296,7 +296,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aS" = (
 /obj/structure/mirror/magic{
@@ -313,7 +313,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aT" = (
 /obj/structure/chair/wood/wings,
@@ -331,7 +331,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aV" = (
 /obj/structure/table/wood/fancy,
@@ -357,7 +357,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/wizard_versus)
 "aZ" = (
 /obj/structure/chair/wood/wings,
