@@ -5,6 +5,7 @@ SUBSYSTEM_DEF(lightsoff)
 	init_order = -50
 	wait = 10
 	runlevels = RUNLEVEL_GAME
+	flags = SS_NO_INIT
 
 /datum/controller/subsystem/lightsoff/fire(resumed)
 	// Fires once after roundstart, due to the default runlevel.
