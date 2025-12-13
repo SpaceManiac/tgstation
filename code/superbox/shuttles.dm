@@ -4,6 +4,7 @@
 	suffix = "sb"
 	name = "Superbox emergency shuttle"
 	credit_cost = 1200
+	occupancy_limit = "25"
 
 /datum/map_template/shuttle/cargo/sb
 	suffix = "sb"
