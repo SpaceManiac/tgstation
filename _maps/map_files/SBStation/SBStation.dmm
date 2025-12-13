@@ -8071,12 +8071,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "asN" = (
-/obj/machinery/computer/pod/old{
-	density = 0;
-	icon = 'icons/obj/airlock_machines.dmi';
-	icon_state = "airlock_control_standby";
-	id = "chapelgun";
-	name = "Mass Driver Controller";
+/obj/machinery/computer/pod/old/mass_driver_controller/chapelgun{
 	pixel_y = 26
 	},
 /turf/open/floor/iron/dark,
