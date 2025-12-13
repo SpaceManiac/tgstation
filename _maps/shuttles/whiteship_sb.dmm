@@ -763,11 +763,9 @@
 /turf/open/floor/iron,
 /area/shuttle/abandoned)
 "bf" = (
-/obj/machinery/airalarm{
-	dir = 8;
+/obj/machinery/airalarm/directional/east{
 	locked = 0;
-	mode = 5;
-	pixel_x = 24
+	mode = 5
 	},
 /obj/machinery/atmospherics/components/binary/pump,
 /obj/effect/decal/cleanable/dirt{
