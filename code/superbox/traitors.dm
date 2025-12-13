@@ -42,8 +42,8 @@
 		// security
 		// /obj/machinery/recharger, -- too hard, there's too many of them
 		/obj/machinery/computer/security,
-		// /obj/machinery/computer/secure_data,
-		// /obj/machinery/door_timer,
+		/obj/machinery/computer/records/security,
+		/obj/machinery/status_display/door_timer,
 		// engineering
 		/obj/machinery/power/smes,
 		/obj/machinery/power/port_gen/pacman,
@@ -59,7 +59,7 @@
 		/obj/machinery/chem_master,
 		/obj/machinery/chem_dispenser,
 		/obj/machinery/sleeper,
-		// /obj/machinery/atmospherics/components/unary/cryo_cell,
+		/obj/machinery/cryo_cell,
 		/obj/machinery/computer/operating,
 		// service
 		/obj/machinery/hydroponics/constructable,
@@ -71,14 +71,14 @@
 		/obj/machinery/gibber,
 		// supply
 		/obj/machinery/autolathe,
-		// /obj/machinery/mineral/equipment_vendor,
+		/obj/machinery/computer/order_console/mining,
 		/obj/machinery/mineral/ore_redemption,
 		/obj/machinery/recycler,
 		// command
 		/obj/machinery/computer/upload/ai,
 		/obj/machinery/computer/upload/borg,
 		/obj/machinery/computer/crew,
-		// /obj/machinery/computer/card,
+		/obj/machinery/modular_computer/preset/id,
 		/obj/machinery/computer/communications,
 		/obj/machinery/blackbox_recorder,
 		// science
