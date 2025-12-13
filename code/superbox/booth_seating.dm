@@ -1,3 +1,4 @@
+#if 0
 /obj/structure/booth_seating
 	name = "booth seating"
 	desc = "Comfortable <i>and</i> snazzy."
@@ -29,11 +30,11 @@
 	if(!(get_dir(target, loc) & dir))
 		return TRUE
 
-/*
 /obj/structure/booth_seating/CheckExit(atom/movable/O, turf/target)
 	if(istype(O) && (O.pass_flags & PASSGLASS))
 		return TRUE
 	if(get_dir(target, O) & dir)
 		return !density
 	return TRUE
-*/
+
+#endif
