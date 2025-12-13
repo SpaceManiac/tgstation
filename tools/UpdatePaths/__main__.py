@@ -175,7 +175,7 @@ def update_all_maps(map_directory, updates, verbose=False):
 def main(args):
     if args.inline:
         print("Using replacement:", args.update_source)
-        updates = [args.update_source]
+        updates = args.update_source
     else:
         updates = []
         for source in args.update_source:
@@ -185,7 +185,8 @@ def main(args):
             updates.extend(updates_from_file)
 
     if args.map:
-        update_map(args.map, updates, verbose=args.verbose)
+        for map in args.map:
+            update_map(map, updates, verbose=args.verbose)
     else:
         map_directory = args.directory or frontend.read_settings().map_folder
         update_all_maps(map_directory, updates, verbose=args.verbose)
@@ -198,7 +199,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(prog=prog, description=desc, formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument("update_source", nargs="+", help="update file path(s) / line of update notation")
-    parser.add_argument("--map", "-m", help="path to update, defaults to all maps in maps directory")
+    parser.add_argument("--map", "-m", help="path to update, defaults to all maps in maps directory", action="append")
     parser.add_argument("--directory", "-d", help="path to maps directory, defaults to _maps/")
     parser.add_argument("--inline", "-i", help="treat update source as update string instead of path", action="store_true")
     parser.add_argument("--verbose", "-v", help="toggle detailed update information", action="store_true")
