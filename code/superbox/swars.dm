@@ -1,3 +1,4 @@
+#if 0
 // Vader outfit
 /datum/outfit/vader
 	name = "Darth Vader"
@@ -36,3 +37,5 @@
 	name = "strom trooper armor"
 	// desc
 	icon_state = "stormtrooper"
+
+#endif
