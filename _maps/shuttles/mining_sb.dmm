@@ -3,8 +3,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/mining)
 "b" = (
-/obj/effect/spawner/structure/window/shuttle,
-/obj/structure/grille,
+/obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/shuttle/mining)
 "c" = (
@@ -46,7 +45,7 @@
 /turf/open/floor/plating,
 /area/shuttle/mining)
 "h" = (
-/obj/structure/shuttle/engine/heater,
+/obj/machinery/power/shuttle_engine/heater,
 /obj/structure/window/reinforced{
 	dir = 4;
 	layer = 2.9
@@ -70,7 +69,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/mining)
 "k" = (
-/obj/structure/shuttle/engine/propulsion/burst,
+/obj/machinery/power/shuttle_engine/propulsion/burst,
 /turf/open/floor/plating/airless,
 /area/shuttle/mining)
 

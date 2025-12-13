@@ -1,10 +1,9 @@
-#if 0
 // Wizard Versus gamemode.
 
 // Clothier which automatically sets the colors of your robe.
 /obj/effect/wizard_clothier
 	name = "wizard clothier"
-	icon = 'icons/mob/screen_gen.dmi'
+	icon = 'icons/hud/screen_gen.dmi'
 	icon_state = "x2"
 	invisibility = INVISIBILITY_ABSTRACT
 	anchored = TRUE
@@ -34,6 +33,7 @@
 	sheet = /obj/item/bedsheet
 	freq = FREQ_MEDICAL
 
+#if 0
 /obj/effect/wizard_clothier/Crossed(AM as mob|obj)
 	if(ishuman(AM))
 		var/mob/living/carbon/human/H = AM
@@ -55,6 +55,7 @@
 			R.subspace_transmission = FALSE
 			R.independent = TRUE
 	..()
+#endif
 
 /obj/effect/wizard_clothier/singularity_act()
 	return
@@ -66,9 +67,8 @@
 /area/wizard_versus
 	name = "Wizard Versus Lobby"
 	icon_state = "green"
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	requires_power = FALSE
-	has_gravity = TRUE
+	default_gravity = STANDARD_GRAVITY
 	area_flags = UNIQUE_AREA | NOTELEPORT
 	flags_1 = NONE
 
@@ -95,6 +95,7 @@
 	icon_state = "purple"
 	team = "white team"
 
+#if 0
 // Gamemode code??
 /datum/mind
 	var/wizard_versus_team
