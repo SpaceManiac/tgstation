@@ -1,4 +1,3 @@
-#if 0
 //! System for turning off the lights of roundstart unoccupied areas.
 
 SUBSYSTEM_DEF(lightsoff)
@@ -25,9 +24,9 @@ SUBSYSTEM_DEF(lightsoff)
 			job_mappings[job] = value
 		lightsoff_areas |= value
 
-	for(var/datum/data/record/record in GLOB.data_core.general)
-		var/rank = record.fields["rank"]
-		var/datum/job/J = SSjob.GetJob(rank)
+	for(var/datum/record/crew/record in GLOB.manifest.general)
+		var/rank = record.rank
+		var/datum/job/J = SSjob.get_job(rank)
 		lightsoff_areas -= job_mappings[J?.type]
 
 	for(var/obj/machinery/door/poddoor/M in SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/door/poddoor))
@@ -47,78 +46,80 @@ GLOBAL_LIST_INIT(lightsoff_info, list(
 	"SB Station" = list(
 		// unconditional
 		list() = list(
-			/area/maintenance/,
-			/area/maintenance/disposal,
-			/area/security/courtroom,
+			/area/station/maintenance,
+			/area/station/maintenance/disposal,
+			/area/station/security/courtroom,
 		),
 		// security
-		list(/datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/prisoner) = list(
-			/area/crew_quarters/heads/hos,
-			/area/security/main,
-			/area/security/brig,
+		list(/datum/job/head_of_security, /datum/job/security_officer, /datum/job/warden, /datum/job/prisoner) = list(
+			/area/station/command/heads_quarters/hos,
+			/area/station/security,
+			/area/station/security/brig,
 			"brigfront",
 			"hoslock",
 		),
 		// cargo
-		list(/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining) = list(
-			/area/quartermaster/miningdock,
-			/area/quartermaster/storage,
+		list(/datum/job/quartermaster, /datum/job/cargo_technician, /datum/job/shaft_miner) = list(
+			/area/station/cargo/miningdock,
+			/area/station/cargo/warehouse,
 		),
 		// medical
-		list(/datum/job/cmo, /datum/job/doctor, /datum/job/chemist, /datum/job/geneticist) = list(
-			/area/crew_quarters/heads/cmo,
-			/area/medical/chemistry,
-			/area/medical/morgue,
-			/area/medical/genetics,
+		list(/datum/job/chief_medical_officer, /datum/job/doctor, /datum/job/chemist) = list(
+			/area/station/command/heads_quarters/cmo,
+			/area/station/medical/medbay/central,
+			/area/station/medical/chemistry,
+			/area/station/medical/morgue,
+		),
+		// genetics are part-medical, part-science: give them their own lightsoff list
+		list(/datum/job/geneticist) = list(
+			/area/station/science/genetics,
 		),
 		// science
-		list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist) = list(
-			/area/crew_quarters/heads/hor,
-			/area/science/research,
-			/area/science/server,
-			/area/science/xenobiology,
-			/area/science/lab,
-			/area/science/robotics/lab,
-			/area/science/robotics/mechbay,
+		list(/datum/job/research_director, /datum/job/scientist, /datum/job/roboticist) = list(
+			/area/station/command/heads_quarters/rd,
+			/area/station/science/research,
+			/area/station/science/server,
+			/area/station/science/xenobiology,
+			/area/station/science/lab,
+			/area/station/science/robotics/lab,
+			/area/station/science/robotics/mechbay,
 		),
 		// service
-		list(/datum/job/bartender, /datum/job/hydro, /datum/job/cook) = list(
-			/area/hydroponics,
-			/area/crew_quarters/kitchen,
+		list(/datum/job/bartender, /datum/job/botanist, /datum/job/cook) = list(
+			/area/station/service/hydroponics,
+			/area/station/service/kitchen,
 			"kitchen",
 		),
 		// engineering
-		list(/datum/job/chief_engineer, /datum/job/engineer, /datum/job/atmos) = list(
-			/area/crew_quarters/heads/chief,
-			/area/engine/engineering,
-			/area/engine/atmos,
+		list(/datum/job/chief_engineer, /datum/job/station_engineer, /datum/job/atmospheric_technician) = list(
+			/area/station/command/heads_quarters/ce,
+			/area/station/engineering/main,
+			/area/station/engineering/atmos,
 			"ceblast",
 		),
 		// private offices
 		list(/datum/job/lawyer) = list(
-			/area/lawoffice,
+			/area/station/service/lawoffice,
 			"lawyer_blast",
 		),
 		list(/datum/job/detective) = list(
-			/area/security/detectives_office,
+			/area/station/security/detectives_office,
 			"kanyewest",
 		),
 		list(/datum/job/janitor) = list(
-			/area/janitor,
+			/area/station/service/janitor,
 		),
 		list(/datum/job/chaplain) = list(
-			/area/chapel/main,
+			/area/station/service/chapel,
 		),
-		list(/datum/job/hop) = list(
-			/area/crew_quarters/heads/hop,
+		list(/datum/job/head_of_personnel) = list(
+			/area/station/command/heads_quarters/hop,
 			"hopline",
 			"hopblast",
 		),
 		list(/datum/job/captain) = list(
-			/area/crew_quarters/heads/captain,
+			/area/station/command/heads_quarters/captain,
 			"captainhall",
 		),
 	)
 ))
-
-#endif
