@@ -24946,9 +24946,7 @@
 	id = "Disposal Exit";
 	name = "disposal exit vent"
 	},
-/obj/machinery/conveyor/inverted{
-	dir = 1;
-	icon_state = "conveyor_map_inverted";
+/obj/machinery/conveyor{
 	id = "garbage"
 	},
 /turf/open/floor/plating,
@@ -25025,9 +25023,8 @@
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/conveyor/inverted{
-	dir = 4;
-	icon_state = "conveyor_map_inverted";
+/obj/machinery/conveyor{
+	dir = 8;
 	id = "garbage"
 	},
 /turf/open/floor/plating,
@@ -25087,8 +25084,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/conveyor/inverted{
-	id = "garbage"
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "cargounload"
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
@@ -25143,9 +25141,7 @@
 /obj/structure/sign/warning/vacuum{
 	pixel_x = -32
 	},
-/obj/machinery/conveyor/inverted{
-	dir = 1;
-	icon_state = "conveyor_map_inverted";
+/obj/machinery/conveyor{
 	id = "garbage"
 	},
 /turf/open/floor/plating,
@@ -25719,9 +25715,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/conveyor/inverted{
-	dir = 1;
-	icon_state = "conveyor_map_inverted";
+/obj/machinery/conveyor{
 	id = "garbage"
 	},
 /turf/open/floor/plating,
@@ -25847,12 +25841,11 @@
 /area/station/maintenance/solars/starboard/fore)
 "osE" = (
 /obj/machinery/recycler{
-	eat_dir = 4
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
-/obj/machinery/conveyor/inverted{
-	dir = 4;
-	icon_state = "conveyor_map_inverted";
+/obj/machinery/conveyor{
+	dir = 8;
 	id = "garbage"
 	},
 /turf/open/floor/plating,
@@ -26228,9 +26221,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
 "qSY" = (
-/obj/machinery/conveyor/inverted{
-	dir = 1;
-	icon_state = "conveyor_map_inverted";
+/obj/machinery/conveyor{
 	id = "garbage"
 	},
 /turf/open/floor/plating,
@@ -26621,9 +26612,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/conveyor/inverted{
-	dir = 1;
-	icon_state = "conveyor_map_inverted";
+/obj/machinery/conveyor{
 	id = "garbage"
 	},
 /turf/open/floor/plating,
