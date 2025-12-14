@@ -52,6 +52,7 @@ GLOBAL_DATUM(the_one_and_only_punpun, /mob/living/carbon/human/species/monkey/pu
 	REGISTER_REQUIRED_MAP_ITEM(1, 1)
 	if(mapload && (locate(/datum/station_trait/job/pun_pun) in SSstation.station_traits))
 		new /obj/effect/landmark/start/pun_pun(loc) //Pun Pun is a crewmember, and may late-join.
+		..()  // Suppress runtimes. SBOX: Kill me in favor of https://github.com/tgstation/tgstation/pull/94463
 		return INITIALIZE_HINT_QDEL
 	Read_Memory()
 
