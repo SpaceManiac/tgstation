@@ -361,11 +361,11 @@
 /obj/machinery/requests_console{
 	department = "Head of Security's Desk";
 	name = "Head of Security RC";
-	pixel_x = 30;
-	can_send_announcements = 1;
-	assistance_requestable = 1;
-	anon_tips_receiver = 1
+	pixel_x = 30
 	},
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/obj/effect/mapping_helpers/requests_console/assistance,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
@@ -2937,11 +2937,11 @@
 /obj/machinery/requests_console{
 	department = "Chief Medical Officer's Desk";
 	name = "Chief Medical Officer RC";
-	pixel_y = 32;
-	can_send_announcements = 1;
-	assistance_requestable = 1;
-	anon_tips_receiver = 1
+	pixel_y = 32
 	},
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/obj/effect/mapping_helpers/requests_console/assistance,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
@@ -5310,9 +5310,9 @@
 /obj/machinery/requests_console{
 	department = "Bar Counter";
 	name = "Bar RC";
-	pixel_y = -32;
-	receive_ore_updates = 1
+	pixel_y = -32
 	},
+/obj/effect/mapping_helpers/requests_console/ore_update,
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
@@ -6105,9 +6105,9 @@
 /obj/machinery/requests_console{
 	department = "Chemistry Lab";
 	name = "Chemistry RC";
-	pixel_x = 32;
-	receive_ore_updates = 1
+	pixel_x = 32
 	},
+/obj/effect/mapping_helpers/requests_console/ore_update,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "aor" = (
@@ -9250,10 +9250,10 @@
 /obj/machinery/requests_console{
 	department = "Science";
 	name = "Science Requests Console";
-	pixel_y = 30;
-	receive_ore_updates = 1;
-	supplies_requestable = 1
+	pixel_y = 30
 	},
+/obj/effect/mapping_helpers/requests_console/ore_update,
+/obj/effect/mapping_helpers/requests_console/supplies,
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -9795,11 +9795,11 @@
 /obj/machinery/requests_console{
 	department = "Bridge";
 	name = "Bridge RC";
-	pixel_x = 32;
-	can_send_announcements = 1;
-	assistance_requestable = 1;
-	anon_tips_receiver = 1
+	pixel_x = 32
 	},
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/obj/effect/mapping_helpers/requests_console/assistance,
 /obj/machinery/camera/directional/east{
 	c_tag = "Bridge - East";
 	network = list("SS13")
@@ -12329,11 +12329,11 @@
 /obj/machinery/requests_console{
 	department = "Captain's Desk";
 	name = "Captain RC";
-	pixel_x = 30;
-	can_send_announcements = 1;
-	assistance_requestable = 1;
-	anon_tips_receiver = 1
+	pixel_x = 30
 	},
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/obj/effect/mapping_helpers/requests_console/assistance,
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/carpet,
@@ -12718,9 +12718,9 @@
 	department = "Cargo Bay";
 	dir = 2;
 	pixel_x = 0;
-	pixel_y = 30;
-	supplies_requestable = 1
+	pixel_y = 30
 	},
+/obj/effect/mapping_helpers/requests_console/supplies,
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
@@ -13061,11 +13061,11 @@
 	department = "Head of Personnel's Desk";
 	name = "Head of Personnel RC";
 	pixel_x = 0;
-	pixel_y = -32;
-	can_send_announcements = 1;
-	assistance_requestable = 1;
-	anon_tips_receiver = 1
+	pixel_y = -32
 	},
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/obj/effect/mapping_helpers/requests_console/assistance,
 /turf/open/floor/iron{
 	dir = 0
 	},
@@ -13154,10 +13154,10 @@
 /obj/machinery/requests_console{
 	department = "Science";
 	name = "Science Requests Console";
-	pixel_y = -32;
-	receive_ore_updates = 1;
-	supplies_requestable = 1
+	pixel_y = -32
 	},
+/obj/effect/mapping_helpers/requests_console/ore_update,
+/obj/effect/mapping_helpers/requests_console/supplies,
 /obj/machinery/light{
 	light_color = "#d1dfff"
 	},
@@ -14895,10 +14895,10 @@
 /obj/machinery/requests_console{
 	department = "Robotics";
 	name = "Robotics RC";
-	pixel_y = 30;
-	receive_ore_updates = 1;
-	supplies_requestable = 1
+	pixel_y = 30
 	},
+/obj/effect/mapping_helpers/requests_console/ore_update,
+/obj/effect/mapping_helpers/requests_console/supplies,
 /obj/machinery/modular_computer/preset/civilian,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
@@ -14924,12 +14924,12 @@
 /obj/machinery/requests_console{
 	department = "Research Director's Desk";
 	name = "Research Director RC";
-	pixel_x = 32;
-	receive_ore_updates = 1;
-	can_send_announcements = 1;
-	assistance_requestable = 1;
-	anon_tips_receiver = 1
+	pixel_x = 32
 	},
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/ore_update,
+/obj/effect/mapping_helpers/requests_console/information,
+/obj/effect/mapping_helpers/requests_console/assistance,
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/delivery,
 /obj/structure/disposalpipe/trunk{
@@ -18497,9 +18497,9 @@
 /obj/machinery/requests_console{
 	department = "Atmospherics";
 	name = "Atmos RC";
-	pixel_y = 30;
-	anon_tips_receiver = 1
+	pixel_y = 30
 	},
+/obj/effect/mapping_helpers/requests_console/information,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
@@ -18664,9 +18664,9 @@
 	announcementConsole = 0;
 	department = "Engineering";
 	name = "Engineering RC";
-	pixel_y = 30;
-	anon_tips_receiver = 1
+	pixel_y = 30
 	},
+/obj/effect/mapping_helpers/requests_console/information,
 /obj/machinery/camera/directional/north{
 	c_tag = "Engineering - North";
 	network = list("SS13")
@@ -20318,11 +20318,11 @@
 /obj/machinery/requests_console{
 	department = "Chief Engineer's Desk";
 	name = "Chief Engineer RC";
-	pixel_x = -32;
-	can_send_announcements = 1;
-	assistance_requestable = 1;
-	supplies_requestable = 1
+	pixel_x = -32
 	},
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/supplies,
+/obj/effect/mapping_helpers/requests_console/assistance,
 /obj/machinery/light_switch{
 	pixel_x = -26;
 	pixel_y = 26
