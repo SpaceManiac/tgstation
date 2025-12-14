@@ -24120,6 +24120,13 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
+"emb" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/spawner/random/entertainment/arcade,
+/turf/open/floor/iron/white/corner,
+/area/station/hallway/secondary/exit)
 "eox" = (
 /obj/machinery/recharge_station,
 /turf/open/floor/plating,
@@ -24169,6 +24176,9 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
+"eDj" = (
+/turf/closed/wall,
+/area/station/service/chapel/office)
 "eED" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/white,
@@ -24270,9 +24280,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
-"fqZ" = (
-/turf/open/floor/iron/dark,
-/area/station/service/chapel/office)
 "frj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/disposalpipe/segment,
@@ -24503,6 +24510,9 @@
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"gZj" = (
+/turf/open/floor/iron/dark,
+/area/station/service/chapel/office)
 "heZ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/vacuum/external,
@@ -24539,10 +24549,6 @@
 /obj/structure/closet/secure_closet/personal,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
-"hyU" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/station/service/chapel/office)
 "hFR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -25146,9 +25152,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
-"lni" = (
-/turf/closed/wall,
-/area/station/service/chapel/office)
 "lnr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -25619,6 +25622,10 @@
 	},
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
+"oCY" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/service/chapel/office)
 "oFh" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -25637,16 +25644,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
-"oIz" = (
-/obj/item/radio/intercom{
-	freerange = 0;
-	frequency = 1459;
-	name = "Station Intercom (General)";
-	pixel_y = -30
-	},
-/obj/effect/spawner/random/structure/twelve_percent_spirit_board,
-/turf/open/floor/carpet,
-/area/station/service/chapel/office)
 "oKy" = (
 /mob/living/basic/sloth/paperwork{
 	icon = 'icons/superbox/sloth.dmi';
@@ -26288,6 +26285,9 @@
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/service/kitchen)
+"sRi" = (
+/turf/open/floor/carpet,
+/area/station/service/chapel/office)
 "sRS" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
@@ -26785,6 +26785,16 @@
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+"wcD" = (
+/obj/item/radio/intercom{
+	freerange = 0;
+	frequency = 1459;
+	name = "Station Intercom (General)";
+	pixel_y = -30
+	},
+/obj/effect/spawner/random/structure/twelve_percent_spirit_board,
+/turf/open/floor/carpet,
+/area/station/service/chapel/office)
 "weW" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-21";
@@ -26869,9 +26879,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
-"wBJ" = (
-/turf/open/floor/carpet,
-/area/station/service/chapel/office)
 "wFA" = (
 /obj/structure/grille,
 /turf/open/space/basic,
@@ -51463,7 +51470,7 @@ aFc
 aFN
 aGS
 aHY
-aJh
+emb
 aJh
 axI
 nKr
@@ -52974,12 +52981,12 @@ aaa
 adP
 adP
 adP
-lni
-lni
-lni
-lni
-lni
-lni
+eDj
+eDj
+eDj
+eDj
+eDj
+eDj
 aoE
 app
 aoA
@@ -53231,7 +53238,7 @@ aaa
 aaa
 adP
 aaa
-lni
+eDj
 akM
 alz
 bfr
@@ -53488,9 +53495,9 @@ aaa
 aaa
 nKr
 aaa
-hyU
-fqZ
-fqZ
+oCY
+gZj
+gZj
 beR
 ane
 anP
@@ -53745,11 +53752,11 @@ aaa
 aaa
 nKr
 aaa
-hyU
-fqZ
-wBJ
+oCY
+gZj
+sRi
 amq
-oIz
+wcD
 anQ
 asg
 aqb
@@ -54002,8 +54009,8 @@ aaa
 aaa
 nKr
 aaa
-hyU
-fqZ
+oCY
+gZj
 alB
 amr
 anf
@@ -54259,7 +54266,7 @@ aaa
 aaa
 nKr
 aaa
-hyU
+oCY
 akO
 alC
 ams
@@ -54516,7 +54523,7 @@ aaa
 aaa
 adP
 aaa
-lni
+eDj
 akP
 alD
 amt
@@ -54773,11 +54780,11 @@ aaa
 aaa
 aiM
 aiM
-lni
+eDj
 akQ
-lni
-lni
-lni
+eDj
+eDj
+eDj
 anR
 aoH
 apu
