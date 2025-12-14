@@ -2247,10 +2247,10 @@
 	dir = 8;
 	dwidth = 2;
 	height = 9;
-	id = "arrivals_stationary";
-	name = "arrivals bay";
+	name = "arrivals";
 	roundstart_template = /datum/map_template/shuttle/arrival/sb;
-	width = 5
+	width = 5;
+	shuttle_id = "arrival_stationary"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -2477,9 +2477,9 @@
 	dir = 8;
 	dwidth = 2;
 	height = 13;
-	id = "ferry_home";
 	name = "port bay";
-	width = 5
+	width = 5;
+	shuttle_id = "ferry_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -15244,9 +15244,9 @@
 	dir = 8;
 	dwidth = 3;
 	height = 5;
-	id = "supply_home";
 	name = "cargo bay";
-	width = 8
+	width = 8;
+	shuttle_id = "cargo_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -17222,10 +17222,10 @@
 	dir = 8;
 	dwidth = 3;
 	height = 5;
-	id = "mining_home";
 	name = "mining shuttle bay";
 	roundstart_template = /datum/map_template/shuttle/mining/sb;
-	width = 7
+	width = 7;
+	shuttle_id = "mining_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -23834,9 +23834,9 @@
 	dir = 8;
 	dwidth = 11;
 	height = 20;
-	id = "emergency_home";
 	name = "evac bay";
-	width = 25
+	width = 25;
+	shuttle_id = "emergency_home"
 	},
 /turf/open/space/basic,
 /area/space)
@@ -24667,9 +24667,9 @@
 	dir = 1;
 	dwidth = 9;
 	height = 22;
-	id = "whiteship_home";
 	name = "SS13: Auxiliary Dock";
-	width = 19
+	width = 19;
+	shuttle_id = "whiteship_home"
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
