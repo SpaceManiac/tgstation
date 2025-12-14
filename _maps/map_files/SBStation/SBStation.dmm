@@ -7261,10 +7261,10 @@
 	name = "kitchen shutters"
 	},
 /obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = -3
+	pixel_x = -5
 	},
 /obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = 3
+	pixel_x = 1
 	},
 /obj/item/food/hotdog{
 	desc = "Old nasty footlong. Please don't eat this.";
@@ -7275,6 +7275,9 @@
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
+	},
+/obj/structure/desk_bell{
+	pixel_x = 7
 	},
 /turf/open/floor/iron,
 /area/station/service/kitchen)
@@ -8056,9 +8059,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
 "asY" = (
-/obj/structure/closet/secure_closet/freezer/kitchen{
-	anchored = 1
-	},
+/obj/machinery/smartfridge/drying,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "asZ" = (
@@ -8066,26 +8067,21 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "ata" = (
-/obj/structure/table,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/obj/item/reagent_containers/condiment/enzyme{
-	layer = 5
-	},
-/obj/item/kitchen/rollingpin,
+/obj/machinery/griddle,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "atc" = (
-/obj/structure/table,
-/obj/machinery/microwave{
-	pixel_x = -3;
-	pixel_y = 6
-	},
 /obj/machinery/requests_console{
 	department = "Kitchen";
 	name = "Kitchen RC";
 	pixel_x = 32
 	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/table,
+/obj/machinery/microwave{
+	pixel_y = 5
+	},
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "atd" = (
@@ -8309,11 +8305,6 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "atF" = (
-/obj/structure/table,
-/obj/machinery/microwave{
-	pixel_x = -3;
-	pixel_y = 6
-	},
 /obj/item/radio/intercom{
 	dir = 4;
 	name = "Station Intercom (General)";
@@ -8324,6 +8315,7 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/oven/range,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "atG" = (
@@ -23914,6 +23906,10 @@
 /area/station/maintenance/disposal)
 "cpm" = (
 /obj/structure/table,
+/obj/item/reagent_containers/condiment/enzyme{
+	layer = 5
+	},
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "cuE" = (
@@ -24061,13 +24057,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
-"dHf" = (
-/obj/structure/table/glass,
-/obj/effect/landmark/start/hangover,
-/turf/open/floor/iron/chapel{
-	dir = 4
-	},
-/area/station/service/chapel)
 "dKZ" = (
 /obj/structure/rack,
 /obj/item/shovel,
@@ -24173,6 +24162,9 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
+"eCW" = (
+/turf/open/floor/carpet,
+/area/station/service/chapel/office)
 "eDb" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/blue{
@@ -24233,9 +24225,6 @@
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
-"eYT" = (
-/turf/open/floor/carpet,
-/area/station/service/chapel/office)
 "eYZ" = (
 /obj/machinery/power/smes{
 	charge = 0
@@ -24255,6 +24244,9 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"fel" = (
+/turf/closed/wall,
+/area/station/service/chapel/office)
 "feM" = (
 /obj/machinery/computer/monitor{
 	name = "backup power monitoring console"
@@ -24364,10 +24356,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/station/medical/psychology)
-"fTK" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/station/service/chapel/office)
 "fUD" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -24555,7 +24543,7 @@
 /area/station/maintenance/port)
 "hyr" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/clothing/under/misc/assistantformal,
+/obj/item/clothing/under/suit/navy,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "hFR" = (
@@ -24771,6 +24759,12 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
+"iCi" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/hangover,
+/turf/open/floor/iron,
+/area/station/security/brig)
 "iCH" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -24901,6 +24895,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
+"jAN" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/spawner/random/entertainment/arcade,
+/turf/open/floor/iron/white/corner,
+/area/station/hallway/secondary/exit)
 "jDA" = (
 /obj/machinery/light{
 	light_color = "#d1dfff"
@@ -25248,6 +25249,11 @@
 	},
 /turf/closed/wall,
 /area/station/medical/medbay/central)
+"meP" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/item/clothing/under/misc/assistantformal,
+/turf/open/floor/carpet,
+/area/station/commons/dorms)
 "mgd" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-21";
@@ -25410,9 +25416,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
-"nns" = (
-/turf/closed/wall,
-/area/station/service/chapel/office)
 "nts" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
@@ -25423,6 +25426,10 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/station/maintenance/solars/starboard/aft)
+"nxv" = (
+/obj/machinery/vending/wardrobe/chef_wardrobe,
+/turf/open/floor/iron/cafeteria,
+/area/station/service/kitchen)
 "nyd" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
@@ -25796,13 +25803,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/station/security/brig)
-"pQH" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/spawner/random/entertainment/arcade,
-/turf/open/floor/iron/white/corner,
-/area/station/hallway/secondary/exit)
 "pTR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -26353,11 +26353,6 @@
 /obj/structure/lattice,
 /turf/open/space,
 /area/space/nearstation)
-"tfX" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/clothing/under/suit/navy,
-/turf/open/floor/carpet,
-/area/station/commons/dorms)
 "tqt" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/disposalpipe/segment,
@@ -26542,9 +26537,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
-"uBn" = (
-/turf/open/floor/iron/dark,
-/area/station/service/chapel/office)
 "uCA" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -26611,6 +26603,13 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
+"uOQ" = (
+/obj/structure/table/glass,
+/obj/effect/landmark/start/hangover,
+/turf/open/floor/iron/chapel{
+	dir = 4
+	},
+/area/station/service/chapel)
 "uRP" = (
 /obj/structure/sign/warning/electric_shock,
 /turf/closed/wall/r_wall,
@@ -26777,6 +26776,9 @@
 /obj/structure/closet,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
+"vMp" = (
+/turf/open/floor/iron/dark,
+/area/station/service/chapel/office)
 "vOn" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -26891,12 +26893,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
-"wxY" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/hangover,
-/turf/open/floor/iron,
-/area/station/security/brig)
 "wFA" = (
 /obj/structure/grille,
 /turf/open/space/basic,
@@ -26969,6 +26965,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/station/science/genetics)
+"wUZ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/service/chapel/office)
 "wXj" = (
 /obj/structure/cable,
 /turf/closed/wall/r_wall,
@@ -27057,6 +27057,16 @@
 "xvC" = (
 /turf/open/floor/carpet,
 /area/station/medical/psychology)
+"xwz" = (
+/obj/item/radio/intercom{
+	freerange = 0;
+	frequency = 1459;
+	name = "Station Intercom (General)";
+	pixel_y = -30
+	},
+/obj/effect/spawner/random/structure/twelve_percent_spirit_board,
+/turf/open/floor/carpet,
+/area/station/service/chapel/office)
 "xIl" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -27197,16 +27207,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
-"ykw" = (
-/obj/item/radio/intercom{
-	freerange = 0;
-	frequency = 1459;
-	name = "Station Intercom (General)";
-	pixel_y = -30
-	},
-/obj/effect/spawner/random/structure/twelve_percent_spirit_board,
-/turf/open/floor/carpet,
-/area/station/service/chapel/office)
 "yme" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -51223,7 +51223,7 @@ adP
 adP
 adP
 ake
-dHf
+uOQ
 aoB
 alA
 alA
@@ -51498,7 +51498,7 @@ aFc
 aFN
 aGS
 aHY
-pQH
+jAN
 aJh
 axI
 nKr
@@ -52523,7 +52523,7 @@ aBF
 aCN
 ayY
 ayV
-hyr
+meP
 vyE
 ayV
 aaa
@@ -53009,12 +53009,12 @@ aaa
 adP
 adP
 adP
-nns
-nns
-nns
-nns
-nns
-nns
+fel
+fel
+fel
+fel
+fel
+fel
 aoE
 app
 aoA
@@ -53266,7 +53266,7 @@ aaa
 aaa
 adP
 aaa
-nns
+fel
 akM
 alz
 bfr
@@ -53523,9 +53523,9 @@ aaa
 aaa
 nKr
 aaa
-fTK
-uBn
-uBn
+wUZ
+vMp
+vMp
 beR
 ane
 anP
@@ -53551,7 +53551,7 @@ jNq
 rqx
 fKN
 ayV
-tfX
+hyr
 vyE
 ayV
 aaa
@@ -53780,11 +53780,11 @@ aaa
 aaa
 nKr
 aaa
-fTK
-uBn
-eYT
+wUZ
+vMp
+eCW
 amq
-ykw
+xwz
 anQ
 asg
 aqb
@@ -54037,8 +54037,8 @@ aaa
 aaa
 nKr
 aaa
-fTK
-uBn
+wUZ
+vMp
 alB
 amr
 anf
@@ -54294,7 +54294,7 @@ aaa
 aaa
 nKr
 aaa
-fTK
+wUZ
 akO
 alC
 ams
@@ -54551,7 +54551,7 @@ aaa
 aaa
 adP
 aaa
-nns
+fel
 akP
 alD
 amt
@@ -54808,11 +54808,11 @@ aaa
 aaa
 aiM
 aiM
-nns
+fel
 akQ
-nns
-nns
-nns
+fel
+fel
+fel
 anR
 aoH
 apu
@@ -57137,7 +57137,7 @@ arx
 ask
 asY
 ary
-ary
+nxv
 aoK
 arD
 arD
@@ -63024,7 +63024,7 @@ adH
 adU
 aei
 aeC
-wxY
+iCi
 afu
 klC
 ags
