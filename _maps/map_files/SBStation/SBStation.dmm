@@ -18526,7 +18526,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "aRH" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden,
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
@@ -18543,7 +18543,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aRJ" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/layer_manifold/supply/hidden,
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
@@ -20108,6 +20108,9 @@
 	req_access_txt = "24"
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 10
+	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aUS" = (
@@ -21308,16 +21311,16 @@
 /turf/open/floor/engine,
 /area/station/engineering/main)
 "aXH" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 6
-	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/orange/hidden{
 	dir = 9
 	},
 /turf/closed/wall/r_wall,
 /area/station/engineering/main)
 "aXI" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/visible{
+	dir = 8
+	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -21831,7 +21834,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/main)
 "aYX" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
 /area/station/engineering/atmos)
 "aYY" = (
@@ -23625,6 +23628,7 @@
 "beo" = (
 /obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
 /obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/closed/wall/r_wall,
 /area/station/engineering/main)
 "bep" = (
@@ -24213,7 +24217,7 @@
 /area/station/maintenance/starboard/fore)
 "cmS" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden{
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
@@ -24304,6 +24308,12 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/station/service/chapel)
+"dac" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 5
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "dbX" = (
 /obj/structure/closet/secure_closet/miner,
 /obj/effect/turf_decal/stripes/line{
@@ -24495,6 +24505,16 @@
 /obj/structure/closet/firecloset,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+"eNw" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "ceblast";
+	name = "Engineering Lockdown Shutters"
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
 "eQE" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -24522,6 +24542,11 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
+"eSj" = (
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/turf/closed/wall/r_wall,
+/area/station/engineering/main)
 "eUV" = (
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
@@ -25850,6 +25875,18 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
+"oxF" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "oCx" = (
 /obj/effect/turf_decal/loading_area/white{
 	dir = 8
@@ -26230,6 +26267,15 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
+"qXo" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "qXC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -63986,7 +64032,7 @@ aSR
 aTu
 aTU
 aSR
-aSR
+dac
 aVn
 aUG
 kUO
@@ -64243,7 +64289,7 @@ aSP
 aTv
 aTV
 aUs
-aUs
+qXo
 aUs
 aVK
 aWf
@@ -64500,7 +64546,7 @@ aSS
 aTw
 aTW
 aUt
-aUP
+oxF
 aUP
 aVL
 aWi
@@ -64758,10 +64804,10 @@ ben
 ben
 aUu
 aUQ
-aUu
-ben
-ben
-ben
+eNw
+eSj
+eSj
+eSj
 beo
 aXH
 aYp
