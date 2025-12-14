@@ -18714,7 +18714,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aSc" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
 	dir = 4
 	},
 /obj/machinery/computer/atmos_alert,
@@ -19273,11 +19273,8 @@
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "aTe" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 8;
-	frequency = 1441;
-	id_tag = "mix_out";
-	name = "mix out"
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/mix_output{
+	dir = 8
 	},
 /turf/open/floor/engine/vacuum,
 /area/station/engineering/atmos)
@@ -19525,10 +19522,8 @@
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "aTK" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 8;
-	frequency = 1441;
-	id = "mix_in"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/mix_input{
+	dir = 8
 	},
 /turf/open/floor/engine/vacuum,
 /area/station/engineering/atmos)
@@ -19537,10 +19532,7 @@
 	dir = 4;
 	light_color = "#fff4bc"
 	},
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "mix_sensor"
-	},
+/obj/machinery/air_sensor/mix_tank,
 /turf/open/floor/engine/vacuum,
 /area/station/engineering/atmos)
 "aTM" = (
@@ -19991,11 +19983,8 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aUC" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 8;
-	frequency = 1441;
-	id_tag = "n2o_out";
-	name = "n2o out"
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrous_output{
+	dir = 8
 	},
 /turf/open/floor/engine/n2o,
 /area/station/engineering/atmos)
@@ -20108,9 +20097,7 @@
 	req_access_txt = "24"
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 10
-	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aUS" = (
@@ -20165,10 +20152,8 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aUZ" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 8;
-	frequency = 1441;
-	id = "n2o_in"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrous_input{
+	dir = 8
 	},
 /turf/open/floor/engine/n2o,
 /area/station/engineering/atmos)
@@ -20177,10 +20162,7 @@
 	dir = 4;
 	light_color = "#fff4bc"
 	},
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "n2o_sensor"
-	},
+/obj/machinery/air_sensor/nitrous_tank,
 /turf/open/floor/engine/n2o,
 /area/station/engineering/atmos)
 "aVb" = (
@@ -20552,11 +20534,8 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aVV" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 8;
-	frequency = 1441;
-	id_tag = "tox_out";
-	name = "toxin out"
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
+	dir = 8
 	},
 /turf/open/floor/engine/plasma,
 /area/station/engineering/atmos)
@@ -20762,10 +20741,8 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aWs" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 8;
-	frequency = 1441;
-	id = "tox_in"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
+	dir = 8
 	},
 /turf/open/floor/engine/plasma,
 /area/station/engineering/atmos)
@@ -20774,10 +20751,7 @@
 	dir = 4;
 	light_color = "#fff4bc"
 	},
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "tox_sensor"
-	},
+/obj/machinery/air_sensor/plasma_tank,
 /obj/effect/landmark/generic_maintenance_landmark,
 /turf/open/floor/engine/plasma,
 /area/station/engineering/atmos)
@@ -21103,10 +21077,12 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aXj" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aXk" = (
@@ -21129,11 +21105,8 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aXm" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 8;
-	frequency = 1441;
-	id_tag = "co2_out";
-	name = "co2 out"
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/carbon_output{
+	dir = 8
 	},
 /turf/open/floor/engine/co2,
 /area/station/engineering/atmos)
@@ -21378,10 +21351,8 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "aXQ" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 8;
-	frequency = 1441;
-	id = "co2_in"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/carbon_input{
+	dir = 8
 	},
 /turf/open/floor/engine/co2,
 /area/station/engineering/atmos)
@@ -21390,10 +21361,7 @@
 	dir = 4;
 	light_color = "#fff4bc"
 	},
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "co2_sensor"
-	},
+/obj/machinery/air_sensor/carbon_tank,
 /turf/open/floor/engine/co2,
 /area/station/engineering/atmos)
 "aXS" = (
@@ -22149,7 +22117,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "aZT" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/machinery/meter{
 	name = "Mixed Air Tank In"
 	},
@@ -22251,53 +22219,38 @@
 /turf/open/space/basic,
 /area/station/engineering/atmos)
 "bag" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 1;
-	frequency = 1441;
-	id = "n2_in"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrogen_input{
+	dir = 1
 	},
 /turf/open/floor/engine/n2,
 /area/station/engineering/atmos)
 "bah" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 1;
-	frequency = 1441;
-	id_tag = "n2_out";
-	name = "n2 out"
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrogen_output{
+	dir = 1
 	},
 /turf/open/floor/engine/n2,
 /area/station/engineering/atmos)
 "bai" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 1;
-	frequency = 1441;
-	id = "o2_in"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/oxygen_input{
+	dir = 1
 	},
 /turf/open/floor/engine/o2,
 /area/station/engineering/atmos)
 "baj" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 1;
-	frequency = 1441;
-	id_tag = "o2_out";
-	name = "oxygen out"
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/oxygen_output{
+	dir = 1
 	},
 /turf/open/floor/engine/o2,
 /area/station/engineering/atmos)
 "bak" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 1;
-	frequency = 1441;
-	id = "air_in"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/air_input{
+	dir = 1
 	},
 /turf/open/floor/engine/air,
 /area/station/engineering/atmos)
 "bal" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/on{
-	dir = 1;
-	frequency = 1441;
-	id_tag = "air_out";
-	name = "air out"
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/monitored/air_output{
+	dir = 1
 	},
 /turf/open/floor/engine/air,
 /area/station/engineering/atmos)
@@ -22401,10 +22354,7 @@
 /area/station/engineering/main)
 "baC" = (
 /obj/machinery/light/small,
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "n2_sensor"
-	},
+/obj/machinery/air_sensor/nitrogen_tank,
 /turf/open/floor/engine/n2,
 /area/station/engineering/atmos)
 "baD" = (
@@ -22413,10 +22363,7 @@
 /area/station/engineering/atmos)
 "baE" = (
 /obj/machinery/light/small,
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "o2_sensor"
-	},
+/obj/machinery/air_sensor/oxygen_tank,
 /turf/open/floor/engine/o2,
 /area/station/engineering/atmos)
 "baF" = (
@@ -22425,10 +22372,7 @@
 /area/station/engineering/atmos)
 "baG" = (
 /obj/machinery/light/small,
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "air_sensor"
-	},
+/obj/machinery/air_sensor/air_tank,
 /obj/effect/landmark/generic_maintenance_landmark,
 /turf/open/floor/engine/air,
 /area/station/engineering/atmos)
@@ -24308,12 +24252,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/station/service/chapel)
-"dac" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 5
-	},
-/turf/open/floor/iron,
-/area/station/engineering/main)
 "dbX" = (
 /obj/structure/closet/secure_closet/miner,
 /obj/effect/turf_decal/stripes/line{
@@ -24351,6 +24289,18 @@
 "dkB" = (
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
+"dpx" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "dqB" = (
 /obj/machinery/mineral/stacking_unit_console{
 	dir = 4;
@@ -24362,6 +24312,12 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/station/security/detectives_office)
+"dvN" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 5
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "dwP" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/disposalpipe/segment,
@@ -24505,16 +24461,6 @@
 /obj/structure/closet/firecloset,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
-"eNw" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/door/poddoor/preopen{
-	id = "ceblast";
-	name = "Engineering Lockdown Shutters"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/turf/open/floor/plating,
-/area/station/engineering/atmos)
 "eQE" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -24542,11 +24488,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
-"eSj" = (
-/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
-/area/station/engineering/main)
 "eUV" = (
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
@@ -24909,6 +24850,16 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/station/cargo/miningdock)
+"hNR" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "ceblast";
+	name = "Engineering Lockdown Shutters"
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
 "hPE" = (
 /obj/structure/closet/wardrobe/cargotech,
 /obj/item/radio/intercom{
@@ -25496,6 +25447,15 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+"lyB" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "lAl" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -25529,6 +25489,15 @@
 	},
 /turf/closed/wall,
 /area/station/medical/medbay/central)
+"lOT" = (
+/obj/machinery/atmospherics/pipe/bridge_pipe/green/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
 "mgd" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-21";
@@ -25875,18 +25844,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
-"oxF" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/effect/turf_decal/delivery,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/station/engineering/main)
 "oCx" = (
 /obj/effect/turf_decal/loading_area/white{
 	dir = 8
@@ -26267,15 +26224,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
-"qXo" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/station/engineering/main)
 "qXC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -27148,6 +27096,11 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
+"wPk" = (
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/turf/closed/wall/r_wall,
+/area/station/engineering/main)
 "wQU" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plating,
@@ -64032,7 +63985,7 @@ aSR
 aTu
 aTU
 aSR
-dac
+dvN
 aVn
 aUG
 kUO
@@ -64289,7 +64242,7 @@ aSP
 aTv
 aTV
 aUs
-qXo
+lyB
 aUs
 aVK
 aWf
@@ -64546,7 +64499,7 @@ aSS
 aTw
 aTW
 aUt
-oxF
+dpx
 aUP
 aVL
 aWi
@@ -64804,10 +64757,10 @@ ben
 ben
 aUu
 aUQ
-eNw
-eSj
-eSj
-eSj
+hNR
+wPk
+wPk
+wPk
 beo
 aXH
 aYp
@@ -67122,10 +67075,10 @@ aVS
 aWp
 aWL
 aXk
-aXN
+lOT
 aYx
-aYA
-aZw
+aYY
+aZv
 aZT
 bak
 baG
