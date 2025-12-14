@@ -12704,7 +12704,7 @@
 	pixel_x = 6;
 	pixel_y = 6
 	},
-/obj/item/stamp,
+/obj/item/stamp/granted,
 /obj/item/pen,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -27043,7 +27043,7 @@
 	pixel_x = -1;
 	pixel_y = -1
 	},
-/obj/item/stamp,
+/obj/item/stamp/granted,
 /obj/item/stamp/denied{
 	pixel_x = 6;
 	pixel_y = 6
