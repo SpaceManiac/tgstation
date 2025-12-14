@@ -1,7 +1,7 @@
 /obj/structure/plaque/static_plaque/sciencestation
 	name = "Dimensional Research Asteroid Commemorative Plaque"
+	icon_state = "goldenplaque"
 	desc = {"\
-<hr>\
 To the brave crew of <b>Special Event Testing Station A-027</b> for clearing \
 the wreckage and uncovering the deep-space research asteroid:
 <ul>\
