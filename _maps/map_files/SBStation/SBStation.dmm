@@ -325,7 +325,7 @@
 	},
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/lamp/green{
-	on = 0;
+	start_on = 0;
 	pixel_x = -3;
 	pixel_y = 8
 	},
@@ -1376,10 +1376,9 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 3;
-	name = "3maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "acM" = (
@@ -1591,7 +1590,6 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=4";
 	dir = 4;
-	freq = 1400;
 	location = "Security"
 	},
 /obj/machinery/door/window/left/directional/north{
@@ -2683,7 +2681,6 @@
 	location = "Security"
 	},
 /mob/living/simple_animal/bot/secbot/ed209{
-	auto_patrol = 1;
 	desc = "Officer Griggs.  He looks less than thrilled.";
 	name = "Officer Griggs";
 	speed = 3
@@ -2890,10 +2887,10 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 4;
-	name = "4maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "agV" = (
@@ -4971,7 +4968,6 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=4";
 	dir = 4;
-	freq = 1400;
 	location = "Diner"
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
@@ -5277,10 +5273,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/port)
 "amw" = (
@@ -5807,10 +5801,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "anH" = (
@@ -5820,10 +5812,9 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 3;
-	name = "3maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "anI" = (
@@ -5831,10 +5822,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "anJ" = (
@@ -6582,7 +6571,6 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=2";
 	dir = 2;
-	freq = 1400;
 	location = "Hydroponics"
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
@@ -7048,7 +7036,6 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=4";
 	dir = 4;
-	freq = 1400;
 	location = "Medical"
 	},
 /obj/machinery/door/window/left/directional/north{
@@ -11657,10 +11644,14 @@
 	dir = 9
 	},
 /obj/structure/closet,
-/obj/effect/spawner/random/maintenance{
-	lootcount = 8;
-	name = "8maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "aBA" = (
@@ -12449,7 +12440,6 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=4";
 	dir = 4;
-	freq = 1400;
 	location = "Science"
 	},
 /obj/machinery/door/window/left/directional/north{
@@ -16450,10 +16440,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "aMJ" = (
@@ -17984,7 +17972,7 @@
 	location = "Engineering"
 	},
 /mob/living/simple_animal/bot/secbot/beepsky{
-	base_speed = 10;
+	base_speed = 4;
 	desc = "It's Officer Sheckley! Powered by a potato and a shot of whiskey.";
 	name = "Officer Sheckley";
 	speed = 3
@@ -18432,7 +18420,6 @@
 	dir = 8
 	},
 /obj/machinery/meter{
-	frequency = 1441;
 	id_tag = "waste_meter";
 	name = "Waste Loop"
 	},
@@ -18462,7 +18449,6 @@
 "aSa" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/visible,
 /obj/machinery/meter{
-	frequency = 1441;
 	id_tag = "distro_meter";
 	name = "Distribution Loop"
 	},
@@ -18661,7 +18647,6 @@
 	light_color = "#cee5d2"
 	},
 /obj/machinery/requests_console{
-	announcementConsole = 0;
 	department = "Engineering";
 	name = "Engineering RC";
 	pixel_y = 30
@@ -18842,10 +18827,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "aSK" = (
@@ -19310,7 +19293,6 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=2";
 	dir = 2;
-	freq = 1400;
 	location = "Engineering"
 	},
 /obj/machinery/door/window/left/directional/north{
@@ -19520,12 +19502,7 @@
 "aUf" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/machinery/computer/atmos_control/mix_tank{
-	dir = 8;
-	frequency = 1441;
-	input_tag = "mix_in";
-	name = "Gas Mix Tank Control";
-	output_tag = "mix_out";
-	sensors = list("mix_sensor" = "Tank")
+	dir = 8
 	},
 /obj/machinery/light{
 	dir = 4;
@@ -20072,12 +20049,7 @@
 "aVv" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/machinery/computer/atmos_control/nitrous_tank{
-	dir = 8;
-	frequency = 1441;
-	input_tag = "n2o_in";
-	name = "Nitrous Oxide Supply Control";
-	output_tag = "n2o_out";
-	sensors = list("n2o_sensor" = "Tank")
+	dir = 8
 	},
 /obj/structure/window/reinforced,
 /obj/effect/turf_decal/tile/yellow,
@@ -20669,12 +20641,7 @@
 "aWM" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/machinery/computer/atmos_control/plasma_tank{
-	dir = 8;
-	frequency = 1441;
-	input_tag = "tox_in";
-	name = "Plasma Supply Control";
-	output_tag = "tox_out";
-	sensors = list("tox_sensor" = "Tank")
+	dir = 8
 	},
 /obj/structure/window/reinforced,
 /obj/machinery/camera/directional/east{
@@ -21297,12 +21264,7 @@
 /area/station/engineering/atmos)
 "aYr" = (
 /obj/machinery/computer/atmos_control/nitrogen_tank{
-	dir = 1;
-	frequency = 1441;
-	input_tag = "n2_in";
-	name = "Nitrogen Supply Control";
-	output_tag = "n2_out";
-	sensors = list("n2_sensor" = "Tank")
+	dir = 1
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -21335,12 +21297,7 @@
 /area/station/engineering/atmos)
 "aYu" = (
 /obj/machinery/computer/atmos_control/oxygen_tank{
-	dir = 1;
-	frequency = 1441;
-	input_tag = "o2_in";
-	name = "Oxygen Supply Control";
-	output_tag = "o2_out";
-	sensors = list("o2_sensor" = "Tank")
+	dir = 1
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -21367,12 +21324,7 @@
 	dir = 4
 	},
 /obj/machinery/computer/atmos_control/air_tank{
-	dir = 1;
-	frequency = 1441;
-	input_tag = "air_in";
-	name = "Mixed Air Supply Control";
-	output_tag = "air_out";
-	sensors = list("air_sensor" = "Tank")
+	dir = 1
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -21410,12 +21362,7 @@
 	dir = 9
 	},
 /obj/machinery/computer/atmos_control/carbon_tank{
-	dir = 8;
-	frequency = 1441;
-	input_tag = "co2_in";
-	name = "Carbon Dioxide Supply Control";
-	output_tag = "co2_out";
-	sensors = list("co2_sensor" = "Tank")
+	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -23002,7 +22949,8 @@
 	},
 /obj/item/clothing/accessory/medal/service_star{
 	name = "Service Star - Hal";
-	commended = 1
+	commendation_message = "Outstandingly friendly and helpful station AI";
+	awarded_to = "HAL 9000",awarder = "Captain Jayme Dawson"
 	},
 /turf/open/floor/circuit,
 /area/station/ai/satellite)
@@ -23086,12 +23034,11 @@
 "bdM" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/obj/item/radio/intercom{
+/obj/item/radio/intercom/prison{
 	desc = "Talk through this. It looks like it has been modified to not broadcast.";
 	dir = 2;
 	name = "Prison Intercom (General)";
-	pixel_x = 28;
-	prison_radio = 1
+	pixel_x = 28
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/prisoner,
@@ -23331,10 +23278,9 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 3;
-	name = "3maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/machinery/light/small{
 	dir = 1;
 	light_color = "#ffc1c1"
@@ -24037,8 +23983,7 @@
 /area/station/commons/dorms)
 "dqB" = (
 /obj/machinery/mineral/stacking_unit_console{
-	dir = 4;
-	machinedir = 1
+	dir = 4
 	},
 /turf/closed/wall,
 /area/station/maintenance/disposal)
@@ -24507,10 +24452,10 @@
 	dir = 4
 	},
 /obj/structure/closet,
-/obj/effect/spawner/random/maintenance{
-	lootcount = 4;
-	name = "4maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "heZ" = (
@@ -24779,10 +24724,9 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 3;
-	name = "3maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "iGs" = (
@@ -24853,10 +24797,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "jko" = (
@@ -25048,7 +24990,6 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=4";
 	dir = 4;
-	freq = 1400;
 	location = "QM2"
 	},
 /obj/machinery/firealarm/directional/west,
@@ -25061,7 +25002,6 @@
 	},
 /obj/effect/turf_decal/delivery,
 /mob/living/simple_animal/bot/mulebot{
-	beacon_freq = 1400;
 	home_destination = "QM2";
 	suffix = "#2"
 	},
@@ -25796,10 +25736,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "pVf" = (
@@ -25925,7 +25863,6 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=4";
 	dir = 4;
-	freq = 1400;
 	location = "QM1"
 	},
 /obj/structure/disposalpipe/segment{
@@ -25939,7 +25876,6 @@
 	},
 /obj/effect/turf_decal/delivery,
 /mob/living/simple_animal/bot/mulebot{
-	beacon_freq = 1400;
 	home_destination = "QM1";
 	suffix = "#1"
 	},
@@ -26600,10 +26536,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "uWn" = (
@@ -26783,10 +26717,10 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/effect/spawner/random/maintenance{
-	lootcount = 4;
-	name = "4maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "weW" = (
@@ -27101,10 +27035,9 @@
 /area/station/science/genetics)
 "xYX" = (
 /obj/structure/closet,
-/obj/effect/spawner/random/maintenance{
-	lootcount = 3;
-	name = "3maintenance loot spawner"
-	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},

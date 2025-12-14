@@ -27,7 +27,7 @@
 	dir = 2;
 	dwidth = 8;
 	height = 22;
-	id = "whiteship";
+	shuttle_id = "whiteship";
 	launch_status = 0;
 	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0);
 	name = "NT White Cruiser";

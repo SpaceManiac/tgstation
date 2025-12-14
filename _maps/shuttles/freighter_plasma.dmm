@@ -379,7 +379,7 @@
 	dir = 8;
 	dwidth = 6;
 	height = 9;
-	id = "propane";
+	shuttle_id = "propane";
 	name = "Freighter";
 	port_direction = 4;
 	timid = 0;
@@ -391,7 +391,7 @@
 	dir = 8;
 	dwidth = 11;
 	height = 20;
-	id = "freighter_away";
+	shuttle_id = "freighter_away";
 	name = "deep space";
 	width = 25
 	},
