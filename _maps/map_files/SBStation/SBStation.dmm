@@ -359,11 +359,12 @@
 	dir = 4
 	},
 /obj/machinery/requests_console{
-	announcementConsole = 1;
 	department = "Head of Security's Desk";
-	departmentType = 5;
 	name = "Head of Security RC";
-	pixel_x = 30
+	pixel_x = 30;
+	can_send_announcements = 1;
+	assistance_requestable = 1;
+	anon_tips_receiver = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -1253,7 +1254,6 @@
 "acy" = (
 /obj/machinery/requests_console{
 	department = "Security";
-	departmentType = 0;
 	name = "Security RC"
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -2956,11 +2956,12 @@
 /area/station/command/heads_quarters/cmo)
 "agZ" = (
 /obj/machinery/requests_console{
-	announcementConsole = 1;
 	department = "Chief Medical Officer's Desk";
-	departmentType = 5;
 	name = "Chief Medical Officer RC";
-	pixel_y = 32
+	pixel_y = 32;
+	can_send_announcements = 1;
+	assistance_requestable = 1;
+	anon_tips_receiver = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -4203,7 +4204,6 @@
 "ajF" = (
 /obj/machinery/requests_console{
 	department = "Theatre Backstage";
-	departmentType = 0;
 	name = "Theatre RC";
 	pixel_x = -32
 	},
@@ -5362,7 +5362,6 @@
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/machinery/requests_console{
 	department = "Bar Counter";
-	departmentType = 0;
 	name = "Bar RC";
 	pixel_y = -32;
 	receive_ore_updates = 1
@@ -5669,7 +5668,6 @@
 "ang" = (
 /obj/machinery/requests_console{
 	department = "Chapel Office";
-	departmentType = 0;
 	name = "Chapel RC";
 	pixel_y = -32
 	},
@@ -6166,7 +6164,6 @@
 /obj/item/reagent_containers/dropper,
 /obj/machinery/requests_console{
 	department = "Chemistry Lab";
-	departmentType = 0;
 	name = "Chemistry RC";
 	pixel_x = 32;
 	receive_ore_updates = 1
@@ -6578,7 +6575,6 @@
 "apl" = (
 /obj/machinery/requests_console{
 	department = "Genetics";
-	departmentType = 0;
 	name = "Genetics Requests Console";
 	pixel_y = 30
 	},
@@ -7484,7 +7480,6 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/requests_console{
 	department = "Hydroponics";
-	departmentType = 0;
 	name = "Hydroponics RC";
 	pixel_x = -32
 	},
@@ -8165,7 +8160,6 @@
 	},
 /obj/machinery/requests_console{
 	department = "Kitchen";
-	departmentType = 0;
 	name = "Kitchen RC";
 	pixel_x = 32
 	},
@@ -9338,10 +9332,10 @@
 /obj/machinery/smartfridge/extract/preloaded,
 /obj/machinery/requests_console{
 	department = "Science";
-	departmentType = 2;
 	name = "Science Requests Console";
 	pixel_y = 30;
-	receive_ore_updates = 1
+	receive_ore_updates = 1;
+	supplies_requestable = 1
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
@@ -9882,11 +9876,12 @@
 /area/station/command/bridge)
 "axf" = (
 /obj/machinery/requests_console{
-	announcementConsole = 1;
 	department = "Bridge";
-	departmentType = 5;
 	name = "Bridge RC";
-	pixel_x = 32
+	pixel_x = 32;
+	can_send_announcements = 1;
+	assistance_requestable = 1;
+	anon_tips_receiver = 1
 	},
 /obj/machinery/camera/directional/east{
 	c_tag = "Bridge - East";
@@ -10726,7 +10721,6 @@
 	},
 /obj/machinery/requests_console{
 	department = "Primary Tool Storage";
-	departmentType = 0;
 	name = "Primary Tool Storage RC";
 	pixel_y = 32
 	},
@@ -12433,11 +12427,12 @@
 	dir = 8
 	},
 /obj/machinery/requests_console{
-	announcementConsole = 1;
 	department = "Captain's Desk";
-	departmentType = 5;
 	name = "Captain RC";
-	pixel_x = 30
+	pixel_x = 30;
+	can_send_announcements = 1;
+	assistance_requestable = 1;
+	anon_tips_receiver = 1
 	},
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
@@ -12825,10 +12820,10 @@
 /obj/item/folder/yellow,
 /obj/machinery/requests_console{
 	department = "Cargo Bay";
-	departmentType = 2;
 	dir = 2;
 	pixel_x = 0;
-	pixel_y = 30
+	pixel_y = 30;
+	supplies_requestable = 1
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -13167,12 +13162,13 @@
 	dir = 8
 	},
 /obj/machinery/requests_console{
-	announcementConsole = 1;
 	department = "Head of Personnel's Desk";
-	departmentType = 5;
 	name = "Head of Personnel RC";
 	pixel_x = 0;
-	pixel_y = -32
+	pixel_y = -32;
+	can_send_announcements = 1;
+	assistance_requestable = 1;
+	anon_tips_receiver = 1
 	},
 /turf/open/floor/iron{
 	dir = 0
@@ -13264,10 +13260,10 @@
 "aEB" = (
 /obj/machinery/requests_console{
 	department = "Science";
-	departmentType = 2;
 	name = "Science Requests Console";
 	pixel_y = -32;
-	receive_ore_updates = 1
+	receive_ore_updates = 1;
+	supplies_requestable = 1
 	},
 /obj/machinery/light{
 	light_color = "#d1dfff"
@@ -15022,10 +15018,10 @@
 "aIR" = (
 /obj/machinery/requests_console{
 	department = "Robotics";
-	departmentType = 2;
 	name = "Robotics RC";
 	pixel_y = 30;
-	receive_ore_updates = 1
+	receive_ore_updates = 1;
+	supplies_requestable = 1
 	},
 /obj/machinery/modular_computer/preset/civilian,
 /obj/effect/turf_decal/stripes/line,
@@ -15050,12 +15046,13 @@
 	pixel_y = 26
 	},
 /obj/machinery/requests_console{
-	announcementConsole = 1;
 	department = "Research Director's Desk";
-	departmentType = 5;
 	name = "Research Director RC";
 	pixel_x = 32;
-	receive_ore_updates = 1
+	receive_ore_updates = 1;
+	can_send_announcements = 1;
+	assistance_requestable = 1;
+	anon_tips_receiver = 1
 	},
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/delivery,
@@ -16437,7 +16434,6 @@
 /obj/item/mop,
 /obj/machinery/requests_console{
 	department = "Custodial Closet";
-	departmentType = 0;
 	name = "Custodial RC";
 	pixel_y = 32
 	},
@@ -18651,9 +18647,9 @@
 	},
 /obj/machinery/requests_console{
 	department = "Atmospherics";
-	departmentType = 4;
 	name = "Atmos RC";
-	pixel_y = 30
+	pixel_y = 30;
+	anon_tips_receiver = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/iron,
@@ -18818,9 +18814,9 @@
 /obj/machinery/requests_console{
 	announcementConsole = 0;
 	department = "Engineering";
-	departmentType = 4;
 	name = "Engineering RC";
-	pixel_y = 30
+	pixel_y = 30;
+	anon_tips_receiver = 1
 	},
 /obj/machinery/camera/directional/north{
 	c_tag = "Engineering - North";
@@ -20482,11 +20478,12 @@
 	dir = 1
 	},
 /obj/machinery/requests_console{
-	announcementConsole = 1;
 	department = "Chief Engineer's Desk";
-	departmentType = 3;
 	name = "Chief Engineer RC";
-	pixel_x = -32
+	pixel_x = -32;
+	can_send_announcements = 1;
+	assistance_requestable = 1;
+	supplies_requestable = 1
 	},
 /obj/machinery/light_switch{
 	pixel_x = -26;
@@ -24782,7 +24779,6 @@
 "hME" = (
 /obj/machinery/requests_console{
 	department = "Mining";
-	departmentType = 0;
 	name = "Mining Dock RC";
 	pixel_y = -32
 	},
