@@ -5889,6 +5889,7 @@
 	dir = 1
 	},
 /obj/structure/reagent_dispensers/watertank/high,
+/obj/item/reagent_containers/cup/watering_can,
 /turf/open/floor/plating,
 /area/station/maintenance/port)
 "anU" = (
@@ -7713,6 +7714,7 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "asj" = (
+/obj/machinery/vending/wardrobe/hydro_wardrobe,
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
 "ask" = (
@@ -8698,6 +8700,10 @@
 	dir = 1;
 	name = "Hydroponics Desk";
 	req_access = list("hydroponics")
+	},
+/obj/structure/desk_bell{
+	pixel_x = 6;
+	pixel_y = 6
 	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
@@ -24045,13 +24051,6 @@
 	},
 /turf/closed/wall,
 /area/station/maintenance/port/aft)
-"dCD" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/spawner/random/entertainment/arcade,
-/turf/open/floor/iron/white/corner,
-/area/station/hallway/secondary/exit)
 "dGS" = (
 /obj/machinery/light{
 	light_color = "#d1dfff"
@@ -24062,6 +24061,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
+"dHf" = (
+/obj/structure/table/glass,
+/obj/effect/landmark/start/hangover,
+/turf/open/floor/iron/chapel{
+	dir = 4
+	},
+/area/station/service/chapel)
 "dKZ" = (
 /obj/structure/rack,
 /obj/item/shovel,
@@ -24227,6 +24233,9 @@
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
+"eYT" = (
+/turf/open/floor/carpet,
+/area/station/service/chapel/office)
 "eYZ" = (
 /obj/machinery/power/smes{
 	charge = 0
@@ -24355,6 +24364,10 @@
 	},
 /turf/closed/wall/r_wall,
 /area/station/medical/psychology)
+"fTK" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/service/chapel/office)
 "fUD" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -24427,16 +24440,6 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
-"gBt" = (
-/obj/item/radio/intercom{
-	freerange = 0;
-	frequency = 1459;
-	name = "Station Intercom (General)";
-	pixel_y = -30
-	},
-/obj/effect/spawner/random/structure/twelve_percent_spirit_board,
-/turf/open/floor/carpet,
-/area/station/service/chapel/office)
 "gHq" = (
 /obj/machinery/atmospherics/pipe/smart/simple/orange/hidden,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
@@ -24552,7 +24555,7 @@
 /area/station/maintenance/port)
 "hyr" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/clothing/under/suit/navy,
+/obj/item/clothing/under/misc/assistantformal,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "hFR" = (
@@ -25407,6 +25410,9 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
+"nns" = (
+/turf/closed/wall,
+/area/station/service/chapel/office)
 "nts" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
@@ -25515,9 +25521,6 @@
 	dir = 1
 	},
 /area/station/hallway/secondary/exit)
-"nVm" = (
-/turf/open/floor/iron/dark,
-/area/station/service/chapel/office)
 "obx" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plating,
@@ -25793,6 +25796,13 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/station/security/brig)
+"pQH" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/spawner/random/entertainment/arcade,
+/turf/open/floor/iron/white/corner,
+/area/station/hallway/secondary/exit)
 "pTR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -25970,9 +25980,6 @@
 	},
 /turf/closed/wall,
 /area/station/security/detectives_office)
-"qGi" = (
-/turf/closed/wall,
-/area/station/service/chapel/office)
 "qOL" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -25998,9 +26005,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
-"qVe" = (
-/turf/open/floor/carpet,
-/area/station/service/chapel/office)
 "qXC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -26291,12 +26295,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/engineering/supermatter)
-"sKc" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/hangover,
-/turf/open/floor/iron,
-/area/station/security/brig)
 "sMT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -26355,6 +26353,11 @@
 /obj/structure/lattice,
 /turf/open/space,
 /area/space/nearstation)
+"tfX" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/item/clothing/under/suit/navy,
+/turf/open/floor/carpet,
+/area/station/commons/dorms)
 "tqt" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/disposalpipe/segment,
@@ -26539,13 +26542,9 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
-"uBc" = (
-/obj/structure/table/glass,
-/obj/effect/landmark/start/hangover,
-/turf/open/floor/iron/chapel{
-	dir = 4
-	},
-/area/station/service/chapel)
+"uBn" = (
+/turf/open/floor/iron/dark,
+/area/station/service/chapel/office)
 "uCA" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -26844,10 +26843,6 @@
 /obj/structure/grille/broken,
 /turf/open/space,
 /area/space/nearstation)
-"wpv" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/station/service/chapel/office)
 "wrd" = (
 /obj/machinery/door/airlock/external{
 	name = "Escape Airlock"
@@ -26896,6 +26891,12 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
+"wxY" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/hangover,
+/turf/open/floor/iron,
+/area/station/security/brig)
 "wFA" = (
 /obj/structure/grille,
 /turf/open/space/basic,
@@ -27196,11 +27197,16 @@
 	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
-"yjB" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/clothing/under/misc/assistantformal,
+"ykw" = (
+/obj/item/radio/intercom{
+	freerange = 0;
+	frequency = 1459;
+	name = "Station Intercom (General)";
+	pixel_y = -30
+	},
+/obj/effect/spawner/random/structure/twelve_percent_spirit_board,
 /turf/open/floor/carpet,
-/area/station/commons/dorms)
+/area/station/service/chapel/office)
 "yme" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -51217,7 +51223,7 @@ adP
 adP
 adP
 ake
-uBc
+dHf
 aoB
 alA
 alA
@@ -51492,7 +51498,7 @@ aFc
 aFN
 aGS
 aHY
-dCD
+pQH
 aJh
 axI
 nKr
@@ -52517,7 +52523,7 @@ aBF
 aCN
 ayY
 ayV
-yjB
+hyr
 vyE
 ayV
 aaa
@@ -53003,12 +53009,12 @@ aaa
 adP
 adP
 adP
-qGi
-qGi
-qGi
-qGi
-qGi
-qGi
+nns
+nns
+nns
+nns
+nns
+nns
 aoE
 app
 aoA
@@ -53260,7 +53266,7 @@ aaa
 aaa
 adP
 aaa
-qGi
+nns
 akM
 alz
 bfr
@@ -53517,9 +53523,9 @@ aaa
 aaa
 nKr
 aaa
-wpv
-nVm
-nVm
+fTK
+uBn
+uBn
 beR
 ane
 anP
@@ -53545,7 +53551,7 @@ jNq
 rqx
 fKN
 ayV
-hyr
+tfX
 vyE
 ayV
 aaa
@@ -53774,11 +53780,11 @@ aaa
 aaa
 nKr
 aaa
-wpv
-nVm
-qVe
+fTK
+uBn
+eYT
 amq
-gBt
+ykw
 anQ
 asg
 aqb
@@ -54031,8 +54037,8 @@ aaa
 aaa
 nKr
 aaa
-wpv
-nVm
+fTK
+uBn
 alB
 amr
 anf
@@ -54288,7 +54294,7 @@ aaa
 aaa
 nKr
 aaa
-wpv
+fTK
 akO
 alC
 ams
@@ -54545,7 +54551,7 @@ aaa
 aaa
 adP
 aaa
-qGi
+nns
 akP
 alD
 amt
@@ -54802,11 +54808,11 @@ aaa
 aaa
 aiM
 aiM
-qGi
+nns
 akQ
-qGi
-qGi
-qGi
+nns
+nns
+nns
 anR
 aoH
 apu
@@ -63018,7 +63024,7 @@ adH
 adU
 aei
 aeC
-sKc
+wxY
 afu
 klC
 ags
