@@ -8,5 +8,40 @@
 		"cargo": "cargo_sb",
 		"emergency": "emergency_sb",
 		"whiteship": "whiteship_sb"
+	},
+	"job_changes": {
+		"Curator": {
+			"spawn_positions": 0,
+			"total_positions": 0
+		},
+		"Paramedic": {
+			"spawn_positions": 0,
+			"total_positions": 0
+		},
+		"Warden": {
+			"spawn_positions": 0,
+			"total_positions": 0
+		},
+		"Prisoner": {
+			"spawn_positions": 0,
+			"total_positions": 0
+		},
+		"Bitrunner": {
+			"spawn_positions": 0,
+			"total_positions": 0
+		},
+		"Coroner": {
+			"spawn_positions": 0,
+			"total_positions": 0
+		},
+		"Botanist": {
+			"spawn_positions": 1
+		},
+		"Chemist": {
+			"spawn_positions": 1
+		},
+		"Lawyer": {
+			"spawn_positions": 1
+		}
 	}
 }
