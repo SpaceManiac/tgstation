@@ -4618,21 +4618,20 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/medbay/central)
 "akM" = (
-/obj/structure/closet/wardrobe/chaplain_black,
-/obj/item/book/bible,
+/obj/machinery/vending/wardrobe/chap_wardrobe,
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "akN" = (
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "akO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "akP" = (
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "akQ" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Chaplain's Office Maintenance";
@@ -4910,11 +4909,15 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "alz" = (
-/obj/structure/table/wood,
-/obj/item/clothing/under/misc/burial,
-/obj/item/clothing/under/misc/burial,
+/obj/structure/closet/wardrobe/chaplain_black,
+/obj/item/book/bible,
+/obj/item/soulstone/anybody/chaplain,
+/obj/item/organ/heart,
+/obj/item/book/granter/action/spell/smoke/lesser{
+	name = "mysterious old book of cloud-chasing"
+	},
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "alA" = (
 /turf/open/floor/carpet,
 /area/station/service/chapel)
@@ -4924,15 +4927,15 @@
 	pixel_y = 10
 	},
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "alC" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "alD" = (
 /obj/machinery/photocopier,
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "alE" = (
 /obj/machinery/power/apc/auto_name/directional/west{
 	areastring = "/area/station/service/chapel"
@@ -5242,13 +5245,13 @@
 "amq" = (
 /obj/structure/chair/stool,
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "amr" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/glass/bottle/holywater,
 /obj/item/nullrod,
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "ams" = (
 /obj/structure/chair{
 	dir = 8
@@ -5256,14 +5259,14 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/effect/landmark/start/chaplain,
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "amt" = (
 /obj/machinery/bookbinder,
 /obj/machinery/newscaster{
 	pixel_x = 32
 	},
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "amu" = (
 /obj/structure/cable,
 /obj/machinery/shieldgen,
@@ -5583,23 +5586,29 @@
 	pixel_y = -24
 	},
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "ane" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "anf" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
 	pixel_x = -2;
-	pixel_y = 5
+	pixel_y = 3
 	},
-/obj/item/pen,
+/obj/item/pen{
+	pixel_y = -4
+	},
 /obj/machinery/light{
 	light_color = "#e8eaff"
 	},
+/obj/item/storage/photo_album/chapel{
+	pixel_y = 4;
+	pixel_x = 3
+	},
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "ang" = (
 /obj/machinery/requests_console{
 	department = "Chapel Office";
@@ -5608,13 +5617,13 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "anh" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/delivery,
 /obj/structure/disposalpipe/trunk,
 /turf/open/floor/carpet,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "ani" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/closed/wall,
@@ -5857,23 +5866,23 @@
 "anP" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/closed/wall,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "anQ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 6
 	},
 /turf/closed/wall,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "anR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
 /turf/closed/wall,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "anS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2,
 /turf/closed/wall,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "anT" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
@@ -23498,7 +23507,7 @@
 "beR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "beS" = (
 /obj/item/radio/intercom{
 	freerange = 0;
@@ -23611,6 +23620,10 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
+/obj/item/paper_bin{
+	pixel_x = -2;
+	pixel_y = 8
+	},
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "bfd" = (
@@ -23638,7 +23651,7 @@
 	req_access = list("chapel_office")
 	},
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "bfg" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
@@ -23667,6 +23680,9 @@
 /area/station/service/chapel)
 "bfj" = (
 /obj/structure/table/wood,
+/obj/item/flashlight/lantern{
+	pixel_y = 7
+	},
 /turf/open/floor/carpet,
 /area/station/service/chapel)
 "bfk" = (
@@ -23721,8 +23737,11 @@
 	c_tag = "Chapel - Office";
 	network = list("SS13")
 	},
+/obj/structure/table/wood,
+/obj/item/clothing/under/misc/burial,
+/obj/item/clothing/under/misc/burial,
 /turf/open/floor/iron/dark,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "bfs" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 6
@@ -23966,7 +23985,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
-/area/station/service/chapel)
+/area/station/service/chapel/office)
 "dbX" = (
 /obj/structure/closet/secure_closet/miner,
 /obj/effect/turf_decal/stripes/line{
@@ -24251,6 +24270,9 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
+"fqZ" = (
+/turf/open/floor/iron/dark,
+/area/station/service/chapel/office)
 "frj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/disposalpipe/segment,
@@ -24517,6 +24539,10 @@
 /obj/structure/closet/secure_closet/personal,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
+"hyU" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/service/chapel/office)
 "hFR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -25120,6 +25146,9 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
+"lni" = (
+/turf/closed/wall,
+/area/station/service/chapel/office)
 "lnr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -25608,6 +25637,16 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+"oIz" = (
+/obj/item/radio/intercom{
+	freerange = 0;
+	frequency = 1459;
+	name = "Station Intercom (General)";
+	pixel_y = -30
+	},
+/obj/effect/spawner/random/structure/twelve_percent_spirit_board,
+/turf/open/floor/carpet,
+/area/station/service/chapel/office)
 "oKy" = (
 /mob/living/basic/sloth/paperwork{
 	icon = 'icons/superbox/sloth.dmi';
@@ -26830,6 +26869,9 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
+"wBJ" = (
+/turf/open/floor/carpet,
+/area/station/service/chapel/office)
 "wFA" = (
 /obj/structure/grille,
 /turf/open/space/basic,
@@ -52932,12 +52974,12 @@ aaa
 adP
 adP
 adP
-akd
-akd
-akd
-akd
-akd
-akd
+lni
+lni
+lni
+lni
+lni
+lni
 aoE
 app
 aoA
@@ -53189,7 +53231,7 @@ aaa
 aaa
 adP
 aaa
-akd
+lni
 akM
 alz
 bfr
@@ -53446,9 +53488,9 @@ aaa
 aaa
 nKr
 aaa
-ake
-akN
-akN
+hyU
+fqZ
+fqZ
 beR
 ane
 anP
@@ -53703,11 +53745,11 @@ aaa
 aaa
 nKr
 aaa
-ake
-akN
-alA
+hyU
+fqZ
+wBJ
 amq
-beS
+oIz
 anQ
 asg
 aqb
@@ -53960,8 +54002,8 @@ aaa
 aaa
 nKr
 aaa
-ake
-akN
+hyU
+fqZ
 alB
 amr
 anf
@@ -54217,7 +54259,7 @@ aaa
 aaa
 nKr
 aaa
-ake
+hyU
 akO
 alC
 ams
@@ -54474,7 +54516,7 @@ aaa
 aaa
 adP
 aaa
-akd
+lni
 akP
 alD
 amt
@@ -54731,11 +54773,11 @@ aaa
 aaa
 aiM
 aiM
-akd
+lni
 akQ
-akd
-akd
-akd
+lni
+lni
+lni
 anR
 aoH
 apu
