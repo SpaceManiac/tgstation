@@ -16164,6 +16164,9 @@
 /area/station/cargo/warehouse)
 "aMc" = (
 /obj/structure/table/wood,
+/obj/item/flashlight/seclite{
+	pixel_y = 8
+	},
 /obj/item/taperecorder,
 /obj/structure/secure_safe{
 	pixel_x = 6;
@@ -16174,9 +16177,13 @@
 /area/station/security/detectives_office)
 "aMd" = (
 /obj/structure/table/wood,
-/obj/item/storage/box/evidence,
+/obj/item/storage/box/evidence{
+	pixel_x = -10;
+	pixel_y = 10
+	},
 /obj/item/hand_labeler{
-	pixel_x = 5
+	pixel_x = -7;
+	pixel_y = -1
 	},
 /obj/machinery/button/door{
 	id = "kanyewest";
@@ -16186,6 +16193,14 @@
 /obj/machinery/light_switch{
 	pixel_x = 26;
 	pixel_y = 26
+	},
+/obj/item/storage/briefcase{
+	pixel_y = 4;
+	pixel_x = 6
+	},
+/obj/item/storage/briefcase/secure{
+	pixel_x = 6;
+	pixel_y = -2
 	},
 /turf/open/floor/wood,
 /area/station/security/detectives_office)
@@ -16728,6 +16743,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/detectiveboard/directional/west,
 /turf/open/floor/carpet,
 /area/station/security/detectives_office)
 "aNM" = (
@@ -17031,10 +17047,18 @@
 "aOJ" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/glass/bottle/whiskey{
-	pixel_x = 3
+	pixel_x = 7
 	},
-/obj/item/lighter,
-/obj/item/storage/fancy/cigarettes,
+/obj/item/lighter{
+	pixel_y = 5
+	},
+/obj/item/storage/fancy/cigarettes{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/book/manual/wiki/security_space_law{
+	pixel_x = -9
+	},
 /turf/open/floor/carpet,
 /area/station/security/detectives_office)
 "aOK" = (
@@ -17047,9 +17071,9 @@
 /turf/open/floor/carpet,
 /area/station/security/detectives_office)
 "aOM" = (
-/obj/structure/rack,
-/obj/item/storage/briefcase,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/structure/closet/secure_closet/detective,
+/obj/item/storage/box/rxglasses/spyglasskit,
+/obj/item/clothing/accessory/rank/detective,
 /turf/open/floor/wood,
 /area/station/security/detectives_office)
 "aON" = (
@@ -17230,8 +17254,7 @@
 /obj/machinery/newscaster{
 	pixel_x = 32
 	},
-/obj/structure/closet/secure_closet/detective,
-/obj/item/clothing/accessory/rank/detective,
+/obj/machinery/vending/wardrobe/det_wardrobe,
 /turf/open/floor/wood,
 /area/station/security/detectives_office)
 "aPs" = (
@@ -22950,7 +22973,7 @@
 /obj/item/clothing/accessory/medal/service_star{
 	name = "Service Star - Hal";
 	commendation_message = "Outstandingly friendly and helpful station AI";
-	awarded_to = "HAL 9000",awarder = "Captain Jayme Dawson"
+	awarded_to = "HAL 9000",awarder="Captain Jayme Dawson"
 	},
 /turf/open/floor/circuit,
 /area/station/ai/satellite)
