@@ -90,8 +90,7 @@
 /area/shuttle/arrival)
 "o" = (
 /obj/machinery/door/airlock/shuttle{
-	name = "Arrival Shuttle Airlock";
-	req_access_txt = "0"
+	name = "Arrival Shuttle Airlock"
 	},
 /turf/open/floor/plating,
 /area/shuttle/arrival)

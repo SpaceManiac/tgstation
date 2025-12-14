@@ -66,7 +66,6 @@
 "g" = (
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
-	req_access_txt = "0";
 	use_power = 0
 	},
 /turf/closed/wall/mineral/wood,
@@ -279,7 +278,7 @@
 	})
 "A" = (
 /obj/structure/displaycase{
-	req_access_txt = "200";
+	req_access = list("away_general");
 	start_showpiece_type = /obj/item/mecha_parts/mecha_equipment/weapon/energy/plasma
 	},
 /turf/open/floor/wood,
@@ -288,7 +287,7 @@
 	})
 "B" = (
 /obj/structure/displaycase{
-	req_access_txt = "200";
+	req_access = list("away_general");
 	start_showpiece_type = /obj/item/mecha_parts/mecha_equipment/generator
 	},
 /turf/open/floor/wood,
@@ -329,7 +328,6 @@
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
 	pixel_y = 32;
-	req_access_txt = "0";
 	use_power = 0
 	},
 /turf/open/floor/wood,
@@ -358,7 +356,7 @@
 	})
 "I" = (
 /obj/machinery/door/window/left/directional/east{
-	req_access_txt = "200"
+	req_access = list("away_general")
 	},
 /turf/open/floor/wood,
 /area/shuttle{
@@ -409,7 +407,7 @@
 	})
 "M" = (
 /obj/machinery/door/airlock/wood{
-	req_access_txt = "200"
+	req_access = list("away_general")
 	},
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/wood,

@@ -53,7 +53,7 @@
 "j" = (
 /obj/machinery/door/airlock/shuttle{
 	name = "Supply Shuttle Airlock";
-	req_access_txt = "31"
+	req_access = list("cargo")
 	},
 /turf/open/floor/plating,
 /area/shuttle/supply)
@@ -91,7 +91,7 @@
 "m" = (
 /obj/machinery/door/airlock/shuttle{
 	name = "Supply Shuttle Airlock";
-	req_access_txt = "31"
+	req_access = list("cargo")
 	},
 /obj/docking_port/mobile/supply{
 	dwidth = 3;

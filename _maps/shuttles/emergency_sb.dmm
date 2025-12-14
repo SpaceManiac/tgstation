@@ -78,14 +78,13 @@
 "p" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Cockpit";
-	req_access_txt = "19"
+	req_access = list("command")
 	},
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "q" = (
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
-	req_access_txt = "0";
 	use_power = 0
 	},
 /turf/closed/wall/mineral/titanium,
@@ -93,7 +92,7 @@
 "r" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Holding Area";
-	req_access_txt = "2"
+	req_access = list("brig")
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
@@ -209,8 +208,7 @@
 "G" = (
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = null;
-	name = "Escape Shuttle Infirmary";
-	req_access_txt = "0"
+	name = "Escape Shuttle Infirmary"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
