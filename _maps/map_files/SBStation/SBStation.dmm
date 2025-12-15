@@ -7157,16 +7157,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/station/science/genetics)
-"aqE" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/camera/directional/west{
-	c_tag = "Science - Genetics";
-	network = list("SS13","RD")
-	},
-/turf/open/floor/iron/white,
-/area/station/science/genetics)
 "aqF" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -7445,6 +7435,10 @@
 /obj/effect/turf_decal/delivery,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
+	},
+/obj/machinery/camera/directional/west{
+	c_tag = "Science - Genetics";
+	network = list("SS13","RD")
 	},
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
@@ -19102,7 +19096,8 @@
 /area/station/engineering/atmos)
 "aTf" = (
 /obj/machinery/camera{
-	c_tag = "Atmospherics - Mix Chamber"
+	c_tag = "Atmospherics - Mix Chamber";
+	dir = 1
 	},
 /turf/open/floor/engine/vacuum,
 /area/station/engineering/atmos)
@@ -69881,7 +69876,7 @@ anH
 aoy
 jVO
 apk
-aqE
+aqF
 aro
 wKS
 asH
