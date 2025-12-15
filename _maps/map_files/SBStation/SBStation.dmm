@@ -22789,6 +22789,10 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/effect/landmark/navigate_destination,
+/obj/machinery/light_switch{
+	pixel_x = -20;
+	pixel_y = -2
+	},
 /turf/open/floor/iron/dark,
 /area/station/ai/satellite)
 "bcw" = (
@@ -24015,6 +24019,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/power/port_gen/pacman,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
 "cSY" = (
@@ -24276,10 +24281,10 @@
 /turf/open/space,
 /area/station/maintenance/solars/starboard/aft)
 "eVj" = (
+/obj/structure/lattice/catwalk,
 /obj/structure/cable,
-/obj/machinery/power/port_gen/pacman,
-/turf/open/floor/plating,
-/area/station/maintenance/department/electrical)
+/turf/open/space,
+/area/station/maintenance/solars/starboard/fore)
 "eYZ" = (
 /obj/machinery/power/smes{
 	charge = 0
@@ -24459,6 +24464,7 @@
 /obj/item/stock_parts/power_store/cell/upgraded/plus,
 /obj/item/stock_parts/power_store/cell/upgraded/plus,
 /obj/item/clothing/gloves/color/fyellow,
+/obj/item/wrench,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
 "gyi" = (
@@ -26130,12 +26136,10 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "raS" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
+/obj/structure/lattice/catwalk,
 /obj/structure/cable,
-/turf/open/floor/plating,
-/area/station/maintenance/department/electrical)
+/turf/open/space,
+/area/station/maintenance/solars/starboard/aft)
 "rch" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -67778,7 +67782,7 @@ aaa
 aaa
 aaa
 pYu
-eVj
+qTl
 bAd
 rWg
 rDi
@@ -68035,8 +68039,8 @@ aaa
 aaa
 aaa
 pYu
-eYZ
-raS
+qTl
+bAd
 bAd
 oZR
 afd
@@ -68294,7 +68298,7 @@ adP
 ojy
 eYZ
 cRt
-qTl
+bAd
 ojy
 uWx
 rnS
@@ -71110,7 +71114,7 @@ rud
 nBu
 nBu
 nBu
-scm
+eVj
 scm
 scm
 scm
@@ -72975,7 +72979,7 @@ bMm
 hIF
 eUV
 eUV
-nxl
+raS
 nxl
 nxl
 nxl
