@@ -2168,14 +2168,12 @@
 /turf/open/floor/iron,
 /area/station/security/brig)
 "aeF" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 10
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron,
-/area/station/engineering/main)
+/area/station/cargo/warehouse)
 "aeG" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+	dir = 6
 	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
@@ -2185,20 +2183,14 @@
 /turf/open/floor/iron,
 /area/station/security/courtroom)
 "aeI" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 6
-	},
-/turf/open/floor/iron,
-/area/station/hallway/secondary/exit)
-"aeJ" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "warehouse";
-	name = "warehouse shutters"
-	},
-/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/iron,
-/area/space)
+/area/station/cargo/warehouse)
+"aeJ" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/exit)
 "aeK" = (
 /obj/structure/chair{
 	dir = 1
@@ -10551,9 +10543,9 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "ayS" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
-/area/station/cargo/warehouse)
+/area/station/hallway/secondary/exit)
 "ayT" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-21";
@@ -11117,12 +11109,7 @@
 /turf/open/floor/plating,
 /area/station/science/server)
 "aAa" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 2;
-	external_pressure_bound = 140;
-	name = "server vent";
-	pressure_checks = 0
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/circuit{
 	name = "Server Base";
 	initial_gas_mix = "n2=500;TEMP=80"
@@ -11216,7 +11203,9 @@
 /turf/open/floor/plating,
 /area/station/hallway/secondary/exit)
 "aAp" = (
-/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "aAq" = (
@@ -13450,7 +13439,9 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "aFb" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "aFc" = (
@@ -13712,11 +13703,11 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "aFL" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 10
 	},
 /turf/open/floor/iron,
-/area/station/hallway/secondary/exit)
+/area/station/engineering/main)
 "aFM" = (
 /obj/structure/chair,
 /turf/open/floor/iron,
@@ -15002,12 +14993,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
 "aIY" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 2;
-	external_pressure_bound = 140;
-	pressure_checks = 0;
-	name = "killroom vent"
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/circuit{
 	name = "Killroom Floor";
 	initial_gas_mix = "n2=500;TEMP=80"
@@ -15058,10 +15044,14 @@
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "aJg" = (
-/obj/effect/turf_decal/stripes/line,
+/obj/machinery/door/poddoor/shutters{
+	id = "warehouse";
+	name = "warehouse shutters"
+	},
+/obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/iron,
-/area/station/cargo/warehouse)
+/area/space)
 "aJh" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -17733,11 +17723,12 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/storage/tech)
 "aQn" = (
+/obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 4
+	dir = 6
 	},
-/turf/open/floor/iron,
-/area/station/engineering/main)
+/turf/open/floor/plating,
+/area/station/hallway/secondary/exit)
 "aQo" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -18913,11 +18904,9 @@
 /turf/open/floor/plating,
 /area/station/engineering/main)
 "aSL" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 6
-	},
-/turf/open/floor/plating,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "aSM" = (
 /obj/effect/turf_decal/stripes/line,
@@ -19111,10 +19100,11 @@
 /turf/closed/wall,
 /area/station/engineering/main)
 "aTm" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
 /turf/open/floor/iron,
-/area/station/hallway/secondary/exit)
+/area/station/engineering/main)
 "aTn" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/poddoor{
@@ -21831,7 +21821,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "aZJ" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
 /turf/open/floor/engine,
@@ -21840,7 +21830,7 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "aZL" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
 /turf/open/floor/engine,
@@ -50601,17 +50591,17 @@ akd
 ave
 arD
 awP
-aSL
+aQn
+aeJ
 aFb
-aFL
 ayR
-aeI
-aTm
+aeG
+aSL
 aFa
 aGR
 aGR
 aGR
-aeG
+aAp
 ayR
 axJ
 adP
@@ -50859,8 +50849,8 @@ avf
 arD
 hKM
 axK
-aAp
-aAp
+ayS
+ayS
 nkY
 aCH
 aDP
@@ -56259,7 +56249,7 @@ axU
 aFY
 aAD
 aBN
-aeJ
+aJg
 aDZ
 aFh
 aFX
@@ -56514,8 +56504,8 @@ arD
 stv
 axU
 aFY
-ayS
-aJg
+aeF
+aeI
 aCR
 dgu
 aFh
@@ -59622,7 +59612,7 @@ bew
 aSJ
 aTk
 aRu
-aQn
+aTm
 xVO
 dGS
 aVx
@@ -60136,7 +60126,7 @@ aSj
 aSK
 aTl
 aTO
-aQn
+aTm
 qgl
 aVc
 aVz
@@ -60393,7 +60383,7 @@ aRQ
 aSM
 aTl
 aTP
-aeF
+aFL
 aUH
 aVd
 aVA
