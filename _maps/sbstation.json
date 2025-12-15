@@ -34,6 +34,10 @@
 			"spawn_positions": 0,
 			"total_positions": 0
 		},
+		"Psychologist": {
+			"spawn_positions": 0,
+			"total_positions": 0
+		},
 		"Botanist": {
 			"spawn_positions": 1
 		},
