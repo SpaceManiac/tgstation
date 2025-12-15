@@ -11821,7 +11821,7 @@
 	name = "Warehouse Door Control";
 	pixel_x = -26;
 	pixel_y = -26;
-	req_access = list("mail_sorting")
+	req_access = list("shipping")
 	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
@@ -12842,7 +12842,7 @@
 	name = "Warehouse Door Control";
 	pixel_x = -26;
 	pixel_y = 26;
-	req_access = list("mail_sorting")
+	req_access = list("shipping")
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -14246,7 +14246,7 @@
 	},
 /obj/machinery/door/airlock/mining/glass{
 	name = "Cargo Bay";
-	req_access = list("mail_sorting")
+	req_access = list("cargo")
 	},
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/navigate_destination,
@@ -14664,7 +14664,7 @@
 /obj/machinery/door/window/left/directional/north{
 	dir = 4;
 	name = "delivery door";
-	req_one_access = list("mail_sorting", "mulebot")
+	req_one_access = list("shipping", "mulebot")
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -26322,7 +26322,7 @@
 	},
 /obj/machinery/door/airlock/maintenance{
 	name = "Cargo Bay Maintenance";
-	req_access = list("mail_sorting")
+	req_access = list("cargo")
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -27039,7 +27039,7 @@
 "wtA" = (
 /obj/machinery/door/window/right/directional/north{
 	name = "Mail";
-	req_access = list("mail_sorting")
+	req_access = list("shipping")
 	},
 /turf/open/floor/plating,
 /area/station/cargo/warehouse)
