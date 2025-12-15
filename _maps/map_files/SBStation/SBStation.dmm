@@ -3030,6 +3030,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/machinery/modular_computer/preset/id,
 /turf/open/floor/iron/cafeteria,
 /area/station/command/heads_quarters/cmo)
 "ahe" = (
@@ -15456,6 +15457,9 @@
 	name = "Research Lab Shutter Control";
 	pixel_x = 26;
 	req_access = list("research")
+	},
+/obj/machinery/modular_computer/preset/id{
+	dir = 8
 	},
 /turf/open/floor/iron/cafeteria,
 /area/station/command/heads_quarters/rd)
