@@ -4031,7 +4031,8 @@
 	dir = 8
 	},
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	nightshift_allowed = 0
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
