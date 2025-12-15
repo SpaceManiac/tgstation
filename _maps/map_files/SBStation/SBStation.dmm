@@ -6260,6 +6260,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
 	dir = 8
 	},
+/obj/machinery/light_switch{
+	pixel_x = -7;
+	pixel_y = 22
+	},
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "aoG" = (
