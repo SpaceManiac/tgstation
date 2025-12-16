@@ -4969,9 +4969,8 @@
 /area/station/service/chapel/office)
 "alE" = (
 /obj/machinery/power/apc/auto_name/directional/west{
-	areastring = "/area/station/service/chapel"
+	areastring = "/area/station/service/chapel/office"
 	},
-/obj/effect/mapping_helpers/apc/cell_5k,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/port)
@@ -5660,6 +5659,7 @@
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/delivery,
 /obj/structure/disposalpipe/trunk,
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/carpet,
 /area/station/service/chapel/office)
 "ani" = (
@@ -22664,7 +22664,7 @@
 /obj/machinery/firealarm/directional/west,
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/power/apc/auto_name/directional/south{
-	areastring = "/area/station/ai/satellite"
+	areastring = "/area/station/ai/satellite/chamber"
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
@@ -22774,11 +22774,11 @@
 /area/station/engineering/main)
 "bcr" = (
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcs" = (
 /obj/machinery/status_display/ai,
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcv" = (
 /obj/effect/turf_decal/stripes/line{
 	icon_state = "warningline";
@@ -22795,33 +22795,33 @@
 	pixel_y = -2
 	},
 /turf/open/floor/iron/dark,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
 	dir = 8
 	},
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcx" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcy" = (
 /obj/machinery/status_display/ai,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcz" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 10
 	},
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
 	dir = 8
@@ -22852,34 +22852,34 @@
 /area/station/engineering/main)
 "bcI" = (
 /turf/open/floor/circuit,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcJ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /turf/open/floor/circuit,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcL" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcM" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/circuit,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcO" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcP" = (
 /obj/structure/table/reinforced,
 /obj/item/wrench,
@@ -22919,7 +22919,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bcW" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/delivery,
@@ -22927,7 +22927,7 @@
 	uses = 10
 	},
 /turf/open/floor/iron/dark,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bda" = (
 /obj/structure/reflector/single/anchored{
 	dir = 9
@@ -22946,7 +22946,7 @@
 	},
 /obj/structure/window/reinforced,
 /turf/open/floor/iron/dark,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bde" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 9
@@ -22957,21 +22957,21 @@
 	},
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/dark,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bdf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
 /obj/structure/window/reinforced,
 /turf/open/floor/iron/dark,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bdg" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 5
 	},
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bdh" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable,
@@ -23023,7 +23023,7 @@
 	tag = "Turret Control 2"
 	},
 /turf/open/floor/iron/dark,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bdn" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light{
@@ -23035,7 +23035,7 @@
 	awarded_to = "HAL 9000",awarder="Captain Jayme Dawson"
 	},
 /turf/open/floor/circuit,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bdo" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -23045,12 +23045,13 @@
 /area/station/service/chapel)
 "bdr" = (
 /obj/structure/table/reinforced,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/circuit,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bdC" = (
 /obj/structure/sign/warning/secure_area,
 /turf/closed/wall/r_wall,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bdE" = (
 /obj/effect/landmark/carpspawn,
 /turf/open/space/basic,
@@ -23711,6 +23712,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/machinery/power/apc/auto_name/directional/west{
+	areastring = "/area/station/service/chapel"
+	},
+/obj/effect/mapping_helpers/apc/cell_5k,
 /turf/open/floor/plating,
 /area/station/maintenance/port)
 "bfh" = (
@@ -23818,7 +23823,7 @@
 	dir = 8
 	},
 /turf/open/floor/circuit,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bfy" = (
 /obj/structure/lattice,
 /obj/machinery/camera/motion/directional/east{
@@ -23836,7 +23841,7 @@
 	network = list("SS13","Satellite")
 	},
 /turf/open/floor/circuit,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "bfA" = (
 /obj/structure/lattice,
 /obj/machinery/camera/motion/directional/west{
@@ -23902,7 +23907,8 @@
 /area/station/engineering/main)
 "bAZ" = (
 /obj/machinery/door/airlock{
-	name = "Unisex Restroom"
+	name = "Unisex Restroom";
+	id_tag = "Shower2"
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/commons/dorms)
@@ -24329,7 +24335,16 @@
 "fnB" = (
 /obj/machinery/light/small{
 	dir = 4;
-	light_color = "#fff4bc"
+	light_color = "#fff4bc";
+	nightshift_allowed = 0
+	},
+/obj/machinery/button/door{
+	id = "Shower1";
+	name = "Restroom Bolt Control";
+	normaldoorcontrol = 1;
+	pixel_x = -25;
+	pixel_y = 26;
+	specialfunctions = 4
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/commons/dorms)
@@ -25615,6 +25630,7 @@
 	name = "Dormitories"
 	},
 /obj/effect/landmark/navigate_destination,
+/obj/machinery/door/firedoor,
 /turf/open/floor/iron,
 /area/station/commons/dorms)
 "oiq" = (
@@ -25641,10 +25657,6 @@
 /area/station/maintenance/disposal)
 "ooO" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/table/wood,
-/obj/structure/table/wood,
-/obj/structure/table/wood,
-/obj/structure/table/wood,
 /obj/structure/table/wood,
 /obj/item/fish_tank/lawyer,
 /turf/open/floor/carpet,
@@ -26089,7 +26101,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/station/ai/satellite)
+/area/station/ai/satellite/chamber)
 "qEU" = (
 /obj/structure/disposalpipe/junction{
 	dir = 1
@@ -26348,6 +26360,13 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/station/maintenance/solars/starboard/fore)
+"smO" = (
+/obj/machinery/door/airlock{
+	name = "Unisex Restroom";
+	id_tag = "Shower1"
+	},
+/turf/open/floor/iron/showroomfloor,
+/area/station/commons/dorms)
 "stv" = (
 /obj/machinery/light,
 /turf/open/floor/iron,
@@ -26482,6 +26501,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
+"twg" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/circuit,
+/area/station/ai/satellite/chamber)
 "txq" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -27122,7 +27145,17 @@
 /obj/machinery/light/small{
 	brightness = 3;
 	dir = 8;
-	light_color = "#d1ffee"
+	light_color = "#d1ffee";
+	nightshift_allowed = 0
+	},
+/obj/machinery/button/door{
+	id = "Shower2";
+	name = "Dorm Bolt Control";
+	normaldoorcontrol = 1;
+	pixel_x = 25;
+	pixel_y = 26;
+	specialfunctions = 4;
+	id_tag = "Shower2"
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/commons/dorms)
@@ -53987,7 +54020,7 @@ bcK
 bcK
 bdd
 bfx
-bdr
+twg
 bcr
 bcr
 bcr
@@ -54966,7 +54999,7 @@ avi
 avk
 arD
 xNp
-bAZ
+smO
 fnB
 aBJ
 ayV
@@ -66758,8 +66791,8 @@ abT
 abT
 abT
 abT
-aen
-aen
+abT
+abT
 rnS
 agA
 agW
