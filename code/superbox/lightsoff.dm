@@ -49,6 +49,7 @@ GLOBAL_LIST_INIT(lightsoff_info, list(
 		list() = list(
 			/area/station/maintenance,
 			/area/station/maintenance/disposal,
+			/area/station/maintenance/department/electrical,
 			/area/station/security/courtroom,
 		),
 		// security
@@ -98,6 +99,11 @@ GLOBAL_LIST_INIT(lightsoff_info, list(
 			/area/station/engineering/atmos,
 			"ceblast",
 		),
+		// AI
+		list(/datum/job/ai, /datum/job/human_ai) = list(
+			/area/station/tcommsat/server,
+			/area/station/ai/satellite/chamber,
+		),
 		// private offices
 		list(/datum/job/lawyer) = list(
 			/area/station/service/lawoffice,
@@ -112,6 +118,7 @@ GLOBAL_LIST_INIT(lightsoff_info, list(
 		),
 		list(/datum/job/chaplain) = list(
 			/area/station/service/chapel,
+			/area/station/service/chapel/office,
 		),
 		list(/datum/job/head_of_personnel) = list(
 			/area/station/command/heads_quarters/hop,
