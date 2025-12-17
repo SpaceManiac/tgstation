@@ -19141,6 +19141,16 @@
 	pixel_x = 7;
 	pixel_y = 9
 	},
+/obj/item/stack/sheet/glass{
+	amount = 50;
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/stack/sheet/glass{
+	amount = 50;
+	pixel_x = -7;
+	pixel_y = 6
+	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "aTp" = (
