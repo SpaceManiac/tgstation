@@ -6,6 +6,7 @@
 	if(SSticker.HasRoundStarted() || !client.holder)
 		return
 
+	. += "— Players ————————————————"
 	for(var/mob/dead/new_player/player in GLOB.player_list)
 		if (player.ready == PLAYER_READY_TO_PLAY)
 			var/job = "no job"
@@ -18,3 +19,4 @@
 			. += "[player.key]: [player.client.prefs.read_preference(/datum/preference/name/real_name)], [job]"
 		else
 			. += "[player.key]: NOT READY!"
+	. += ""
