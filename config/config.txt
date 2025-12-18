@@ -196,16 +196,16 @@ IPINTEL_REJECT_BAD
 # SERVER ss13.example.com:2506
 
 ## forum address
-# FORUMURL http://tgstation13.org/phpBB/index.php
+FORUMURL
 
 ## Wiki address
 # WIKIURL http://tgstation13.org/wiki
 
 ## Rules address
-# RULESURL http://tgstation13.org/wiki/Rules
+RULESURL
 
 ## Github address
-GITHUBURL https://www.github.com/AutomaticFrenzy/tgstation
+GITHUBURL https://github.com/SpaceManiac/tgstation
 
 ## Discord bot command prefix, if the discord bot is used
 # DISCORDBOTCOMMANDPREFIX ?
