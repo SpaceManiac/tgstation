@@ -1,0 +1,319 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"h" = (
+/obj/machinery/computer/security/mining{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"i" = (
+/obj/structure/cable,
+/turf/closed/wall,
+/area/station/cargo/miningdock)
+"j" = (
+/obj/machinery/airalarm/directional/south,
+/obj/machinery/light{
+	light_color = "#c9d3e8"
+	},
+/obj/machinery/computer/order_console/mining,
+/obj/effect/turf_decal/stripes/line{
+	icon_state = "warningline";
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"l" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"m" = (
+/obj/structure/rack,
+/obj/item/shovel,
+/obj/item/pickaxe,
+/obj/item/storage/toolbox/emergency,
+/obj/structure/extinguisher_cabinet{
+	dir = 4;
+	pixel_x = 24
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/spawner/random/engineering/flashlight,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"n" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"o" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/status_display/supply{
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/obj/structure/cable,
+/obj/machinery/camera/directional/east{
+	c_tag = "Cargo - Mining Dock";
+	network = list("SS13")
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"q" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"s" = (
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"u" = (
+/obj/machinery/computer/shuttle/mining{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"v" = (
+/obj/machinery/mineral/ore_redemption{
+	dir = 1;
+	input_dir = 2;
+	output_dir = 1
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"y" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"B" = (
+/obj/machinery/light_switch{
+	pixel_x = -26;
+	pixel_y = 26
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"E" = (
+/turf/template_noop,
+/area/station/cargo/miningdock)
+"G" = (
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"H" = (
+/turf/closed/wall,
+/area/station/cargo/miningdock)
+"K" = (
+/obj/machinery/requests_console{
+	department = "Mining";
+	pixel_y = -32
+	},
+/obj/structure/ore_box,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/bot,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"M" = (
+/obj/item/radio/intercom{
+	dir = 4;
+	name = "Station Intercom (General)";
+	pixel_y = -28
+	},
+/obj/structure/closet/secure_closet/miner,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"O" = (
+/obj/effect/landmark/start/shaft_miner,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"Q" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/folder/yellow,
+/obj/machinery/firealarm/directional/east,
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"S" = (
+/obj/machinery/holopad,
+/obj/modular_map_connector,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"T" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/mining{
+	name = "Mining Dock";
+	req_access = list("mining")
+	},
+/obj/effect/turf_decal/stripes/line{
+	icon_state = "warningline";
+	dir = 1
+	},
+/obj/effect/landmark/navigate_destination,
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+"Z" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningdock)
+
+(1,1,1) = {"
+a
+a
+a
+E
+E
+E
+a
+"}
+(2,1,1) = {"
+a
+a
+a
+E
+E
+E
+a
+"}
+(3,1,1) = {"
+H
+H
+E
+E
+E
+E
+E
+"}
+(4,1,1) = {"
+H
+h
+u
+q
+q
+K
+H
+"}
+(5,1,1) = {"
+H
+B
+s
+s
+s
+M
+H
+"}
+(6,1,1) = {"
+T
+l
+s
+S
+s
+j
+H
+"}
+(7,1,1) = {"
+v
+G
+O
+s
+O
+Z
+H
+"}
+(8,1,1) = {"
+i
+n
+m
+Q
+y
+o
+H
+"}
+(9,1,1) = {"
+H
+H
+H
+H
+E
+H
+H
+"}

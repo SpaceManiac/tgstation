@@ -1,0 +1,7 @@
+directory = "_maps/map_files/SBStation/"
+
+[rooms.mining]
+modules = [
+    "shaft_miner.dmm",
+    # "bitrunner.dmm",
+]
