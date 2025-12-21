@@ -14645,7 +14645,7 @@
 /obj/machinery/door/window/left/directional/north{
 	dir = 4;
 	name = "delivery door";
-	req_one_access = list("shipping", "mulebot")
+	req_one_access = list("cargo", "mulebot")
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -15132,16 +15132,14 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/north{
-	dir = 4;
-	name = "delivery door";
-	req_one_access = list("shipping")
-	},
 /obj/item/newspaper{
 	pixel_x = -5
 	},
 /obj/structure/desk_bell{
 	pixel_x = 7
+	},
+/obj/machinery/door/window/left/directional/west{
+	req_access = list("cargo")
 	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
