@@ -22667,7 +22667,7 @@
 "bch" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/turretid{
-	control_area = /area/station/ai/satellite;
+	control_area = /area/station/ai/satellite/chamber;
 	name = "turret control panel 1";
 	pixel_y = -28;
 	tag = "Turret Control 1"
@@ -22967,7 +22967,7 @@
 	pixel_y = -31
 	},
 /obj/machinery/turretid{
-	control_area = /area/station/ai/satellite;
+	control_area = /area/station/ai/satellite/chamber;
 	name = "turret control panel 2";
 	pixel_x = -28;
 	tag = "Turret Control 2"
