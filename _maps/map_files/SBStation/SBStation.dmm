@@ -12691,8 +12691,9 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 5
 	},
-/obj/structure/disposalpipe/junction/flip{
-	dir = 1
+/obj/structure/disposalpipe/sorting/mail/flip{
+	dir = 1;
+	sortType = 26
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -13299,7 +13300,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
 	dir = 8
 	},
-/obj/structure/disposalpipe/junction/flip,
+/obj/structure/disposalpipe/sorting/mail/flip{
+	sortType = 28
+	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "aEP" = (
@@ -24152,7 +24155,7 @@
 "ebL" = (
 /obj/machinery/door/airlock{
 	id_tag = "Dorm1";
-	name = "Dorm 1"
+	name = "Dormitory"
 	},
 /turf/open/floor/iron,
 /area/station/commons/dorms)
@@ -26134,8 +26137,9 @@
 /turf/open/floor/plating,
 /area/station/ai/satellite/chamber)
 "qEU" = (
-/obj/structure/disposalpipe/junction{
-	dir = 1
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 1;
+	sortType = 30
 	},
 /turf/closed/wall,
 /area/station/security/detectives_office)
@@ -26434,7 +26438,7 @@
 "sxJ" = (
 /obj/machinery/door/airlock{
 	id_tag = "Dorm2";
-	name = "Dorm 2"
+	name = "Dormitory"
 	},
 /turf/open/floor/iron,
 /area/station/commons/dorms)
@@ -27124,8 +27128,9 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/structure/disposalpipe/junction{
-	dir = 4
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 4;
+	sortType = 29
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
