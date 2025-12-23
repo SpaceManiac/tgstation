@@ -127,3 +127,9 @@
 		display.pixel_x = (64 - 72) / 2
 		display.pixel_y = 27
 		add_overlay(display)
+
+#undef GEO_OFF
+#undef GEO_ON
+#undef GEO_TURNON
+#undef GEO_TURNOFF
+#undef GEO_ANIM_LENGTH

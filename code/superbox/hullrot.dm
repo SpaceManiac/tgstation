@@ -402,3 +402,5 @@
 		languageicon = "[D.get_icon()] "
 
 	return "[spanpart1][spanpart2][freqpart][languageicon][compose_track_href(speaker, namepart)][namepart][compose_job(speaker, message_language, null, radio_freq)][endspanpart][messagepart]"
+
+#undef HULLROT_STAT_HEADER

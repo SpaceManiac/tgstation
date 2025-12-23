@@ -5,3 +5,5 @@
 /mob/living/simple_animal/bot/mulebot/Initialize()
 	. = ..()
 	access_card.access += "mulebot"
+
+#undef ACCESS_MULEBOT
