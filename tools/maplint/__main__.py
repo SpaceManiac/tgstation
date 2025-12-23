@@ -4,8 +4,8 @@ import pathlib
 import traceback
 import yaml
 
-from . import dmm, lint
-from .error import MaplintError
+from .source import dmm, lint
+from .source.error import MaplintError
 
 def green(text):
     return "\033[32m" + str(text) + "\033[0m"
@@ -57,7 +57,7 @@ def main(args):
 
     lints: dict[str, lint.Lint] = {}
 
-    lint_base = pathlib.Path(__file__).parent.parent / "lints"
+    lint_base = pathlib.Path(__file__).parent / "lints"
     lint_filenames = []
     if args.lints is None:
         lint_filenames = lint_base.glob("*.yml")

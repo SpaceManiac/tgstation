@@ -86,10 +86,10 @@ jobs:
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: |
           tools/bootstrap/python -m mapmerge2.dmm_test
-          tools/bootstrap/python -m tools.maplint.source
+          tools/bootstrap/python -m maplint
       - name: Check Cutter
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
-        run: tools/bootstrap/python -m tools.icon_cutter.check
+        run: tools/bootstrap/python -m icon_cutter.check
       - name: Run DMI Tests
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: tools/bootstrap/python -m dmi.test

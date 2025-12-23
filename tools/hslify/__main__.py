@@ -1,7 +1,7 @@
 import re
 import glob
-from colormath.color_objects import sRGBColor, HSLColor
-from colormath.color_conversions import convert_color
+from colormath2.color_objects import sRGBColor, HSLColor
+from colormath2.color_conversions import convert_color
 
 def hex_to_hsl(hex_color):
     alpha_percent = None

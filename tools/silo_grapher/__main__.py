@@ -41,7 +41,7 @@ grand_total = {
     "plastic": {"grand_total": 0, "grand_spent": 0, "grand_obtained": 0},
 }
 
-log_folder = "tools\silo_grapher\logs"
+log_folder = r"tools\silo_grapher\logs"
 total_files = 0
 first_time_value = None
 first_time_setup = True

@@ -3,7 +3,7 @@ This module allows user to convert MIDI melodies to SS13 sheet music ready
 for copy-and-paste
 """
 from functools import reduce
-import MidiDependencies as mi
+from . import midi
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
@@ -109,7 +109,7 @@ def obtain_midi_file():
     Asks user to select MIDI and returns this file opened in binary mode for reading
     """
     messagebox.showinfo("Midi2Piano Information", "Choose a MIDI file to convert")
-    file = filedialog.askopenfilename(title='MIDI file selection',filetypes=[['*.mid', 'MID files']])
+    file = filedialog.askopenfilename(title='MIDI file selection',filetypes=[('MID files', '*.mid')])
     if not file:
         return None
     file = open(file, mode='rb').read()
@@ -119,9 +119,9 @@ def midi2score_without_ticks(midi_file):
     """
     Transforms aforementioned file into a score, truncates it and returns it
     """
-    opus = mi.midi2opus(midi_file)
-    opus = mi.to_millisecs(opus)
-    score = mi.opus2score(opus)
+    opus = midi.midi2opus(midi_file)
+    opus = midi.to_millisecs(opus)
+    score = midi.opus2score(opus)
     return score[1:] # Ticks don't matter anymore, it is always 1000
 
 def filter_events_from_score(score):
