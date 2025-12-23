@@ -19,8 +19,8 @@ export BUN_VERSION=1.2.16
 # SpacemanDMM git tag
 export SPACEMAN_DMM_VERSION=suite-1.11
 
-# Python version for mapmerge and other tools
-export PYTHON_VERSION=3.9.0
+# For UV version, see `tools/bootstrap/uv` and `uv_.ps1`.
+# For Python version, see `.python-version`.
 
 #dreamluau repo
 export DREAMLUAU_REPO="tgstation/dreamluau"

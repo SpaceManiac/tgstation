@@ -1,0 +1,13 @@
+[project]
+name = "tgstation"
+version = "0.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pygit2 ~= 1.19",
+    "bidict ~= 0.22.0",
+    "Pillow ~= 12.0",
+    "PyYaml ~= 6.0",
+    "beautifulsoup4 ~= 4.9",
+    "mysql-connector-python ~= 8.0",
+    "numpy ~= 1.26",
+]

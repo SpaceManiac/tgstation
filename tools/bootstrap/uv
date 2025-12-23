@@ -1,0 +1,69 @@
+#!/bin/sh
+#
+# Uses https://github.com/astral-sh/uv to:
+# - Download and install Python.
+# - Install PyPI dependencies.
+# It does a better job than we could do ourselves.
+#
+# However, don't use their official installer yet because it doesn't check
+# hashes: https://github.com/astral-sh/uv/issues/13074
+set -eu
+
+# Change these variables to update uv.
+UV_VERSION="0.9.18"
+ExpectedSha256="a55ae2d0d53c8f6541bb4d6afc95857ff33a97de8f1d23e9d09acdcb865c4a00"
+
+# Convenience variables
+Bootstrap=$(dirname "$0")
+Tools=$(dirname "$Bootstrap")
+
+# On Windows (ex. MSYS2, Git for Windows, GitHub Desktop), use the PowerShell script instead.
+if command -v powershell.exe >/dev/null 2>/dev/null; then
+    exec powershell.exe -NoLogo -ExecutionPolicy Bypass -File "$Bootstrap/uv_.ps1" "$@"
+fi
+
+# If uv is already on PATH, just use it.
+if ! uv=$(command -v uv 2>/dev/null); then
+    # Else, install it.
+    # We could use the official installer here, but it doesn't check hashes!!!
+    # https://github.com/astral-sh/uv/issues/13074
+
+    Cache="$Bootstrap/.cache"
+    if test -n "${TG_BOOTSTRAP_CACHE:-}"; then
+        Cache="$TG_BOOTSTRAP_CACHE"
+    fi
+
+    UvDir="$Cache/uv-$(uname)-$UV_VERSION"
+    uv="$UvDir/uv"
+    if ! test -f "$uv"; then
+        # Download
+        mkdir -p "$Cache"
+        Url="https://github.com/astral-sh/uv/releases/download/$UV_VERSION/uv-x86_64-unknown-linux-musl.tar.gz"
+        Archive="$UvDir.tar"
+        if command -v curl >/dev/null 2>/dev/null; then
+            curl -L "$Url" -o "$Archive" -s
+        elif command -v wget >/dev/null 2>/dev/null; then
+            wget "$Url" -O "$Archive" -q
+        else
+            echo "No curl or wget available, can't bootstrap uv" >&2
+            exit 1
+        fi
+
+        # Verify
+        echo "$ExpectedSha256  $Archive" | sha256sum -c
+
+        # Untar
+        TmpDir="$UvDir.tmp"
+        rm -rf "$TmpDir"
+        mkdir -p "$TmpDir"
+        tar -x -C "$TmpDir" -f "$Archive" --strip-components=1 >&2
+        rm "$Archive"
+
+        # Commit
+        mv "$TmpDir" "$UvDir"
+    fi
+fi
+
+# Invoke with all command-line arguments
+export PYTHONPATH="$Tools"
+exec "$uv" "$@"

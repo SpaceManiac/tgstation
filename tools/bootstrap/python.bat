@@ -1,2 +1,1 @@
-@echo off
-call powershell.exe -NoLogo -ExecutionPolicy Bypass -File "%~dp0\python_.ps1" %*
+@call "%~dp0uv" run python %*
