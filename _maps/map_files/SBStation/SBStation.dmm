@@ -1606,8 +1606,7 @@
 	dir = 4;
 	location = "Security"
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 8;
+/obj/machinery/door/window/left/directional/west{
 	name = "delivery door";
 	req_one_access = list("security", "mulebot")
 	},
@@ -2060,8 +2059,7 @@
 /turf/closed/wall,
 /area/station/security/brig)
 "aek" = (
-/obj/machinery/door/window/brigdoor/security/cell{
-	dir = 2;
+/obj/machinery/door/window/brigdoor/security/cell/left/directional/south{
 	id = "Cell 1";
 	name = "Cell 1"
 	},
@@ -3088,6 +3086,7 @@
 /area/station/hallway/secondary/entry)
 "ahm" = (
 /obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
@@ -4445,8 +4444,7 @@
 /turf/open/floor/iron,
 /area/station/service/bar)
 "akn" = (
-/obj/machinery/door/window{
-	dir = 8;
+/obj/machinery/door/window/left/directional/west{
 	name = "Theatre Stage"
 	},
 /turf/open/floor/wood,
@@ -5006,8 +5004,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 8;
+/obj/machinery/door/window/left/directional/west{
 	name = "delivery door";
 	req_one_access = list("bar", "mulebot")
 	},
@@ -5287,7 +5284,7 @@
 /area/station/service/chapel/office)
 "ams" = (
 /obj/structure/chair{
-	dir = 8s
+	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/effect/landmark/start/chaplain,
@@ -5677,7 +5674,6 @@
 /area/station/service/bar)
 "ank" = (
 /obj/machinery/door/window/right/directional/south{
-	dir = 2;
 	name = "Bar Door";
 	req_one_access = list("bar", "kitchen")
 	},
@@ -6738,8 +6734,7 @@
 /area/station/medical/chemistry)
 "apF" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/south{
-	dir = 8;
+/obj/machinery/door/window/left/directional/west{
 	name = "Chemistry Desk";
 	req_access = list("medical", "plumbing")
 	},
@@ -7118,8 +7113,7 @@
 	dir = 4;
 	location = "Medical"
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 8;
+/obj/machinery/door/window/left/directional/west{
 	name = "delivery door";
 	req_one_access = list("medical", "mulebot")
 	},
@@ -7190,8 +7184,7 @@
 /turf/open/floor/iron,
 /area/station/science/genetics)
 "aqJ" = (
-/obj/machinery/door/window/left/directional/west{
-	dir = 2;
+/obj/machinery/door/window/left/directional/south{
 	name = "Monkey Pen";
 	req_access = list("genetics")
 	},
@@ -8359,8 +8352,7 @@
 "atD" = (
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/left/directional/north{
-	dir = 8;
+/obj/machinery/door/window/left/directional/west{
 	name = "Hydroponics Desk";
 	req_access = list("hydroponics")
 	},
@@ -9700,8 +9692,7 @@
 	id = "xeno1";
 	name = "containment blast door"
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 4;
+/obj/machinery/door/window/left/directional/east{
 	name = "Containment Pen";
 	req_access = list("xenobiology")
 	},
@@ -10351,8 +10342,7 @@
 	pixel_x = 2
 	},
 /obj/item/ai_module/reset,
-/obj/machinery/door/window/brigdoor{
-	dir = 8;
+/obj/machinery/door/window/brigdoor/left/directional/west{
 	name = "Core Modules";
 	req_access = list("captain")
 	},
@@ -10830,8 +10820,7 @@
 	pixel_x = 3;
 	pixel_y = 5
 	},
-/obj/machinery/door/window/brigdoor{
-	dir = 8;
+/obj/machinery/door/window/brigdoor/left/directional/west{
 	name = "Core Modules";
 	req_access = list("captain")
 	},
@@ -11420,8 +11409,7 @@
 /area/station/ai/upload/chamber)
 "aAX" = (
 /obj/structure/rack,
-/obj/machinery/door/window/brigdoor{
-	dir = 8;
+/obj/machinery/door/window/brigdoor/left/directional/west{
 	name = "Core Modules";
 	req_access = list("captain")
 	},
@@ -11671,8 +11659,7 @@
 	id = "xeno2";
 	name = "containment blast door"
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 4;
+/obj/machinery/door/window/left/directional/east{
 	name = "Containment Pen";
 	req_access = list("xenobiology")
 	},
@@ -11680,12 +11667,6 @@
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "aBy" = (
-/obj/structure/chair/stool/bamboo{
-	dir = 1
-	},
-/obj/structure/chair/stool/bamboo{
-	dir = 1
-	},
 /obj/structure/chair/stool/bamboo,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
@@ -12491,8 +12472,7 @@
 	dir = 4;
 	location = "Science"
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 8;
+/obj/machinery/door/window/left/directional/west{
 	name = "delivery door";
 	req_one_access = list("research", "mulebot")
 	},
@@ -13681,8 +13661,7 @@
 	id = "xeno3";
 	name = "containment blast door"
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 4;
+/obj/machinery/door/window/left/directional/east{
 	name = "Containment Pen";
 	req_access = list("xenobiology")
 	},
@@ -13887,8 +13866,7 @@
 /obj/structure/closet/crate/rcd{
 	pixel_y = 4
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 2;
+/obj/machinery/door/window/left/directional/south{
 	name = "RCD Storage";
 	req_access = list("command")
 	},
@@ -14337,7 +14315,6 @@
 /area/station/engineering/gravity_generator)
 "aHv" = (
 /obj/machinery/door/window/left/directional/north{
-	dir = 1;
 	name = "Gravity Generator";
 	req_access = list("engine_equip")
 	},
@@ -14642,8 +14619,7 @@
 	opacity = 1
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/window/left/directional/north{
-	dir = 4;
+/obj/machinery/door/window/left/directional/east{
 	name = "delivery door";
 	req_one_access = list("cargo", "mulebot")
 	},
@@ -15410,13 +15386,7 @@
 /obj/item/taperecorder{
 	pixel_x = -3
 	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the RD's goons from the safety of your own office.";
-	dir = 4;
-	name = "Research Monitor";
-	network = list("RD","Satellite");
-	pixel_x = -24
-	},
+/obj/machinery/computer/security/telescreen/rd/directional/west,
 /turf/open/floor/iron/cafeteria,
 /area/station/command/heads_quarters/rd)
 "aJV" = (
@@ -15480,8 +15450,7 @@
 	id = "xeno4";
 	name = "containment blast door"
 	},
-/obj/machinery/door/window/left/directional/north{
-	dir = 4;
+/obj/machinery/door/window/left/directional/east{
 	name = "Containment Pen";
 	req_access = list("xenobiology")
 	},
@@ -15757,7 +15726,6 @@
 	layer = 2.9
 	},
 /obj/machinery/door/window/left/directional/north{
-	dir = 1;
 	name = "RCD Storage";
 	req_access = list("command")
 	},
@@ -17283,8 +17251,7 @@
 /area/station/engineering/storage/tech)
 "aPw" = (
 /obj/structure/table,
-/obj/machinery/door/window/brigdoor/right/directional/west{
-	dir = 4;
+/obj/machinery/door/window/brigdoor/right/directional/east{
 	name = "Core Modules";
 	req_access = list("captain")
 	},
@@ -19310,7 +19277,6 @@
 	location = "Engineering"
 	},
 /obj/machinery/door/window/left/directional/north{
-	dir = 1;
 	name = "delivery door";
 	req_one_access = list("engineering", "mulebot")
 	},
@@ -19609,13 +19575,7 @@
 /obj/machinery/light{
 	light_color = "#cee5d2"
 	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the Engine.";
-	dir = 1;
-	name = "Engine Monitor";
-	network = list("Engine");
-	pixel_y = -32
-	},
+/obj/machinery/computer/security/telescreen/engine/directional/south,
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/delivery,
 /obj/structure/disposalpipe/trunk{
@@ -19920,12 +19880,7 @@
 /turf/open/floor/engine/n2o,
 /area/station/engineering/atmos)
 "aVb" = (
-/obj/machinery/computer/security/telescreen{
-	dir = 1;
-	name = "Satellite Monitor";
-	network = list("Satellite");
-	pixel_y = -26
-	},
+/obj/machinery/computer/security/telescreen/minisat/directional/south,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -20379,13 +20334,7 @@
 /obj/machinery/light{
 	light_color = "#c9d3e8"
 	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the Engine.";
-	dir = 1;
-	name = "Engine Monitor";
-	network = list("Engine");
-	pixel_y = -32
-	},
+/obj/machinery/computer/security/telescreen/engine/directional/south,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -20538,14 +20487,7 @@
 /obj/machinery/computer/station_alert{
 	dir = 8
 	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the Engine.";
-	dir = 8;
-	layer = 4;
-	name = "Engine Monitor";
-	network = list("Engine");
-	pixel_x = 30
-	},
+/obj/machinery/computer/security/telescreen/engine/directional/east,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -21420,7 +21362,7 @@
 "aYE" = (
 /obj/machinery/camera/directional/north{
 	c_tag = "Satellite - Telecomms Server Room";
-	network = list("SS13","Satellite")
+	network = list("SS13","minisat")
 	},
 /obj/machinery/telecomms/bus/preset_three,
 /turf/open/floor/iron/dark/telecomms,
@@ -21757,9 +21699,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/supermatter)
 "aZH" = (
-/obj/structure/cable/multilayer{
-	cable_layer = 6
-	},
+/obj/structure/cable/multilayer,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "aZI" = (
@@ -22606,7 +22546,7 @@
 /obj/structure/lattice/catwalk,
 /obj/machinery/camera/directional/east{
 	c_tag = "Satellite - Airlock";
-	network = list("SS13","Satellite")
+	network = list("SS13","minisat")
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -22660,7 +22600,7 @@
 	},
 /obj/machinery/camera/directional/south{
 	c_tag = "Satellite - Control Center";
-	network = list("SS13","Satellite")
+	network = list("SS13","minisat")
 	},
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/server)
@@ -22682,7 +22622,7 @@
 "bcj" = (
 /obj/machinery/camera/directional/west{
 	c_tag = "Satellite - Entrance";
-	network = list("SS13","Satellite")
+	network = list("SS13","minisat")
 	},
 /turf/open/floor/plating,
 /area/station/tcommsat/server)
@@ -23635,8 +23575,7 @@
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
 "bfe" = (
-/obj/machinery/door/window/left/directional/east{
-	dir = 1;
+/obj/machinery/door/window/left/directional/north{
 	name = "Coffin Storage";
 	req_access = list("chapel_office")
 	},
@@ -23779,7 +23718,7 @@
 /obj/machinery/camera/motion/directional/east{
 	c_tag = "Satellite Exterior - West";
 	name = "motion-sensitive security camera";
-	network = list("SS13","Satellite")
+	network = list("SS13","minisat")
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -23788,7 +23727,7 @@
 /obj/machinery/camera/motion/directional/south{
 	c_tag = "Satellite - AI Core";
 	name = "motion-sensitive security camera";
-	network = list("SS13","Satellite")
+	network = list("SS13","minisat")
 	},
 /turf/open/floor/circuit,
 /area/station/ai/satellite/chamber)
@@ -23797,7 +23736,7 @@
 /obj/machinery/camera/motion/directional/west{
 	c_tag = "Satellite Exterior - East";
 	name = "motion-sensitive security camera";
-	network = list("SS13","Satellite")
+	network = list("SS13","minisat")
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -23805,7 +23744,7 @@
 /obj/machinery/camera/motion/directional/north{
 	c_tag = "Satellite Exterior - South";
 	name = "motion-sensitive security camera";
-	network = list("SS13","Satellite")
+	network = list("SS13","minisat")
 	},
 /turf/open/space/basic,
 /area/space)
@@ -24069,9 +24008,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/structure/cable/multilayer{
-	cable_layer = 6
-	},
+/obj/structure/cable/multilayer,
 /turf/open/floor/engine,
 /area/station/engineering/main)
 "ebL" = (
@@ -24185,13 +24122,8 @@
 "eUV" = (
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
-/turf/open/space,
+/turf/open/space/basic,
 /area/station/maintenance/solars/starboard/aft)
-"eVj" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable,
-/turf/open/space,
-/area/station/maintenance/solars/starboard/fore)
 "eYZ" = (
 /obj/machinery/power/smes{
 	charge = 0
@@ -24284,9 +24216,7 @@
 	dir = 1;
 	layer = 2.9
 	},
-/obj/machinery/door/window/right/directional/west{
-	dir = 2
-	},
+/obj/machinery/door/window/right/directional/south,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
@@ -24345,9 +24275,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/station/hallway/primary/fore)
-"gmQ" = (
-/turf/open/space,
-/area/space)
 "gnI" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -24596,7 +24523,7 @@
 	light_color = "#ffc1c1"
 	},
 /obj/structure/lattice/catwalk,
-/turf/open/space,
+/turf/open/space/basic,
 /area/station/maintenance/solars/starboard/aft)
 "icL" = (
 /obj/machinery/door/poddoor/preopen{
@@ -25388,7 +25315,7 @@
 /area/station/maintenance/port/aft)
 "nxl" = (
 /obj/structure/lattice/catwalk,
-/turf/open/space,
+/turf/open/space/basic,
 /area/station/maintenance/solars/starboard/aft)
 "nyd" = (
 /obj/structure/cable,
@@ -25407,7 +25334,7 @@
 "nBu" = (
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
-/turf/open/space,
+/turf/open/space/basic,
 /area/station/maintenance/solars/starboard/fore)
 "nEB" = (
 /obj/structure/cable,
@@ -26026,7 +25953,7 @@
 "raS" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable,
-/turf/open/space,
+/turf/open/space/basic,
 /area/station/maintenance/solars/starboard/aft)
 "rch" = (
 /obj/structure/disposalpipe/segment{
@@ -26202,10 +26129,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
-"scm" = (
-/obj/structure/lattice/catwalk,
-/turf/open/space,
-/area/station/maintenance/solars/starboard/fore)
 "sis" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -26338,11 +26261,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
-"tfC" = (
-/obj/structure/grille,
-/obj/structure/lattice,
-/turf/open/space,
-/area/space/nearstation)
 "tpO" = (
 /obj/modular_map_root{
 	config_file = "_maps/map_files/SBStation/modules.toml";
@@ -26509,10 +26427,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
-"uhe" = (
-/obj/structure/lattice,
-/turf/open/space,
-/area/space/nearstation)
 "uyC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -26707,11 +26621,6 @@
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
-"vBm" = (
-/obj/structure/lattice,
-/obj/structure/grille,
-/turf/open/space,
-/area/space/nearstation)
 "vBr" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/line{
@@ -26836,7 +26745,7 @@
 "wnZ" = (
 /obj/structure/lattice,
 /obj/structure/grille/broken,
-/turf/open/space,
+/turf/open/space/basic,
 /area/space/nearstation)
 "wrd" = (
 /obj/machinery/door/airlock/external{
@@ -68912,21 +68821,21 @@ aaa
 aaa
 aaa
 aaa
-tfC
-uhe
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
+aaf
+adP
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
 aaa
 fxx
 rnS
@@ -69169,22 +69078,22 @@ bdE
 aaa
 aaa
 aaa
-tfC
+aaf
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-tfC
-uhe
+aaf
+adP
 fxx
 wMI
 lrZ
@@ -69426,7 +69335,7 @@ aaa
 aaa
 aaa
 aaa
-tfC
+aaf
 aaa
 nEB
 nBu
@@ -69440,8 +69349,8 @@ nEB
 nBu
 nEB
 aaa
-tfC
-uhe
+aaf
+adP
 aen
 wMI
 lrZ
@@ -69683,8 +69592,8 @@ aaa
 aaa
 aaa
 aaa
-tfC
-uhe
+aaf
+adP
 nEB
 nBu
 nEB
@@ -69696,8 +69605,8 @@ aaa
 nEB
 nBu
 nEB
-uhe
-uhe
+adP
+adP
 aaa
 fxx
 wMI
@@ -69940,21 +69849,21 @@ aaa
 aaa
 aaa
 aaa
-tfC
+aaf
 aaa
 nEB
 nBu
 nEB
-uhe
+adP
 nEB
 nBu
 nEB
-uhe
+adP
 nEB
 nBu
 nEB
 aaa
-uhe
+adP
 aaa
 fxx
 xYX
@@ -70197,8 +70106,8 @@ aaa
 aaa
 aaa
 aaa
-uhe
-uhe
+adP
+adP
 nEB
 nBu
 nEB
@@ -70210,9 +70119,9 @@ aaa
 nEB
 nBu
 nEB
-uhe
-uhe
-uhe
+adP
+adP
+adP
 aen
 tUE
 agE
@@ -70451,10 +70360,10 @@ aaa
 aaa
 aaa
 aaa
-tfC
-tfC
-tfC
-uhe
+aaf
+aaf
+aaf
+adP
 aaa
 nEB
 nBu
@@ -70468,7 +70377,7 @@ nEB
 nBu
 nEB
 aaa
-uhe
+adP
 aaa
 fxx
 pvM
@@ -70708,13 +70617,9 @@ aaa
 aaa
 aaa
 aaa
-tfC
+aaf
 aaa
-uhe
-aaa
-aaa
-aaa
-nBu
+adP
 aaa
 aaa
 aaa
@@ -70725,7 +70630,11 @@ aaa
 nBu
 aaa
 aaa
-uhe
+aaa
+nBu
+aaa
+aaa
+adP
 aaa
 fxx
 fxx
@@ -70778,21 +70687,21 @@ aMM
 aaa
 adP
 aaa
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
 wnZ
-tfC
-tfC
-tfC
-tfC
-tfC
+aaf
+aaf
+aaf
+aaf
+aaf
 aaa
 aaa
 aaa
@@ -70965,24 +70874,24 @@ aaa
 aaa
 aaa
 aaa
-tfC
-uhe
+aaf
+adP
 rud
 nBu
 nBu
 nBu
-eVj
-scm
-scm
-scm
-scm
-scm
-scm
-scm
-scm
-scm
-scm
-scm
+hTc
+skf
+skf
+skf
+skf
+skf
+skf
+skf
+skf
+skf
+skf
+skf
 nBu
 nBu
 hTc
@@ -71037,19 +70946,19 @@ adP
 aaa
 nKr
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-tfC
+aaf
 aaa
 aaa
 aaa
@@ -71222,13 +71131,9 @@ aaa
 aaa
 aaa
 aaa
-tfC
+aaf
 aaa
-uhe
-aaa
-aaa
-aaa
-nBu
+adP
 aaa
 aaa
 aaa
@@ -71239,7 +71144,11 @@ aaa
 nBu
 aaa
 aaa
-uhe
+aaa
+nBu
+aaa
+aaa
+adP
 aaa
 aaa
 skf
@@ -71306,7 +71215,7 @@ lvD
 eUV
 lvD
 aaa
-tfC
+aaf
 aaa
 aaa
 aaa
@@ -71479,10 +71388,10 @@ aaa
 aaa
 aaa
 aaa
-tfC
+aaf
 wnZ
-tfC
-uhe
+aaf
+adP
 aaa
 nEB
 nBu
@@ -71496,7 +71405,7 @@ nEB
 nBu
 nEB
 aaa
-uhe
+adP
 aaa
 aaa
 aaa
@@ -71550,7 +71459,7 @@ aaa
 adP
 aaa
 nKr
-uhe
+adP
 lvD
 eUV
 lvD
@@ -71562,8 +71471,8 @@ aaa
 lvD
 eUV
 lvD
-uhe
-tfC
+adP
+aaf
 aaa
 aaa
 aaa
@@ -71739,8 +71648,8 @@ aaa
 aaa
 aaa
 aaa
-uhe
-uhe
+adP
+adP
 nEB
 nBu
 nEB
@@ -71752,10 +71661,10 @@ aaa
 nEB
 nBu
 nEB
-uhe
-uhe
-uhe
-vBm
+adP
+adP
+adP
+nKr
 adP
 adP
 adP
@@ -71811,16 +71720,16 @@ aaa
 lvD
 eUV
 lvD
-uhe
+adP
 lvD
 eUV
 lvD
-uhe
+adP
 lvD
 eUV
 lvD
 aaa
-tfC
+aaf
 aaa
 aaa
 aaa
@@ -71996,21 +71905,21 @@ aaa
 aaa
 aaa
 aaa
-tfC
+aaf
 aaa
 nEB
 nBu
 nEB
-uhe
+adP
 nEB
 nBu
 nEB
-uhe
+adP
 nEB
 nBu
 nEB
 aaa
-uhe
+adP
 aaa
 wFA
 aaa
@@ -72064,7 +71973,7 @@ aZc
 aZc
 aZc
 adP
-uhe
+adP
 lvD
 eUV
 lvD
@@ -72076,8 +71985,8 @@ aaa
 lvD
 eUV
 lvD
-uhe
-uhe
+adP
+adP
 aaa
 aaa
 aaa
@@ -72253,8 +72162,8 @@ aaa
 aaa
 aaa
 aaa
-tfC
-uhe
+aaf
+adP
 nEB
 nBu
 nEB
@@ -72266,8 +72175,8 @@ aaa
 nEB
 nBu
 nEB
-uhe
-uhe
+adP
+adP
 aaa
 wFA
 aaa
@@ -72320,7 +72229,7 @@ vjK
 oNK
 aZc
 aZc
-uhe
+adP
 aaa
 lvD
 eUV
@@ -72334,10 +72243,10 @@ lvD
 eUV
 lvD
 aaa
-uhe
-tfC
-tfC
-tfC
+adP
+aaf
+aaf
+aaf
 aaa
 aaa
 aaa
@@ -72510,7 +72419,7 @@ aaa
 aaa
 aaa
 aaa
-tfC
+aaf
 aaa
 nEB
 nBu
@@ -72524,9 +72433,9 @@ nEB
 nBu
 nEB
 aaa
-tfC
-uhe
-vBm
+aaf
+adP
+nKr
 adP
 adP
 adP
@@ -72592,9 +72501,9 @@ eUV
 aaa
 aaa
 aaa
-uhe
+adP
 aaa
-tfC
+aaf
 aaa
 aaa
 aaa
@@ -72767,21 +72676,21 @@ aaa
 aaa
 aaa
 aaa
-tfC
+aaf
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-gmQ
 aaa
-tfC
+aaa
+aaf
 aaa
 wFA
 aaa
@@ -72850,8 +72759,8 @@ eUV
 eUV
 eUV
 vHW
-uhe
-tfC
+adP
+aaf
 aaa
 aaa
 aaa
@@ -73024,22 +72933,22 @@ aaa
 aaa
 aaa
 aaa
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-uhe
-tfC
-tfC
-uhe
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+adP
+aaf
+aaf
+adP
 nKr
 adP
 adP
@@ -73106,9 +73015,9 @@ eUV
 aaa
 aaa
 aaa
-uhe
+adP
 aaa
-tfC
+aaf
 aaa
 aaa
 aaa
@@ -73348,7 +73257,7 @@ wLH
 oNK
 aZc
 aZc
-uhe
+adP
 aaa
 lvD
 eUV
@@ -73362,10 +73271,10 @@ lvD
 eUV
 lvD
 aaa
-uhe
-tfC
-tfC
-tfC
+adP
+aaf
+aaf
+aaf
 aaa
 aaa
 aaa
@@ -73603,10 +73512,10 @@ adP
 adP
 adP
 aZc
-uhe
-uhe
-uhe
-uhe
+adP
+adP
+adP
+adP
 lvD
 eUV
 lvD
@@ -73618,8 +73527,8 @@ aaa
 lvD
 eUV
 lvD
-uhe
-uhe
+adP
+adP
 aaa
 aaa
 aaa
@@ -73862,21 +73771,21 @@ aaa
 adP
 aaa
 aaa
-uhe
+adP
 aaa
 lvD
 eUV
 lvD
-uhe
+adP
 lvD
 eUV
 lvD
-uhe
+adP
 lvD
 eUV
 lvD
 aaa
-tfC
+aaf
 aaa
 aaa
 aaa
@@ -74117,10 +74026,10 @@ adP
 nKr
 nKr
 adP
-uhe
-uhe
-vBm
-uhe
+adP
+adP
+nKr
+adP
 lvD
 eUV
 lvD
@@ -74132,8 +74041,8 @@ aaa
 lvD
 eUV
 lvD
-uhe
-tfC
+adP
+aaf
 aaa
 aaa
 aaa
@@ -74376,7 +74285,7 @@ aaa
 aaa
 aaa
 aaa
-vBm
+nKr
 aaa
 lvD
 eUV
@@ -74390,7 +74299,7 @@ lvD
 eUV
 lvD
 aaa
-tfC
+aaf
 aaa
 aaa
 aaa
@@ -74631,23 +74540,23 @@ nKr
 nKr
 nKr
 adP
-uhe
-uhe
-tfC
+adP
+adP
+aaf
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
-uhe
+adP
 aaa
 aaa
 aaa
@@ -74890,21 +74799,21 @@ aaa
 aaa
 aaa
 aaa
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
-tfC
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
+aaf
 aaa
 aaa
 aaa
