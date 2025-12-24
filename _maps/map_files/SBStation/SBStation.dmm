@@ -128,9 +128,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -307,9 +305,7 @@
 /turf/closed/wall/r_wall,
 /area/station/command/heads_quarters/hos)
 "aaM" = (
-/obj/machinery/newscaster{
-	pixel_x = -32
-	},
+/obj/machinery/newscaster/directional/west,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
@@ -810,9 +806,7 @@
 /area/station/security)
 "abI" = (
 /obj/machinery/vending/security,
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/light{
 	dir = 1;
@@ -846,9 +840,7 @@
 /turf/closed/wall,
 /area/station/security)
 "abL" = (
-/obj/machinery/newscaster{
-	pixel_x = -32
-	},
+/obj/machinery/newscaster/directional/west,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -1787,9 +1779,7 @@
 /turf/open/floor/plating,
 /area/station/security)
 "adD" = (
-/obj/machinery/newscaster{
-	pixel_x = -32
-	},
+/obj/machinery/newscaster/directional/west,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -2951,9 +2941,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/command/heads_quarters/cmo)
 "aha" = (
-/obj/machinery/newscaster{
-	pixel_y = 36
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
@@ -4540,9 +4528,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
-/obj/machinery/newscaster{
-	pixel_x = -30
-	},
+/obj/machinery/newscaster/directional/west,
 /turf/open/floor/iron,
 /area/station/medical/medbay/central)
 "akD" = (
@@ -5276,9 +5262,7 @@
 /area/station/service/chapel/office)
 "amt" = (
 /obj/machinery/bookbinder,
-/obj/machinery/newscaster{
-	pixel_x = 32
-	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/carpet,
 /area/station/service/chapel/office)
 "amu" = (
@@ -5389,9 +5373,7 @@
 /turf/open/floor/iron,
 /area/station/service/bar)
 "amF" = (
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -5965,9 +5947,7 @@
 /area/station/service/bar)
 "aob" = (
 /obj/structure/cable,
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
@@ -7034,9 +7014,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/machinery/newscaster{
-	pixel_x = -30
-	},
+/obj/machinery/newscaster/directional/west,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -7647,9 +7625,7 @@
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
 "asa" = (
-/obj/machinery/newscaster{
-	pixel_x = 30
-	},
+/obj/machinery/newscaster/directional/east,
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#e8eaff"
@@ -8059,9 +8035,7 @@
 /area/station/service/hydroponics)
 "asV" = (
 /obj/machinery/vending/hydroseeds,
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
 "asW" = (
@@ -9111,9 +9085,7 @@
 /turf/open/floor/iron,
 /area/station/science/research)
 "avH" = (
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -9427,9 +9399,7 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "awl" = (
-/obj/machinery/newscaster{
-	pixel_y = -30
-	},
+/obj/machinery/newscaster/directional/south,
 /obj/machinery/light{
 	light_color = "#e8eaff"
 	},
@@ -12274,9 +12244,7 @@
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
 "aCZ" = (
-/obj/machinery/newscaster{
-	pixel_x = 32
-	},
+/obj/machinery/newscaster/directional/east,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -12993,9 +12961,7 @@
 /area/station/command/heads_quarters/hop)
 "aEs" = (
 /obj/structure/cable,
-/obj/machinery/newscaster{
-	pixel_x = -30
-	},
+/obj/machinery/newscaster/directional/west,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -13558,9 +13524,7 @@
 /turf/closed/wall,
 /area/station/science/lab)
 "aFF" = (
-/obj/machinery/newscaster{
-	pixel_x = -32
-	},
+/obj/machinery/newscaster/directional/west,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -13757,9 +13721,7 @@
 	icon_state = "autolathe";
 	name = "public autolathe"
 	},
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#d1dfff"
@@ -16018,9 +15980,7 @@
 "aLQ" = (
 /obj/structure/table,
 /obj/item/paper_bin,
-/obj/machinery/newscaster{
-	pixel_x = 32
-	},
+/obj/machinery/newscaster/directional/east,
 /obj/item/pen,
 /obj/item/folder/white,
 /obj/item/stamp/head/rd{
@@ -16569,9 +16529,7 @@
 /turf/open/floor/iron,
 /area/station/service/janitor)
 "aNp" = (
-/obj/machinery/newscaster{
-	pixel_x = 32
-	},
+/obj/machinery/newscaster/directional/east,
 /obj/effect/turf_decal/tile/green,
 /obj/effect/turf_decal/tile/green{
 	dir = 4
@@ -16606,9 +16564,7 @@
 /obj/machinery/cell_charger,
 /obj/item/stock_parts/power_store/cell/upgraded,
 /obj/item/stock_parts/power_store/cell/upgraded,
-/obj/machinery/newscaster{
-	pixel_x = 32
-	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/iron/white,
 /area/station/science/robotics/lab)
 "aNu" = (
@@ -17009,10 +16965,6 @@
 "aOR" = (
 /turf/closed/wall,
 /area/station/hallway/primary/aft)
-"aOS" = (
-/obj/machinery/newscaster,
-/turf/closed/wall,
-/area/station/hallway/primary/aft)
 "aOT" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass,
@@ -17025,6 +16977,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+/obj/machinery/newscaster/directional/west,
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "aOU" = (
@@ -17048,6 +17001,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
 "aOW" = (
@@ -17154,9 +17108,7 @@
 /turf/open/floor/wood,
 /area/station/security/detectives_office)
 "aPr" = (
-/obj/machinery/newscaster{
-	pixel_x = 32
-	},
+/obj/machinery/newscaster/directional/east,
 /obj/machinery/vending/wardrobe/det_wardrobe,
 /turf/open/floor/wood,
 /area/station/security/detectives_office)
@@ -18501,9 +18453,7 @@
 "aSn" = (
 /obj/structure/closet/secure_closet/engineering_welding,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -18615,9 +18565,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "aSv" = (
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /obj/structure/closet/wardrobe/engineering_yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -23598,9 +23546,7 @@
 /turf/open/floor/carpet,
 /area/station/service/chapel)
 "bfq" = (
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "bfr" = (
@@ -62127,7 +62073,7 @@ aLz
 aMj
 arD
 aNV
-aOS
+aOR
 aPF
 aQr
 aQW
@@ -63155,7 +63101,7 @@ aLz
 aMj
 arD
 aNV
-aOS
+aOR
 aPC
 aQr
 aRa

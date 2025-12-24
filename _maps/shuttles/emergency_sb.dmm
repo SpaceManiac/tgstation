@@ -28,9 +28,7 @@
 /area/shuttle/escape/brig)
 "h" = (
 /obj/structure/chair,
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "i" = (
