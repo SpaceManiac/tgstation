@@ -11699,8 +11699,7 @@
 	id = "warehouse";
 	name = "Warehouse Door Control";
 	pixel_x = -26;
-	pixel_y = -26;
-	req_access = list("shipping")
+	pixel_y = -26
 	},
 /obj/effect/spawner/random/structure/crate,
 /obj/effect/turf_decal/bot,
@@ -12716,8 +12715,7 @@
 	id = "warehouse";
 	name = "Warehouse Door Control";
 	pixel_x = -26;
-	pixel_y = 26;
-	req_access = list("shipping")
+	pixel_y = 26
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
