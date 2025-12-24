@@ -21699,7 +21699,9 @@
 /turf/open/floor/plating,
 /area/station/engineering/supermatter)
 "aZH" = (
-/obj/structure/cable/multilayer,
+/obj/structure/cable/multilayer{
+	cable_layer = 6
+	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "aZI" = (
@@ -24008,7 +24010,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/structure/cable/multilayer,
+/obj/structure/cable/multilayer{
+	cable_layer = 6
+	},
 /turf/open/floor/engine,
 /area/station/engineering/main)
 "ebL" = (
