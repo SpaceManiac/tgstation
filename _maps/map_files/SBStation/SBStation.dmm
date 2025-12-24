@@ -221,9 +221,7 @@
 	pixel_x = -26;
 	pixel_y = 26
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -26
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/carpet,
 /area/station/command/heads_quarters/hos)
@@ -258,9 +256,7 @@
 	pixel_x = -3
 	},
 /obj/item/storage/lockbox/loyalty,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -1613,9 +1609,7 @@
 /turf/open/floor/iron,
 /area/station/security)
 "adl" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/loading_area/white{
 	dir = 4
 	},
@@ -1966,9 +1960,7 @@
 /turf/open/floor/iron,
 /area/station/security/brig)
 "adW" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 26
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -2193,9 +2185,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 26
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron,
 /area/station/security/courtroom)
 "aeP" = (
@@ -2489,9 +2479,7 @@
 /turf/open/floor/iron/white/corner,
 /area/station/hallway/secondary/entry)
 "afP" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 24
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/cable,
 /obj/machinery/camera/directional/east{
 	c_tag = "Arrivals - Alternative";
@@ -5149,9 +5137,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 24
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "ama" = (
@@ -5245,9 +5231,7 @@
 /turf/open/floor/iron,
 /area/station/medical/medbay/central)
 "amm" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -5320,9 +5304,7 @@
 "amx" = (
 /obj/structure/table/wood,
 /obj/machinery/reagentgrinder,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/item/book/manual/wiki/barman_recipes,
 /turf/open/floor/wood,
 /area/station/service/bar)
@@ -5501,9 +5483,7 @@
 	pixel_y = -23
 	},
 /obj/structure/cable,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 32
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -5997,9 +5977,7 @@
 /area/station/service/bar)
 "aoc" = (
 /obj/structure/cable,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 32
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -6501,9 +6479,7 @@
 	icon_state = "plant-21";
 	layer = 4.1
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -6566,9 +6542,7 @@
 /area/station/medical/medbay/central)
 "apj" = (
 /obj/structure/closet/secure_closet/medical1,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -26
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/light{
 	dir = 8;
 	light_color = "#e8eaff"
@@ -7239,9 +7213,7 @@
 "aqP" = (
 /obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/bot,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -26
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
 "aqQ" = (
@@ -7603,9 +7575,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "arN" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 32
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/iron/white/side{
 	dir = 1;
 	icon_state = "whitehall"
@@ -7793,10 +7763,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
 "asn" = (
-/obj/structure/extinguisher_cabinet{
-	dir = 4;
-	pixel_x = 24
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/cafeteria,
 /area/station/service/kitchen)
@@ -7900,9 +7867,7 @@
 /area/station/hallway/primary/central)
 "asB" = (
 /obj/structure/bodycontainer/morgue,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -26
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 5
 	},
@@ -8279,10 +8244,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/structure/extinguisher_cabinet{
-	dir = 4;
-	pixel_x = 24
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "atv" = (
@@ -8944,9 +8906,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "avh" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 32
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "avi" = (
@@ -9782,9 +9742,7 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "awY" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -26
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/camera/directional/west{
 	c_tag = "Bridge - West";
 	network = list("SS13")
@@ -10688,9 +10646,7 @@
 	},
 /obj/item/clothing/head/utility/welding,
 /obj/item/weldingtool,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 32
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -11050,9 +11006,7 @@
 /turf/open/floor/iron/white,
 /area/station/science/lab)
 "azV" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 26
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron/white/side{
 	dir = 9
 	},
@@ -12107,9 +12061,7 @@
 	},
 /area/station/science/server)
 "aCA" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -28
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white/side{
 	dir = 6
@@ -12847,10 +12799,7 @@
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "aEc" = (
-/obj/structure/extinguisher_cabinet{
-	dir = 4;
-	pixel_x = 24
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 10
@@ -13022,9 +12971,7 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
 "aEp" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 26
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -13645,9 +13592,7 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "aFI" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -28
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
@@ -13895,9 +13840,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 32
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/camera/directional/north{
 	c_tag = "E.V.A. Storage";
 	network = list("SS13")
@@ -14382,10 +14325,7 @@
 /turf/open/floor/iron,
 /area/station/command/teleporter)
 "aHD" = (
-/obj/structure/extinguisher_cabinet{
-	dir = 4;
-	pixel_x = 24
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -14443,9 +14383,7 @@
 /turf/open/floor/circuit,
 /area/station/science/robotics/mechbay)
 "aHK" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/cable,
 /turf/open/floor/circuit,
 /area/station/science/robotics/mechbay)
@@ -16408,9 +16346,7 @@
 /obj/item/assembly/flash/handheld,
 /obj/item/assembly/flash/handheld,
 /obj/item/stack/cable_coil,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron/white,
 /area/station/science/robotics/lab)
 "aMB" = (
@@ -16765,9 +16701,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "aNS" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "aNT" = (
@@ -19139,9 +19073,7 @@
 	pixel_y = 4
 	},
 /obj/item/wrench,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 26
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -19178,9 +19110,7 @@
 	name = "Mix to Port";
 	on = 0
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -21132,9 +21062,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
@@ -22134,9 +22062,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 26
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
@@ -22798,9 +22724,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 26
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/engineering/main)
 "bcU" = (

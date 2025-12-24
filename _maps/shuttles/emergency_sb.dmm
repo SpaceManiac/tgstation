@@ -112,9 +112,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "v" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -164,9 +162,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/light{
 	dir = 4
 	},

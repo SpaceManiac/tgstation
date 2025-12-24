@@ -185,9 +185,7 @@
 	name = "Freighter"
 	})
 "q" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/light{
 	dir = 4
 	},
