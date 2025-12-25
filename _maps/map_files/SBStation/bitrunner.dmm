@@ -30,11 +30,7 @@
 	light_color = "#c9d3e8"
 	},
 /obj/machinery/netpod,
-/obj/item/radio/intercom{
-	dir = 4;
-	name = "Station Intercom (General)";
-	pixel_y = -28
-	},
+/obj/item/radio/intercom/directional/south,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/cargo/bitrunning/den)
 "l" = (
@@ -49,10 +45,7 @@
 	},
 /area/station/cargo/bitrunning/den)
 "m" = (
-/obj/structure/extinguisher_cabinet{
-	dir = 4;
-	pixel_x = 24
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -157,6 +150,10 @@
 "E" = (
 /turf/template_noop,
 /area/station/cargo/bitrunning/den)
+"F" = (
+/obj/effect/spawner/random/structure/barricade,
+/turf/template_noop,
+/area/station/cargo/bitrunning/den)
 "G" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -184,9 +181,8 @@
 /area/station/cargo/bitrunning/den)
 "M" = (
 /obj/machinery/netpod,
-/obj/machinery/requests_console{
-	department = "Bitrunning";
-	pixel_y = -32
+/obj/machinery/requests_console/directional/south{
+	department = "Bitrunning"
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/cargo/bitrunning/den)
@@ -274,28 +270,28 @@
 a
 a
 a
-E
-E
-E
+F
+F
+F
 a
 "}
 (2,1,1) = {"
 a
 a
 a
-E
-E
-E
+F
+F
+F
 a
 "}
 (3,1,1) = {"
 L
 L
-E
-E
-E
-E
-E
+F
+F
+F
+F
+F
 "}
 (4,1,1) = {"
 L
