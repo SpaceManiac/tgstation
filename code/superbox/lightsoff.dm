@@ -62,8 +62,9 @@ GLOBAL_LIST_INIT(lightsoff_info, list(
 		),
 		// cargo
 		list(/datum/job/quartermaster, /datum/job/cargo_technician, /datum/job/shaft_miner) = list(
-			/area/station/cargo/miningdock,
 			/area/station/cargo/warehouse,
+			/area/station/cargo/miningdock,
+			/area/station/cargo/bitrunning/den,
 		),
 		// medical
 		list(/datum/job/chief_medical_officer, /datum/job/doctor, /datum/job/chemist) = list(
