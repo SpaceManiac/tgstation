@@ -4169,6 +4169,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/instrument/piano_synth,
 /turf/open/floor/wood,
 /area/station/service/theater)
 "ajD" = (
@@ -5096,6 +5097,9 @@
 /area/station/service/theater)
 "alR" = (
 /obj/structure/window/reinforced,
+/obj/structure/chair/stool{
+	dir = 8
+	},
 /turf/open/floor/wood,
 /area/station/service/theater)
 "alS" = (
@@ -5688,15 +5692,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/service/bar)
-"anl" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/fancy/donut_box,
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/station/service/bar)
 "anm" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/bar,
@@ -6030,7 +6025,9 @@
 /area/station/service/bar)
 "aof" = (
 /obj/structure/cable,
-/obj/structure/chair/stool,
+/obj/structure/chair/stool{
+	dir = 4
+	},
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -6070,7 +6067,9 @@
 /area/station/service/bar)
 "aoi" = (
 /obj/structure/cable,
-/obj/structure/chair/stool,
+/obj/structure/chair/stool{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/effect/landmark/start/assistant,
 /obj/effect/turf_decal/tile/bar,
@@ -6341,7 +6340,9 @@
 /turf/open/floor/iron,
 /area/station/service/bar)
 "aoQ" = (
-/obj/structure/chair/stool,
+/obj/structure/chair/stool{
+	dir = 4
+	},
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -24484,6 +24485,16 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/server)
+"gdf" = (
+/obj/structure/chair/stool{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/service/bar)
 "gdw" = (
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/hidden/layer4{
 	dir = 4
@@ -25839,6 +25850,15 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/server)
+"nFA" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/item/storage/fancy/donut_box,
+/turf/open/floor/iron,
+/area/station/service/bar)
 "nGb" = (
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
@@ -27077,6 +27097,17 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
+"ugG" = (
+/obj/structure/chair/stool{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/service/bar)
 "uhc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
 	dir = 1
@@ -27284,6 +27315,17 @@
 "vjK" = (
 /turf/closed/wall/r_wall,
 /area/station/maintenance/starboard/aft)
+"vqA" = (
+/obj/structure/cable,
+/obj/structure/chair/stool{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/service/bar)
 "vst" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -59335,7 +59377,7 @@ akk
 ala
 alO
 akm
-anl
+anm
 aoa
 aoO
 akm
@@ -59592,7 +59634,7 @@ akl
 alb
 alP
 amC
-anm
+nFA
 aoa
 akm
 akm
@@ -60621,8 +60663,8 @@ ale
 alR
 akm
 akm
-aof
-aoQ
+vqA
+gdf
 akm
 aqo
 arb
@@ -61393,7 +61435,7 @@ ajE
 amG
 ala
 aoi
-aoM
+ugG
 ala
 ala
 arc
