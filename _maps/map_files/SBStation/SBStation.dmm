@@ -70,7 +70,7 @@
 /obj/structure/table/wood,
 /obj/item/taperecorder,
 /obj/structure/secure_safe/hos{
-	pixel_x = 35
+	pixel_x = 32
 	},
 /obj/item/book/manual/wiki/security_space_law,
 /obj/item/storage/box/handcuffs,
@@ -3360,9 +3360,7 @@
 /obj/machinery/computer/records/medical{
 	dir = 4
 	},
-/obj/machinery/keycard_auth{
-	pixel_x = -24
-	},
+/obj/machinery/keycard_auth/wall_mounted/directional/west,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -10573,10 +10571,6 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
 "azs" = (
-/obj/structure/secure_safe{
-	pixel_x = 32;
-	pixel_y = 26
-	},
 /obj/machinery/power/apc/auto_name/directional/north{
 	areastring = "/area/station/command/heads_quarters/captain"
 	},
@@ -10585,17 +10579,11 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
 "azt" = (
-/obj/machinery/keycard_auth{
-	pixel_x = 9;
-	pixel_y = 26
-	},
+/obj/machinery/keycard_auth/wall_mounted/directional/north,
 /obj/structure/cable,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
 "azu" = (
-/obj/structure/plaque/static_plaque/golden/captain{
-	pixel_y = 32
-	},
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#e8eaff"
@@ -10604,12 +10592,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
 	dir = 8
 	},
+/obj/structure/secure_safe/directional/north,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
 "azv" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
+	},
+/obj/structure/plaque/static_plaque/golden/captain{
+	pixel_y = 32
 	},
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain)
@@ -12920,10 +12912,7 @@
 /area/station/command/heads_quarters/hop)
 "aEv" = (
 /obj/machinery/pdapainter,
-/obj/machinery/keycard_auth{
-	pixel_x = -4;
-	pixel_y = -26
-	},
+/obj/machinery/keycard_auth/wall_mounted/directional/south,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -14720,6 +14709,7 @@
 /obj/machinery/computer/mecha{
 	dir = 4
 	},
+/obj/machinery/keycard_auth/wall_mounted/directional/west,
 /turf/open/floor/iron/cafeteria,
 /area/station/command/heads_quarters/rd)
 "aIT" = (
@@ -15188,10 +15178,6 @@
 "aJU" = (
 /obj/machinery/computer/robotics{
 	dir = 4
-	},
-/obj/machinery/keycard_auth{
-	pixel_x = -26;
-	pixel_y = 24
 	},
 /obj/item/taperecorder{
 	pixel_x = -3
@@ -15960,10 +15946,7 @@
 	pixel_y = 8
 	},
 /obj/item/taperecorder,
-/obj/structure/secure_safe{
-	pixel_x = 6;
-	pixel_y = 26
-	},
+/obj/structure/secure_safe/directional/north,
 /obj/item/restraints/handcuffs,
 /turf/open/floor/wood,
 /area/station/security/detectives_office)
@@ -20552,11 +20535,6 @@
 	pixel_x = -24;
 	req_access = list("engine_equip")
 	},
-/obj/machinery/keycard_auth{
-	pixel_w = 0;
-	pixel_x = -26;
-	pixel_y = -26
-	},
 /obj/effect/landmark/start/chief_engineer,
 /obj/machinery/button/door{
 	id = "ceblast";
@@ -20831,6 +20809,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
+/obj/machinery/keycard_auth/wall_mounted/directional/west,
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/ce)
 "aYa" = (
