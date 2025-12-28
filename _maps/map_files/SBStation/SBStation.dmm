@@ -2193,7 +2193,7 @@
 	dir = 8;
 	dwidth = 2;
 	height = 9;
-	name = "arrivals";
+	name = "SS13: Arrivals";
 	roundstart_template = /datum/map_template/shuttle/arrival/sb;
 	width = 5;
 	shuttle_id = "arrival_stationary"
@@ -2432,7 +2432,7 @@
 	dir = 8;
 	dwidth = 2;
 	height = 13;
-	name = "port bay";
+	name = "SS13: Port Dock";
 	width = 5;
 	shuttle_id = "ferry_home"
 	},
@@ -2440,7 +2440,7 @@
 /area/space)
 "afM" = (
 /obj/machinery/door/airlock/external{
-	name = "External Docking Port"
+	name = "Port Dock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -2623,7 +2623,7 @@
 /area/station/hallway/secondary/entry)
 "agn" = (
 /obj/machinery/door/airlock/external{
-	name = "Arrivals Docking Port"
+	name = "Arrivals Dock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	icon_state = "warningline";
@@ -11529,7 +11529,7 @@
 /area/station/maintenance/starboard/aft)
 "aBA" = (
 /obj/machinery/door/airlock/external{
-	name = "Escape Airlock"
+	name = "Escape Dock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -13930,7 +13930,7 @@
 /area/station/hallway/secondary/exit)
 "aGX" = (
 /obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock";
+	name = "Supply Dock";
 	req_access = list("cargo")
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -14826,7 +14826,7 @@
 	dir = 8;
 	dwidth = 3;
 	height = 5;
-	name = "cargo bay";
+	name = "SS13: Supply Dock";
 	width = 8;
 	shuttle_id = "cargo_home"
 	},
@@ -14834,7 +14834,7 @@
 /area/space)
 "aJj" = (
 /obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock";
+	name = "Supply Dock";
 	req_access = list("cargo")
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -16733,7 +16733,7 @@
 	dir = 8;
 	dwidth = 3;
 	height = 5;
-	name = "mining shuttle bay";
+	name = "SS13: Mining Dock";
 	roundstart_template = /datum/map_template/shuttle/mining/sb;
 	width = 7;
 	shuttle_id = "mining_home"
@@ -16742,7 +16742,7 @@
 /area/space)
 "aOz" = (
 /obj/machinery/door/airlock/external{
-	name = "Mining Dock Airlock";
+	name = "Mining Dock";
 	req_access = list("mining")
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -22143,7 +22143,6 @@
 /area/station/engineering/main)
 "bbN" = (
 /obj/machinery/door/airlock/external{
-	name = "Communications External Access";
 	req_access = list("minisat", "external airlocks")
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -23040,7 +23039,7 @@
 /area/station/maintenance/port/fore)
 "beF" = (
 /obj/machinery/door/airlock/external{
-	name = "External Docking Port"
+	name = "Port Dock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -23059,7 +23058,7 @@
 /area/station/hallway/secondary/entry)
 "beG" = (
 /obj/machinery/door/airlock/external{
-	name = "Arrivals Docking Port"
+	name = "Arrivals Dock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	icon_state = "warningline";
@@ -23093,7 +23092,7 @@
 /area/station/science/research)
 "beI" = (
 /obj/machinery/door/airlock/external{
-	name = "Escape Airlock"
+	name = "Escape Dock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -23111,7 +23110,7 @@
 /area/station/hallway/secondary/exit)
 "beJ" = (
 /obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock";
+	name = "Supply Dock";
 	req_access = list("cargo")
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -23126,11 +23125,12 @@
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/hidden/layer4{
 	dir = 4
 	},
+/obj/effect/landmark/navigate_destination,
 /turf/open/floor/plating,
 /area/station/cargo/warehouse)
 "beK" = (
 /obj/machinery/door/airlock/external{
-	name = "Supply Dock Airlock";
+	name = "Supply Dock";
 	req_access = list("cargo")
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -23149,7 +23149,7 @@
 /area/station/cargo/warehouse)
 "beL" = (
 /obj/machinery/door/airlock/external{
-	name = "Mining Dock Airlock";
+	name = "Mining Dock";
 	req_access = list("mining")
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -23164,11 +23164,11 @@
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/hidden/layer4{
 	dir = 4
 	},
+/obj/effect/landmark/navigate_destination,
 /turf/open/floor/plating,
 /area/station/cargo/warehouse)
 "beO" = (
 /obj/machinery/door/airlock/external{
-	name = "Communications External Access";
 	req_access = list("minisat", "external airlocks")
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -23196,7 +23196,7 @@
 	dir = 8;
 	dwidth = 11;
 	height = 20;
-	name = "evac bay";
+	name = "SS13: Escape Dock";
 	width = 25;
 	shuttle_id = "emergency_home"
 	},
@@ -25994,7 +25994,7 @@
 /area/station/maintenance/port)
 "pWK" = (
 /obj/machinery/door/airlock/external{
-	name = "Arrivals Docking Port"
+	name = "Arrivals Dock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	icon_state = "warningline";
@@ -27166,7 +27166,7 @@
 /area/space/nearstation)
 "wrd" = (
 /obj/machinery/door/airlock/external{
-	name = "Escape Airlock"
+	name = "Escape Dock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
