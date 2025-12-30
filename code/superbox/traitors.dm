@@ -128,11 +128,11 @@
 	id = "sabotage_pinpointer"
 	duration = -1
 	tick_interval = 30 SECONDS
-	alert_type = /obj/screen/alert/status_effect/sabotage_pinpointer
+	alert_type = /atom/movable/screen/alert/status_effect/sabotage_pinpointer
 	var/range_mid = 8
 	var/range_far = 16
 
-/obj/screen/alert/status_effect/sabotage_pinpointer
+/atom/movable/screen/alert/status_effect/sabotage_pinpointer
 	name = "Sabotage Integrated Pinpointer"
 	desc = "Even stealthier than a normal implant."
 	icon = 'icons/obj/devices/tracker.dmi'
@@ -184,13 +184,13 @@
 
 /// Traitor objective to steal a certain amount of energy from station systems.
 /datum/objective_item/syndicate_powercell
-	name = "energy from the station's network."
+	name = "energy from the station's network"
 	targetitem = /obj/item/stock_parts/power_store/cell/syndicate
 	var/charge_to_steal = 400000
 
 /datum/objective_item/syndicate_powercell/New()
 	..()
-	name = "[display_energy(charge_to_steal)] of energy from the station's network."
+	name = "[display_energy(charge_to_steal)] of energy from the station's network (use your bluespace power cell on APCs)"
 	special_equipment += /obj/item/stock_parts/power_store/cell/syndicate
 
 /datum/objective_item/syndicate_powercell/check_special_completion(obj/item/stock_parts/power_store/cell/I)
