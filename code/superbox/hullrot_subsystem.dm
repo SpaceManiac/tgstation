@@ -115,11 +115,15 @@ SUBSYSTEM_DEF(hullrot)
 	VV_DROPDOWN_OPTION("", "---------")
 	VV_DROPDOWN_OPTION("restart", "Restart")
 
-/datum/controller/subsystem/hullrot/Topic(href, href_list)
-	if(..() || !check_rights(R_ADMIN, FALSE) || !usr.client.holder.CheckAdminHref(href, href_list))
+/datum/controller/subsystem/hullrot/vv_do_topic(list/href_list)
+	. = ..()
+
+	if(!.)
 		return
 
 	if(href_list["restart"])
+		if(!check_rights(R_ADMIN, FALSE))
+			return
 		restart()
 
 // ----------------------------------------------------------------------------
