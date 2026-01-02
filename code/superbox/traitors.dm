@@ -203,13 +203,15 @@
 	icon_state = "bscell"
 	maxcharge = 400000
 	custom_materials = null
-	grind_results = null
 	chargerate = 4000
 
 /obj/item/stock_parts/power_store/cell/syndicate/Initialize(mapload, override_maxcharge)
 	. = ..()
 	charge = 0
 	update_icon()
+
+/obj/item/stock_parts/power_store/cell/syndicate/grind_results()
+	return null
 
 /obj/item/stock_parts/power_store/cell/syndicate/pre_attack(atom/A, mob/living/user, params)
 	. = ..()
