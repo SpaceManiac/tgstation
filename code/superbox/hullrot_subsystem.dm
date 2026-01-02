@@ -90,7 +90,7 @@ SUBSYSTEM_DEF(hullrot)
 /datum/controller/subsystem/hullrot/proc/abort(msg)
 	dead_because = msg
 	log_world(msg)
-	message_admins("(<a href='?src=[REF(src)];[HrefToken(TRUE)];restart=1'>restart</a>) [msg]")
+	message_admins("(<a href='byond://?src=[REF(src)];[HrefToken(TRUE)];restart=1'>restart</a>) [msg]")
 	can_fire = FALSE
 
 	var/list/images = list()
@@ -217,12 +217,12 @@ SUBSYSTEM_DEF(hullrot)
 			var/name = data["untrusted_username"]
 			var/client/C = GLOB.directory[ckey(name)]
 			if(C)
-				INVOKE_ASYNC(C, /client.proc/hullrot_auth_prompt, "[name] connected to Hullrot. If this is you, provide the code:")
+				INVOKE_ASYNC(C, TYPE_PROC_REF(/client, hullrot_auth_prompt), "[name] connected to Hullrot. If this is you, provide the code:")
 
 		else if ((data = event["BadRegistration"]))
 			var/client/C = GLOB.directory[data["ckey"]]
 			if(C)
-				INVOKE_ASYNC(C, /client.proc/hullrot_auth_prompt, "That code does not appear to be valid. Try again:")
+				INVOKE_ASYNC(C, TYPE_PROC_REF(/client, hullrot_auth_prompt), "That code does not appear to be valid. Try again:")
 
 		else if ((data = event["IsConnected"]))
 			var/client/C = GLOB.directory[data["ckey"]]
@@ -241,7 +241,7 @@ SUBSYSTEM_DEF(hullrot)
 		subspace_ticker += wait
 		if (subspace_ticker >= 50 || !subspace_groups)
 			subspace_ticker = -1
-			INVOKE_ASYNC(src, .proc/subspace_update)
+			INVOKE_ASYNC(src, PROC_REF(subspace_update))
 
 	for (var/mob/living/L in GLOB.player_list)
 		if (L.client && (L.hullrot_needs_update || prob(5)))

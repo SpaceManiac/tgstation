@@ -287,7 +287,7 @@
 		hullrot_needs_update = TRUE
 
 // Radios must always be hearing sensitive because we cheat by looking for "hearers" to find what radios a mob can hear.
-/obj/item/radio/Initialize()
+/obj/item/radio/Initialize(mapload)
 	. = ..()
 	if (!istype(src, /obj/item/radio/headset))
 		become_hearing_sensitive("hullrot")
@@ -306,7 +306,7 @@
 	for (var/mob/living/M in get_hearers_in_view(range, src))
 		M.hullrot_needs_update = TRUE
 
-/obj/item/radio/Initialize()
+/obj/item/radio/Initialize(mapload)
 	. = ..()
 	hullrot_check_all_hearers(canhear_range)
 
@@ -318,7 +318,7 @@
 /obj/item/radio/emp_act()
 	. = ..()
 	hullrot_check_all_hearers(canhear_range)
-	addtimer(CALLBACK(src, .proc/hullrot_check_all_hearers, canhear_range), 201)  // un-EMP delay + 1
+	addtimer(CALLBACK(src, PROC_REF(hullrot_check_all_hearers), canhear_range), 201)  // un-EMP delay + 1
 
 /mob/living/afterShuttleMove()
 	. = ..()

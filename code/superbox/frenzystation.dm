@@ -63,7 +63,7 @@
 	state = S_OCCUPIED
 	close_machine(target)
 	target.SetSleeping(60 SECONDS)
-	addtimer(CALLBACK(src, .proc/awaken, target, FALSE), 5 SECONDS, TIMER_UNIQUE)
+	addtimer(CALLBACK(src, PROC_REF(awaken), target, FALSE), 5 SECONDS, TIMER_UNIQUE)
 	return TRUE
 
 /obj/machinery/latejoin_cryo/proc/awaken(mob/living/target, forced)
@@ -84,7 +84,7 @@
 
 	close_machine()
 	if (!forced)
-		addtimer(CALLBACK(src, .proc/cooled_off), 5 SECONDS, TIMER_UNIQUE)
+		addtimer(CALLBACK(src, PROC_REF(cooled_off)), 5 SECONDS, TIMER_UNIQUE)
 	return TRUE
 
 /obj/machinery/latejoin_cryo/proc/cooled_off()
@@ -92,7 +92,7 @@
 		return
 	state = S_CHARGING
 	update_icon()
-	addtimer(CALLBACK(src, .proc/idle), 5 SECONDS, TIMER_UNIQUE)
+	addtimer(CALLBACK(src, PROC_REF(idle)), 5 SECONDS, TIMER_UNIQUE)
 
 /obj/machinery/latejoin_cryo/proc/idle()
 	if (state != S_CHARGING)
@@ -157,7 +157,7 @@
 	anchored = TRUE
 	var/list/cells
 
-/obj/machinery/latejoin_cryo_computer/Initialize()
+/obj/machinery/latejoin_cryo_computer/Initialize(mapload)
 	. = ..()
 	SSjob.latejoin_trackers += src
 	cells = list()
@@ -242,7 +242,7 @@
 	SSshuttle.supply.buy()
 	queued_crates = everything()
 	queued_crates -= before
-	addtimer(CALLBACK(src, .proc/deliver), 3 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(deliver)), 3 SECONDS)
 	return TRUE
 
 /obj/machinery/computer/cargo/frenzy/proc/findBeacon()
@@ -270,7 +270,7 @@
 		if (deliverOne(top))
 			queued_crates -= top
 		if (queued_crates.len)
-			addtimer(CALLBACK(src, .proc/deliver), 1 SECONDS)
+			addtimer(CALLBACK(src, PROC_REF(deliver)), 1 SECONDS)
 		else
 			say("Shipment complete.")
 			queued_crates = null
@@ -302,7 +302,7 @@ GLOBAL_VAR(frenzy_exports)
 /obj/effect/landmark/frenzy_exports
 	name = "Frenzy export teleporter marker"
 
-/obj/effect/landmark/frenzy_exports/Initialize()
+/obj/effect/landmark/frenzy_exports/Initialize(mapload)
 	. = ..()
 	GLOB.frenzy_exports = src
 

@@ -823,7 +823,7 @@ SUBSYSTEM_DEF(ticker)
 		return
 
 	to_chat(world, span_boldannounce("Rebooting World in [DisplayTimeText(delay)]. [reason]"))
-	message_admins("<a href='?_src_=holder;[HrefToken()];delay_round_end=1'>Delay round end</a>") // SBOX
+	message_admins("<a href='byond://?_src_=holder;[HrefToken()];delay_round_end=1'>Delay round end</a>") // SBOX
 
 	var/statspage = CONFIG_GET(string/roundstatsurl)
 	var/gamelogloc = CONFIG_GET(string/gamelogurl)

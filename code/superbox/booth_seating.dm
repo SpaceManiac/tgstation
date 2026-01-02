@@ -19,7 +19,7 @@
 /obj/structure/booth_seating/end2
 	icon_state = "end2"
 
-/obj/structure/booth_seating/Initialize()
+/obj/structure/booth_seating/Initialize(mapload)
 	. = ..()
 	add_overlay(mutable_appearance(icon, "[icon_state]_overlay", layer=ABOVE_MOB_LAYER))
 

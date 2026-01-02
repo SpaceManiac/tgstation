@@ -13,7 +13,7 @@
 	name = "folder - Bluespace Anomaly Investigation"
 	icon_state = "folder_red"
 
-/obj/item/folder/away_mission/Initialize()
+/obj/item/folder/away_mission/Initialize(mapload)
 	. = ..()
 	//new /obj/item/paper/fluff/commandeer(src)
 	//new /obj/item/paper/fluff/away_mission(src)
@@ -24,7 +24,7 @@
 /obj/item/paper/fluff/commandeer
 	name = "formal authorization (for emergencies)"
 
-/obj/item/paper/fluff/commandeer/Initialize()
+/obj/item/paper/fluff/commandeer/Initialize(mapload)
 	. = ..()
 	info = {"
 The POSSESSOR of this DOCUMENT is hereby authorized by NANOTRASEN and CENTRAL
@@ -46,7 +46,7 @@ this DOCUMENT shall result in INVESTIGATION and probable TERMINATION.
 	name = "note"
 	icon_state = "scrap_bloodied"
 
-/obj/item/paper/fluff/away_mission/Initialize()
+/obj/item/paper/fluff/away_mission/Initialize(mapload)
 	. = ..()
 	info = {"<style>body{background:darkred;}</style>
 Gateway for Fiel<font color='red'>d D.L:kjme.t O</font>uick Reference:<br>
@@ -85,7 +85,7 @@ S. Stan<font color='red'>d c1ear of ih</font>e deployment zone and voila!<br>
 	max_integrity = 150
 	var/obj/machinery/gateway_deploy/pad
 
-/obj/item/briefcase_away_mission/Initialize()
+/obj/item/briefcase_away_mission/Initialize(mapload)
 	. = ..()
 	pad = new(src)
 
@@ -118,7 +118,7 @@ S. Stan<font color='red'>d c1ear of ih</font>e deployment zone and voila!<br>
 	var/provided_capsule = FALSE
 	var/obj/item/briefcase_away_mission/briefcase
 
-/obj/machinery/gateway_deploy/Initialize()
+/obj/machinery/gateway_deploy/Initialize(mapload)
 	. = ..()
 	if(istype(loc, /obj/item/briefcase_away_mission))
 		briefcase = loc

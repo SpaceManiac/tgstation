@@ -23,7 +23,7 @@
 
 	var/state = GEO_ON
 
-/obj/machinery/geoscape/Initialize()
+/obj/machinery/geoscape/Initialize(mapload)
 	. = ..()
 	finish_turnon()
 
@@ -77,7 +77,7 @@
 /obj/machinery/geoscape/proc/turnon()
 	state = GEO_TURNON
 	update_icon()
-	addtimer(CALLBACK(src, .proc/finish_turnon), GEO_ANIM_LENGTH)
+	addtimer(CALLBACK(src, PROC_REF(finish_turnon)), GEO_ANIM_LENGTH)
 
 /obj/machinery/geoscape/proc/finish_turnon()
 	state = GEO_ON
@@ -86,7 +86,7 @@
 /obj/machinery/geoscape/proc/turnoff()
 	state = GEO_TURNOFF
 	update_icon()
-	addtimer(CALLBACK(src, .proc/finish_turnoff), GEO_ANIM_LENGTH)
+	addtimer(CALLBACK(src, PROC_REF(finish_turnoff)), GEO_ANIM_LENGTH)
 
 /obj/machinery/geoscape/proc/finish_turnoff()
 	if (obj_flags & EMAGGED)

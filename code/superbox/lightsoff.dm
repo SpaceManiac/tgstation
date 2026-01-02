@@ -32,7 +32,7 @@ SUBSYSTEM_DEF(lightsoff)
 
 	for(var/obj/machinery/door/poddoor/M in SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/door/poddoor))
 		if(M.id in lightsoff_areas)
-			INVOKE_ASYNC(M, /obj/machinery/door/poddoor.proc/close)
+			INVOKE_ASYNC(M, TYPE_PROC_REF(/obj/machinery/door/poddoor, close))
 
 	for(var/area_path in lightsoff_areas)
 		var/area/area = GLOB.areas_by_type[area_path]

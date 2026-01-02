@@ -228,7 +228,7 @@
 	if (!steal_cell)
 		return
 
-	addtimer(CALLBACK(src, .proc/steal_from, user, A, steal_cell))
+	addtimer(CALLBACK(src, PROC_REF(steal_from), user, A, steal_cell))
 	return FALSE
 
 /obj/item/stock_parts/power_store/cell/syndicate/proc/steal_from(mob/living/user, obj/from, obj/item/stock_parts/power_store/steal_cell)

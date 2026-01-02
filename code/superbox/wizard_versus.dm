@@ -166,7 +166,7 @@
 	// prepare to start
 	started = 1
 	to_chat(world, "<B>Everybody appears to be ready. The battle will begin momentarily!</b>")
-	addtimer(CALLBACK(src, .proc/really_begin), 10 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(really_begin)), 10 SECONDS)
 
 /datum/game_mode/wizard_versus/proc/really_begin()
 	// double-check that nobody has moved

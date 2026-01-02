@@ -2,7 +2,7 @@
 
 #define ACCESS_MULEBOT "mulebot"
 
-/mob/living/simple_animal/bot/mulebot/Initialize()
+/mob/living/simple_animal/bot/mulebot/Initialize(mapload)
 	. = ..()
 	access_card.access += "mulebot"
 
