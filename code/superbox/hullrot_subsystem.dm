@@ -177,7 +177,7 @@ SUBSYSTEM_DEF(hullrot)
 			if (!istype(speaker))
 				continue
 
-			if (!speaker.can_hear())
+			if (HAS_TRAIT(speaker, TRAIT_DEAF))
 				if (!data["freq"])
 					to_chat(speaker, "<span class='notice'>You can't hear yourself!</span>")
 			else if (data["freq"])

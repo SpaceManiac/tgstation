@@ -232,9 +232,6 @@
 	return FALSE
 
 /obj/item/stock_parts/power_store/cell/syndicate/proc/steal_from(mob/living/user, obj/from, obj/item/stock_parts/power_store/steal_cell)
-	var/datum/effect_system/spark_spread/spark_system = new /datum/effect_system/spark_spread()
-	spark_system.set_up(5, 0, get_turf(src))
-
 	if (steal_cell.charge <= 0)
 		to_chat(user, "<span class='notice'>[from] is empty!</span>")
 		return
@@ -248,5 +245,5 @@
 		else
 			break
 
-	spark_system.start()
+	do_sparks(5, FALSE, src)
 	playsound(src, "sparks", 50, 1)

@@ -181,7 +181,7 @@
 
 	// Mob-level speaking and hearing
 	var/can_speak = (can_speak() && (stat == CONSCIOUS || stat == SOFT_CRIT)) || FALSE
-	var/can_hear = (can_hear() && (stat == CONSCIOUS || stat == SOFT_CRIT)) || FALSE
+	var/can_hear = (!HAS_TRAIT(src, TRAIT_DEAF) && (stat == CONSCIOUS || stat == SOFT_CRIT)) || FALSE
 	if (cache["can_speak"] != can_speak)
 		cache["can_speak"] = can_speak
 		.["mute"] = !can_speak
